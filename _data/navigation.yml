@@ -2,8 +2,8 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About (edit url in _data/navigation.yml)"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "About"
+    url: https://benslack19.github.io/_pages/about/
   - title: "Sample Posts"
     url: /year-archive/
   # - title: "Sample Collections"
