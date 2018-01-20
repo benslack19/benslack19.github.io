@@ -1,5 +1,6 @@
 ---
 layout: single
+author: true
 permalink: /about/
 ---
 
