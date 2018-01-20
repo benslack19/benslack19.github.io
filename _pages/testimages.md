@@ -4,13 +4,15 @@ layout: single
 
 This is how to put in images.
 
-See https://mmistakes.github.io/minimal-mistakes/markup/markup-image-alignment/
+See minimal mistakes [site](https://mmistakes.github.io/minimal-mistakes/markup/markup-image-alignment/) about image formatting. But doesn't describe how to put images in different ways.
 
-https://www.w3schools.com/html/html_images.asp
+
 
 
 Inserting image by Markdown
 ![surfing-b&w](/assets/surfingBW.png){:class="img-responsive", :height="525px" width="300px"}
+
+Looks like you need some html anyway see [this link](https://www.w3schools.com/html/html_images.asp) as a reference for formatting.
 
 Using html code for centering and sizing (525 x 300) [this](https://stackoverflow.com/questions/12090472/github-readme-md-center-image) and [this](https://github.com/waldyr/Sublime-Installer/edit/master/README.md) to center image
 
