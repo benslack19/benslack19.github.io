@@ -1,5 +1,4 @@
 ---
-# title: "Splash Page"
 layout: splash
 permalink: /splash-page/
 date: 2018-01-20
