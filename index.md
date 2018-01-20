@@ -4,8 +4,10 @@ permalink: /
 author_profile: false
 
 ---
-<a href="https://benslack19.github.io/_pages/about-the-cover/"
+
 <p align="center">
+  <a href="https://benslack19.github.io/_pages/about-the-cover/">
   <img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ"/>
+  </a>
 </p>
-</a>
+
