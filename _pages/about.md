@@ -10,7 +10,7 @@ I'm a biotech applications scientist, neuroscientist, part-time educator, wanna-
 
 ### About the cover image
 
-<p align="center">
+<p align="left">
   <img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ" style="width:25%;"/>
 This image encapsulates my interests of education, neuroscience, and data science.
 
