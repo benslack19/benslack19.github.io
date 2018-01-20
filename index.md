@@ -4,8 +4,8 @@ permalink: /
 author_profile: false
 
 ---
-
+<a href="https://benslack19.github.io/splash-page/"
 <p align="center">
-  <a href="https://benslack19.github.io/splash-page/"<img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ"/>
-  </a>
+  <img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ"/>
 </p>
+</a>
