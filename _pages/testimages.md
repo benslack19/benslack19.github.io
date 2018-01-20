@@ -26,3 +26,10 @@ This is 400 x 300:
 <p align="center">
   <img src="/assets/surfingBW.png" alt="surfingBW" style="width:400px;height:300px;"/>
 </p>
+
+
+
+This is trying a different image to see what it looks like:
+<p align="center">
+  <img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ"/>
+</p>
