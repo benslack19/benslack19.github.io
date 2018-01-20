@@ -5,7 +5,7 @@ permalink: /splash-page/
 date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
-  overlay_image: unsplash-image-1.jpg
+  overlay_image: /assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg
   cta_label: "Download"
   cta_url: "https://github.com/mmistakes/minimal-mistakes/"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
