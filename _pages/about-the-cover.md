@@ -1,8 +1,7 @@
 ---
+title: About the cover image
 layout: single
 ---
-
-### About the cover image
 
 <img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ" align="left" width="25%" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;"> This image encapsulates my interests of education, neuroscience, and data science. I have long been interested in education and how people learn. This lead me to studying and researching neuroscience, where I learned about different examples of brain plasticity. The example shown in the image are neurons born in adulthood. Human adult neurogenesis occurs in the dentate gyrus, a region important for learning and memory. The idea of brain plasticity and growth mindset is fundamental to effective learning, aligning with my interests in education.
 
