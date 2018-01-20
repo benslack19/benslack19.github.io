@@ -11,11 +11,11 @@ I'm a biotech applications scientist, neuroscientist, part-time educator, wanna-
 ### About the cover image
 
 <p align="center">
-  <img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ" max-width:50%; height:auto;/>
+  <img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ"/>
 </p>
 {
 img {
-     width: 50%; 
+     max-width: 50%; 
      height: auto; 
 }
 
