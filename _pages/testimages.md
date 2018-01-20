@@ -14,8 +14,15 @@ Inserting image by Markdown
 
 Looks like you need some html anyway see [this link](https://www.w3schools.com/html/html_images.asp) as a reference for formatting.
 
-Using html code for centering and sizing (525 x 300) [this](https://stackoverflow.com/questions/12090472/github-readme-md-center-image) and [this](https://github.com/waldyr/Sublime-Installer/edit/master/README.md) to center image
+Using html code for centering and sizing  [this](https://stackoverflow.com/questions/12090472/github-readme-md-center-image) and [this](https://github.com/waldyr/Sublime-Installer/edit/master/README.md) to center image
 
+This is 600 x 300:
 <p align="center">
   <img src="/assets/surfingBW.png" alt="surfingBW" style="width:600px;height:300px;"/>
+</p>
+
+
+This is 400 x 300:
+<p align="center">
+  <img src="/assets/surfingBW.png" alt="surfingBW" style="width:400px;height:300px;"/>
 </p>
