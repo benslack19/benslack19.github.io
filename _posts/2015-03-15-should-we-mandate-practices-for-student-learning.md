@@ -1,3 +1,8 @@
+---
+title: Should we mandate instruction practices that are known to improve student learning?
+categories: education, neuroscience
+---
+
 This is a summary of a discussion I led through a discussion group. This group is called the "STEM Education & Diversity Discussion Group" and it is organized by students and post-docs at UCSD/Salk Institute/Scripps.
 
 **The subject of discussion was about the implementation of well-studied, if not always well-known, educational practices that can facilitate long-term retention of material.**
