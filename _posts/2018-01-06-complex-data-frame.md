@@ -1,6 +1,6 @@
 ---
 title: Creating a complex pandas dataframe
-categories: data science
+categories: [data science]
 ---
 
 Over the holiday break, I set out to create a customized Python scatter plot function. (Yes, I know that's a weird thing to do over the holidays. I hid the nerd-ness from my family.) While creating this function, I realized that there were cases where the plot and/or legend rendering could go out of whack. This could happen if the feature where I wanted marker size to be represented has a skewed distributions, contain 0, or contain negative values. Therefore, creating a data frame that has features that range in complexity was important for evaluating my custom scatterplot function.
