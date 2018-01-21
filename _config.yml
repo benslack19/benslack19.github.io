@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "benslack19"
 title_separator          : "-"
 name                     : "benslack19"
-description              : "Musings on neuroscience, data science, and education."
+description              : "Musings on education, neuroscience, and data science."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -90,7 +90,7 @@ author:
   location         : # "Somewhere"
   email            :
   uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
+  home             : https://benslack19.github.io  # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
