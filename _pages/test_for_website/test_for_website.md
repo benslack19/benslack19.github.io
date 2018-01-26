@@ -1,3 +1,6 @@
+---
+layout: single
+---
 
 ## Test what this does
 
