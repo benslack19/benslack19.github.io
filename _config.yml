@@ -239,6 +239,11 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  mynotes:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -264,3 +269,11 @@ defaults:
       comments: # true
       share: false
       related: true
+  # _mynotes
+  - scope:
+      path: ""
+      type: mynotes
+    values:
+      layout: single
+      author_profile: false
+      share: true    
