@@ -1,0 +1,12 @@
+---
+layout: archive
+title: "My notes"
+permalink: /mynotes/
+author_profile: false
+---
+
+{% include base_path %}
+
+{% for post in site.mynotes %}
+  {% include archive-single.html %}
+{% endfor %}
