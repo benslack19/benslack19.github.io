@@ -9,7 +9,7 @@ I recently finished Andrew Ng’s fantastic and well-known machine learning cour
 
 2. *Before* watching the video, I’d recommend looking through the lecture notes or summary first. While things might not make sense immediately, previewing the lecture notes provided a mental roadmap of the lesson while watching the videos.
 
-3. Before* watching the video, I’d also recommend taking a brief look through the FAQs on the discussion forum for that week. The FAQs could alert you to errata in the lectures so that you’re aware of them right away.
+3. *Before* watching the video, I’d also recommend taking a brief look through the FAQs on the discussion forum for that week. The FAQs could alert you to errata in the lectures so that you’re aware of them right away.
 
 4. Write things out. I pretended like I was in school and wrote notes in a dedicated notebook. This was admittedly time-consuming, however, I think the lessons became a little more solidified. When you write things out, you have internal dialogues with yourself like “Is this an ‘i’ or a ‘j’? Does this term go inside or outside the parentheses?” Writing forces you to take a few extra seconds to marinate on the information a little longer and be able to answer small questions like this. My experience is consistent with [research](https://www.scientificamerican.com/article/a-learning-secret-don-t-take-notes-with-a-laptop/) showing the benefits of writing versus typing notes.
 
