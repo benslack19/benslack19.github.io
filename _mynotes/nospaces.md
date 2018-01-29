@@ -1,3 +1,6 @@
+--- 
+title: 'nospaces'
+---
 
 # Creating scatter plots with pandas, matplotlib, and seaborn
 
