@@ -1,3 +1,6 @@
+---
+title: Creating scatter plots with pandas, matplotlib, and seaborn
+---
 
 # Creating scatter plots with pandas, matplotlib, and seaborn
 
