@@ -1,6 +1,6 @@
 ---
 title: Projects
-excerpt: “My data science projects.”
+excerpt: My data science projects
 header:
   image: /assets/surfingBW.png
   teaser: /assets/surfingBW.png
