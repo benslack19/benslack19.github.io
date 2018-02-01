@@ -1,11 +1,8 @@
 --- 
 title: 'Creating scatter plots with pandas, matplotlib, and seaborn'
 ---
-**Creating scatter plots with pandas, matplotlib, and seaborn**
 
 I wanted an easy way to plot scatter plots with marker size and marker color and the legend on the plot. I couldn't figure out how to install ggplot for Python so I wrote my own scatter plot. (I eventually figured out how to install it but after I already wrote this.)
-
-by Ben Lacar
 
 
 ```python
