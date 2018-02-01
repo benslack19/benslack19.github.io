@@ -1,6 +1,6 @@
 ---
 title: Projects
-excerpt: My data science projects
+excerpt: This page will serve as a project template.
 header:
   image: /assets/surfingBW.png
   teaser: /assets/surfingBW.png
