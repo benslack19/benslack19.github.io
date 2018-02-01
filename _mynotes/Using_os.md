@@ -1,7 +1,6 @@
 --- 
-title: 'Using os'
+title: 'Using os.system and interpreting error messages'
 ---
-
 **Using os.system and interpreting error messages**
 
 [StackOverflow discussion](https://stackoverflow.com/questions/31262614/handle-result-of-os-system)
