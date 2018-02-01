@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Project 2
 excerpt: This page will serve as a project template.
 header:
   image: /assets/surfingBW.png
