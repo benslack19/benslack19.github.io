@@ -1,9 +1,9 @@
 ---
-title: “Projects”
+title: Projects
 excerpt: “My data science projects.”
 header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
+  image: /assets/surfingBW.png
+  teaser: /assets/surfingBW.png
 sidebar:
   - title: "Role"
     image: http://placehold.it/350x250
