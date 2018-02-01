@@ -1,12 +1,9 @@
 --- 
-title: 'Python Scatterplot by Ben'
+title: 'Creating scatter plots with pandas, matplotlib, and seaborn'
 ---
-# Creating scatter plots with pandas, matplotlib, and seaborn
+**Creating scatter plots with pandas, matplotlib, and seaborn**
 
-
-I wanted an easy way to plot scatter plots with marker size and marker color and the legend on the plot. I couldn't figure out how to install ggplot for Python so I wrote my own scatter plot. (I eventually figured out how to install it but after I already wrote this.)
-
-by Ben Lacar
+I wanted an easy way to plot scatter plots with marker size and marker color and the legend on the plot. Embarrassingly, I couldn't figure out how to install ggplot for Python so I wrote my own scatter plot. (I eventually figured out how to install it but after I already wrote this.)
 
 
 ```python
@@ -18,48 +15,6 @@ import seaborn as sns
 # from ggplot import *    # requires a pip install
 %matplotlib inline
 ```
-
-
-```python
-import sys
-!{sys.executable} -m pip install ggplot
-```
-
-    Collecting ggplot
-      Downloading ggplot-0.11.5-py2.py3-none-any.whl (2.2MB)
-    [K    100% |████████████████████████████████| 2.2MB 628kB/s eta 0:00:01
-    [?25hRequirement already satisfied (use --upgrade to upgrade): pandas in ./anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): numpy in ./anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): statsmodels in ./anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): matplotlib in ./anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): six in ./anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): scipy in ./anaconda/lib/python3.5/site-packages (from ggplot)
-    Collecting brewer2mpl (from ggplot)
-      Downloading brewer2mpl-1.4.1-py2.py3-none-any.whl
-    Requirement already satisfied (use --upgrade to upgrade): patsy>=0.4 in ./anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): cycler in ./anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): python-dateutil>=2 in ./anaconda/lib/python3.5/site-packages (from pandas->ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): pytz>=2011k in ./anaconda/lib/python3.5/site-packages (from pandas->ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=1.5.6 in ./anaconda/lib/python3.5/site-packages (from matplotlib->ggplot)
-    Installing collected packages: brewer2mpl, ggplot
-    Successfully installed brewer2mpl-1.4.1 ggplot-0.11.5
-    [33mYou are using pip version 8.1.1, however version 9.0.1 is available.
-    You should consider upgrading via the 'pip install --upgrade pip' command.[0m
-
-
-
-```python
-from ggplot import *
-```
-
-    /Users/lacar/anaconda/lib/python3.5/site-packages/ggplot/utils.py:81: FutureWarning: pandas.tslib is deprecated and will be removed in a future version.
-    You can access Timestamp as pandas.Timestamp
-      pd.tslib.Timestamp,
-    /Users/lacar/anaconda/lib/python3.5/site-packages/ggplot/stats/smoothers.py:4: FutureWarning: The pandas.lib module is deprecated and will be removed in a future version. These are private functions and can be accessed from pandas._libs.lib instead
-      from pandas.lib import Timestamp
-    /Users/lacar/anaconda/lib/python3.5/site-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
-      from pandas.core import datetools
-
 
 ### Use a complex sample data frame for a variety of test cases
 
@@ -696,7 +651,7 @@ ax1.set_ylabel('uniform');
 ```
 
 
-![png](Python_Scatterplot_by%20Ben_files/Python_Scatterplot_by%20Ben_14_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_12_0.png)
 
 
 
@@ -707,7 +662,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='uniform', color='class_even')) + 
 ```
 
 
-![png](Python_Scatterplot_by%20Ben_files/Python_Scatterplot_by%20Ben_15_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_13_0.png)
 
 
 
@@ -737,7 +692,7 @@ ax1.set_ylabel('gaussian')
 
 
 
-![png](Python_Scatterplot_by%20Ben_files/Python_Scatterplot_by%20Ben_17_1.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_15_1.png)
 
 
 
@@ -748,7 +703,7 @@ ggplot(df, aes(x='uniform', y='gaussian', size='gaussian', color='class_even')) 
 ```
 
 
-![png](Python_Scatterplot_by%20Ben_files/Python_Scatterplot_by%20Ben_18_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_16_0.png)
 
 
 
@@ -768,7 +723,7 @@ ax1.set_title('g_scatter, negative binomial distribution');
 ```
 
 
-![png](Python_Scatterplot_by%20Ben_files/Python_Scatterplot_by%20Ben_20_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_18_0.png)
 
 
 
@@ -779,7 +734,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='negbinomial', color='class_even')
 ```
 
 
-![png](Python_Scatterplot_by%20Ben_files/Python_Scatterplot_by%20Ben_21_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_19_0.png)
 
 
 
