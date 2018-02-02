@@ -15,7 +15,7 @@ import seaborn as sns
 %matplotlib inline
 ```
 
-### Use a complex sample data frame for a variety of test cases
+## Use a complex sample data frame for a variety of test cases
 
 This is necessary to test the robustness of the visualization properties of the function. In addition to the variety of distributions, zeros, negatives, fractions, and a large range of numbers are represented.
 
@@ -81,472 +81,6 @@ df['class_even'] = (['group 1']*groupSize + ['group 2']*groupSize
 df['class_poisson'] = ['group ' + str(i+1) for i in poisson_dist.tolist()]
 
 ```
-
-
-```python
-df
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>bimodal</th>
-      <th>chisquare</th>
-      <th>gaussian</th>
-      <th>large_range</th>
-      <th>leftskew_dist</th>
-      <th>lognormal</th>
-      <th>negbinomial</th>
-      <th>poisson</th>
-      <th>uniform</th>
-      <th>class_even</th>
-      <th>class_poisson</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>154.250607</td>
-      <td>6.316693</td>
-      <td>-78.915374</td>
-      <td>0</td>
-      <td>89</td>
-      <td>76.664209</td>
-      <td>15</td>
-      <td>0</td>
-      <td>0</td>
-      <td>group 1</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>201.845077</td>
-      <td>3.965357</td>
-      <td>-23.312473</td>
-      <td>1</td>
-      <td>65</td>
-      <td>984.974379</td>
-      <td>9</td>
-      <td>0</td>
-      <td>1</td>
-      <td>group 1</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>260.563106</td>
-      <td>2.779451</td>
-      <td>191.841673</td>
-      <td>4</td>
-      <td>84</td>
-      <td>58.073001</td>
-      <td>25</td>
-      <td>0</td>
-      <td>2</td>
-      <td>group 1</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>118.606620</td>
-      <td>2.886615</td>
-      <td>55.952445</td>
-      <td>9</td>
-      <td>84</td>
-      <td>7.025429</td>
-      <td>26</td>
-      <td>1</td>
-      <td>3</td>
-      <td>group 1</td>
-      <td>group 2</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>194.212954</td>
-      <td>12.006341</td>
-      <td>-116.373243</td>
-      <td>16</td>
-      <td>57</td>
-      <td>338.770022</td>
-      <td>23</td>
-      <td>0</td>
-      <td>4</td>
-      <td>group 1</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>134.970457</td>
-      <td>4.984677</td>
-      <td>66.169012</td>
-      <td>25</td>
-      <td>81</td>
-      <td>30.928304</td>
-      <td>38</td>
-      <td>0</td>
-      <td>5</td>
-      <td>group 1</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>312.395224</td>
-      <td>3.714452</td>
-      <td>149.826987</td>
-      <td>36</td>
-      <td>92</td>
-      <td>216.290403</td>
-      <td>5</td>
-      <td>0</td>
-      <td>6</td>
-      <td>group 2</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>187.471422</td>
-      <td>3.240577</td>
-      <td>-65.834795</td>
-      <td>49</td>
-      <td>81</td>
-      <td>79.486020</td>
-      <td>16</td>
-      <td>0</td>
-      <td>7</td>
-      <td>group 2</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>153.502224</td>
-      <td>2.098391</td>
-      <td>30.631864</td>
-      <td>64</td>
-      <td>99</td>
-      <td>189.996401</td>
-      <td>7</td>
-      <td>0</td>
-      <td>8</td>
-      <td>group 2</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>87.044965</td>
-      <td>9.083710</td>
-      <td>52.957192</td>
-      <td>81</td>
-      <td>50</td>
-      <td>451.305621</td>
-      <td>64</td>
-      <td>1</td>
-      <td>9</td>
-      <td>group 2</td>
-      <td>group 2</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>64.804407</td>
-      <td>4.380548</td>
-      <td>6.434178</td>
-      <td>100</td>
-      <td>79</td>
-      <td>139.635630</td>
-      <td>29</td>
-      <td>0</td>
-      <td>10</td>
-      <td>group 2</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>166.618028</td>
-      <td>1.541803</td>
-      <td>-72.032221</td>
-      <td>121</td>
-      <td>97</td>
-      <td>87.627416</td>
-      <td>15</td>
-      <td>0</td>
-      <td>11</td>
-      <td>group 2</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>226.584262</td>
-      <td>1.681881</td>
-      <td>-8.462267</td>
-      <td>144</td>
-      <td>73</td>
-      <td>207.464548</td>
-      <td>10</td>
-      <td>0</td>
-      <td>12</td>
-      <td>group 3</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>170.130962</td>
-      <td>6.851729</td>
-      <td>-109.947474</td>
-      <td>169</td>
-      <td>74</td>
-      <td>21.009332</td>
-      <td>29</td>
-      <td>0</td>
-      <td>13</td>
-      <td>group 3</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>427.765719</td>
-      <td>1.291694</td>
-      <td>-30.045810</td>
-      <td>196</td>
-      <td>91</td>
-      <td>144.216283</td>
-      <td>31</td>
-      <td>1</td>
-      <td>14</td>
-      <td>group 3</td>
-      <td>group 2</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>609.179291</td>
-      <td>4.701100</td>
-      <td>264.884984</td>
-      <td>225</td>
-      <td>81</td>
-      <td>123.514419</td>
-      <td>27</td>
-      <td>0</td>
-      <td>15</td>
-      <td>group 3</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>1014.697466</td>
-      <td>1.561184</td>
-      <td>165.026958</td>
-      <td>256</td>
-      <td>88</td>
-      <td>222.169308</td>
-      <td>27</td>
-      <td>0</td>
-      <td>16</td>
-      <td>group 3</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>620.015938</td>
-      <td>10.390554</td>
-      <td>30.451860</td>
-      <td>289</td>
-      <td>91</td>
-      <td>135.555152</td>
-      <td>27</td>
-      <td>0</td>
-      <td>17</td>
-      <td>group 3</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>754.022337</td>
-      <td>0.849390</td>
-      <td>-50.784537</td>
-      <td>324</td>
-      <td>90</td>
-      <td>108.753474</td>
-      <td>7</td>
-      <td>1</td>
-      <td>18</td>
-      <td>group 4</td>
-      <td>group 2</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>829.121167</td>
-      <td>2.269775</td>
-      <td>-6.464158</td>
-      <td>361</td>
-      <td>90</td>
-      <td>158.682129</td>
-      <td>2</td>
-      <td>0</td>
-      <td>19</td>
-      <td>group 4</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>696.595967</td>
-      <td>3.065890</td>
-      <td>-15.288733</td>
-      <td>400</td>
-      <td>90</td>
-      <td>138.275194</td>
-      <td>38</td>
-      <td>0</td>
-      <td>20</td>
-      <td>group 4</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>791.143876</td>
-      <td>3.368891</td>
-      <td>46.619527</td>
-      <td>441</td>
-      <td>90</td>
-      <td>131.092830</td>
-      <td>7</td>
-      <td>0</td>
-      <td>21</td>
-      <td>group 4</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>739.749286</td>
-      <td>1.748566</td>
-      <td>-99.439755</td>
-      <td>484</td>
-      <td>68</td>
-      <td>214.722840</td>
-      <td>6</td>
-      <td>0</td>
-      <td>22</td>
-      <td>group 4</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>790.535959</td>
-      <td>5.275529</td>
-      <td>27.182666</td>
-      <td>529</td>
-      <td>94</td>
-      <td>126.677069</td>
-      <td>7</td>
-      <td>0</td>
-      <td>23</td>
-      <td>group 4</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>753.894054</td>
-      <td>1.668527</td>
-      <td>43.067058</td>
-      <td>576</td>
-      <td>86</td>
-      <td>193.468215</td>
-      <td>3</td>
-      <td>1</td>
-      <td>24</td>
-      <td>group 5</td>
-      <td>group 2</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>970.366730</td>
-      <td>4.847279</td>
-      <td>-4.231740</td>
-      <td>625</td>
-      <td>95</td>
-      <td>125.024272</td>
-      <td>18</td>
-      <td>1</td>
-      <td>25</td>
-      <td>group 5</td>
-      <td>group 2</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>924.485940</td>
-      <td>3.362214</td>
-      <td>1.404154</td>
-      <td>676</td>
-      <td>71</td>
-      <td>24.886331</td>
-      <td>4</td>
-      <td>0</td>
-      <td>26</td>
-      <td>group 5</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>691.245659</td>
-      <td>4.673880</td>
-      <td>-48.744118</td>
-      <td>729</td>
-      <td>92</td>
-      <td>185.913869</td>
-      <td>20</td>
-      <td>0</td>
-      <td>27</td>
-      <td>group 5</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>739.089656</td>
-      <td>3.505498</td>
-      <td>93.144674</td>
-      <td>784</td>
-      <td>95</td>
-      <td>307.747059</td>
-      <td>8</td>
-      <td>0</td>
-      <td>28</td>
-      <td>group 5</td>
-      <td>group 1</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>773.012331</td>
-      <td>1.473198</td>
-      <td>-0.204641</td>
-      <td>841</td>
-      <td>93</td>
-      <td>126.297113</td>
-      <td>21</td>
-      <td>0</td>
-      <td>29</td>
-      <td>group 5</td>
-      <td>group 1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 
 
 ```python
@@ -650,7 +184,7 @@ ax1.set_ylabel('uniform');
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_12_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_11_0.png)
 
 
 
@@ -661,7 +195,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='uniform', color='class_even')) + 
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_13_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_12_0.png)
 
 
 
@@ -691,7 +225,7 @@ ax1.set_ylabel('gaussian')
 
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_15_1.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_14_1.png)
 
 
 
@@ -702,7 +236,7 @@ ggplot(df, aes(x='uniform', y='gaussian', size='gaussian', color='class_even')) 
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_16_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_15_0.png)
 
 
 
@@ -722,7 +256,7 @@ ax1.set_title('g_scatter, negative binomial distribution');
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_18_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_17_0.png)
 
 
 
@@ -733,7 +267,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='negbinomial', color='class_even')
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_19_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_18_0.png)
 
 
 
