@@ -3,7 +3,15 @@ title: Tips on taking Andrew Ng’s Machine Learning Course
 categories: [data science]
 ---
 
-I recently finished Andrew Ng’s fantastic and well-known machine learning course through Coursera. As I progress into my data science journey, I felt that taking and completing his course was one of the rites-of-passage in this field. Since the course has been around for some time, there are already fantastic resources and supplemental material. Nevertheless, I thought I could share some of my tips for newcomers to the course.
+I recently finished Andrew Ng’s fantastic and well-known Machine Learning course through Coursera. As I progress into my data science journey, I felt that taking and completing his course was one of the rites-of-passage in this field. Since the course has been around for some time, there are already fantastic resources and supplemental material to facilitate taking the course such as [here], [here], and [here]. Nevertheless, I thought I could share some of my tips for newcomers to the course, integrating my awareness of effective learning approaches informed by neuroscience and psychology.
+
+The learning techniques that I detail below is inspired from one of my favorite guides, [Organizing Instruction and Study to Improve Student Learning](https://ies.ed.gov/ncee/wwc/PracticeGuide/1) which I mentioned in an earlier [post]. Many of these learning techniques are already built well into the course and I will point out cases where that occurs.
+
+
+
+1. **Space learning over time.** This refers to the delayed re-exposure of material. Instead of spending four consecutive hours on a lesson, devote two sessions of two hours each with the sessions spaced several weeks apart. As a concrete example in the ML course, there are some concepts or practices that are taught early on then are re-exposed later through course assignments. One example of this is practicing vectorization in MATLAB notation, which was taught explicitly in Lecture 5 but is applied several times in course assignments. However, other ideas could use more self-directed re-exposure. 
+
+
 
 1. Don’t get too hung up on using MATLAB/Octave versus a more data science-y language like R or Python. I thought using MATLAB/Octave was a bit peculiar, but it made sense to me as I was doing the lessons. Most of the code is very easy to pick up and he even does a brief tutorial as a part of the course.
 

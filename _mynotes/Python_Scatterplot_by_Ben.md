@@ -5,11 +5,6 @@ title: 'Creating scatter plots with pandas, matplotlib, and seaborn'
 I wanted an easy way to plot scatter plots with marker size and marker color and the legend on the plot. Embarrassingly, I couldn't figure out how to install ggplot for Python so I wrote my own scatter plot. (I eventually figured out how to install it but after I already wrote this.)
 
 
-why don't images show up?
-
-
-
-
 ```python
 # importing packages
 import pandas as pd
@@ -31,19 +26,6 @@ This is necessary to test the robustness of the visualization properties of the 
 
 m = 30
 ```
-
-
-```python
-np.arange(0, m)
-```
-
-
-
-
-    array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
-           17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
-
-
 
 
 ```python
@@ -87,21 +69,6 @@ df['class_poisson'] = ['group ' + str(i+1) for i in poisson_dist.tolist()]
 
 ```
 
-
-```python
-df.columns
-```
-
-
-
-
-    Index(['bimodal', 'chisquare', 'gaussian', 'large_range', 'leftskew_dist',
-           'lognormal', 'negbinomial', 'poisson', 'uniform', 'class_even',
-           'class_poisson'],
-          dtype='object')
-
-
-
 ## g_scatter function
 
 
@@ -125,7 +92,7 @@ def g_scatter(df, x, y, size, color, ax):
 
     # get dataframe rows that are closest to the legendPoints_ideal
     # dense list comprehension to get the closest values in the dataset that are distributed
-    legendPoints_data = [(df[size].iloc[(df[size]-x).abs().argsort()[0]]) for x in legendPoints_ideal]
+    legendPoints_data = [(df[size].iloc[(df[size]-x).abs().argsort().iloc[0]]) for x in legendPoints_ideal]
     
     # find the rows and make a new dataframe; 
     dfTemp = df[df[size].isin(legendPoints_data)]  
@@ -189,7 +156,21 @@ ax1.set_ylabel('uniform');
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_11_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_9_0.png)
+
+
+
+```python
+from ggplot import *
+```
+
+    /Users/lacar/anaconda/lib/python3.5/site-packages/ggplot/utils.py:81: FutureWarning: pandas.tslib is deprecated and will be removed in a future version.
+    You can access Timestamp as pandas.Timestamp
+      pd.tslib.Timestamp,
+    /Users/lacar/anaconda/lib/python3.5/site-packages/ggplot/stats/smoothers.py:4: FutureWarning: The pandas.lib module is deprecated and will be removed in a future version. These are private functions and can be accessed from pandas._libs.lib instead
+      from pandas.lib import Timestamp
+    /Users/lacar/anaconda/lib/python3.5/site-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+      from pandas.core import datetools
 
 
 
@@ -200,13 +181,13 @@ ggplot(df, aes(x='uniform', y='uniform', size='uniform', color='class_even')) + 
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_12_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_11_0.png)
 
 
 
 
 
-    <ggplot: (-9223372036547871018)>
+    <ggplot: (290789878)>
 
 
 
@@ -215,6 +196,9 @@ ggplot(df, aes(x='uniform', y='uniform', size='uniform', color='class_even')) + 
 
 ```python
 # Plotting with g_scatter function
+
+colors = ['red', 'orange', 'yellow', 'greenyellow', 'green', 'cyan', 'blue', 'magenta', 'purple', 'black']
+
 f, ax1 = plt.subplots(1,1);
 g_scatter(df=df, x='uniform', y='gaussian', size='gaussian', color='class_even', ax=ax1);
 ax1.set_title('g_scatter, marker size by gaussian feature');
@@ -225,12 +209,12 @@ ax1.set_ylabel('gaussian')
 
 
 
-    <matplotlib.text.Text at 0x125b500f0>
+    <matplotlib.text.Text at 0x103f16780>
 
 
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_14_1.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_13_1.png)
 
 
 
@@ -241,13 +225,13 @@ ggplot(df, aes(x='uniform', y='gaussian', size='gaussian', color='class_even')) 
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_15_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_14_0.png)
 
 
 
 
 
-    <ggplot: (-9223372036547980130)>
+    <ggplot: (291414911)>
 
 
 
@@ -261,7 +245,7 @@ ax1.set_title('g_scatter, negative binomial distribution');
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_17_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_16_0.png)
 
 
 
@@ -272,12 +256,12 @@ ggplot(df, aes(x='uniform', y='uniform', size='negbinomial', color='class_even')
 ```
 
 
-![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_18_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_17_0.png)
 
 
 
 
 
-    <ggplot: (-9223372036546203602)>
+    <ggplot: (294229466)>
 
 
