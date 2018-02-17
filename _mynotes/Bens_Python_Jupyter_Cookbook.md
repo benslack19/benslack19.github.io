@@ -1,6 +1,7 @@
 --- 
 title: 'Ben's Python Jupyter Cookbook'
 ---
+
 Stuff that I forget.
 
 # Python and Jupyter setup
