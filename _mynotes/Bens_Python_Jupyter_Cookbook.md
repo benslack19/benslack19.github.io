@@ -787,7 +787,7 @@ ax2.plot(y, xSSF)
 
 
 
-![png](Bens_Python_Jupyter_Cookbook_files/Bens_Python_Jupyter_Cookbook_55_1.png)
+![png](Bens_Python_Jupyter_Cookbook_55_1.png)
 
 
 
@@ -803,7 +803,7 @@ plt.show()
 ```
 
 
-![png](Bens_Python_Jupyter_Cookbook_files/Bens_Python_Jupyter_Cookbook_56_0.png)
+![png](Bens_Python_Jupyter_Cookbook_56_0.png)
 
 
 ### Making a discontinuous axis
@@ -1071,7 +1071,7 @@ plt.savefig('Plot5_new.png', dpi=400)
 ```
 
 
-![png](Bens_Python_Jupyter_Cookbook_files/Bens_Python_Jupyter_Cookbook_75_0.png)
+![png](Bens_Python_Jupyter_Cookbook_75_0.png)
 
 
 
@@ -1177,7 +1177,7 @@ sns.set_style(style='white')
 ```
 
 
-![png](Bens_Python_Jupyter_Cookbook_files/Bens_Python_Jupyter_Cookbook_87_0.png)
+![png](Bens_Python_Jupyter_Cookbook_87_0.png)
 
 
 
@@ -1228,7 +1228,7 @@ plt.show()
 ```
 
 
-![png](Bens_Python_Jupyter_Cookbook_files/Bens_Python_Jupyter_Cookbook_91_0.png)
+![png](Bens_Python_Jupyter_Cookbook_91_0.png)
 
 
 
@@ -1244,7 +1244,7 @@ for spine in plt.gca().spines.values():
 
 
 
-![png](Bens_Python_Jupyter_Cookbook_files/Bens_Python_Jupyter_Cookbook_92_1.png)
+![png](Bens_Python_Jupyter_Cookbook_92_1.png)
 
 
 
@@ -1286,7 +1286,7 @@ plt.show()
 ```
 
 
-![png](Bens_Python_Jupyter_Cookbook_files/Bens_Python_Jupyter_Cookbook_93_0.png)
+![png](Bens_Python_Jupyter_Cookbook_93_0.png)
 
 
 
@@ -2121,7 +2121,7 @@ plt.savefig('pctPadresPayroll_pctWinning.png', dpi=400)
 ```
 
 
-![png](Bens_Python_Jupyter_Cookbook_files/Bens_Python_Jupyter_Cookbook_111_0.png)
+![png](Bens_Python_Jupyter_Cookbook_111_0.png)
 
 
 
