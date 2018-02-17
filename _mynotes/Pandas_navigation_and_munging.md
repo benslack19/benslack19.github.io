@@ -2,6 +2,7 @@
 title: 'Pandas navgiation and munging'
 ---
 
+Basic pandas functions including data frame creation, importing, navigation and series selection. Advanced pandas functions including merging, apply, and group by.
 
 
 ```python
