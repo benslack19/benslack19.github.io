@@ -1,8 +1,8 @@
 --- 
-title: 'Ben's Python Jupyter Cookbook'
+title: 'My Python Jupyter cookbook'
 ---
 
-Stuff that I forget.
+For stuff that I forget.
 
 # Python and Jupyter setup
 
