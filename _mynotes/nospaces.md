@@ -692,7 +692,7 @@ ax1.set_ylabel('uniform');
 ```
 
 
-![png](nospaces_files/nospaces_14_0.png)
+![png](nospaces_14_0.png)
 
 
 
@@ -703,7 +703,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='uniform', color='class_even')) + 
 ```
 
 
-![png](nospaces_files/nospaces_15_0.png)
+![png](nospaces_15_0.png)
 
 
 
@@ -733,7 +733,7 @@ ax1.set_ylabel('gaussian')
 
 
 
-![png](nospaces_files/nospaces_17_1.png)
+![png](nospaces_17_1.png)
 
 
 
@@ -744,7 +744,7 @@ ggplot(df, aes(x='uniform', y='gaussian', size='gaussian', color='class_even')) 
 ```
 
 
-![png](nospaces_files/nospaces_18_0.png)
+![png](nospaces_18_0.png)
 
 
 
@@ -764,7 +764,7 @@ ax1.set_title('g_scatter, negative binomial distribution');
 ```
 
 
-![png](nospaces_files/nospaces_20_0.png)
+![png](nospaces_20_0.png)
 
 
 
@@ -775,7 +775,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='negbinomial', color='class_even')
 ```
 
 
-![png](nospaces_files/nospaces_21_0.png)
+![png](nospaces_21_0.png)
 
 
 
