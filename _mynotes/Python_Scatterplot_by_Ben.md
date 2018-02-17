@@ -156,7 +156,7 @@ ax1.set_ylabel('uniform');
 ```
 
 
-![png](Python_Scatterplot_by_Ben_9_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_9_0.png)
 
 
 
@@ -181,7 +181,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='uniform', color='class_even')) + 
 ```
 
 
-![png](Python_Scatterplot_by_Ben_11_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_11_0.png)
 
 
 
@@ -214,7 +214,7 @@ ax1.set_ylabel('gaussian')
 
 
 
-![png](Python_Scatterplot_by_Ben_13_1.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_13_1.png)
 
 
 
@@ -225,7 +225,7 @@ ggplot(df, aes(x='uniform', y='gaussian', size='gaussian', color='class_even')) 
 ```
 
 
-![png](Python_Scatterplot_by_Ben_14_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_14_0.png)
 
 
 
@@ -245,7 +245,7 @@ ax1.set_title('g_scatter, negative binomial distribution');
 ```
 
 
-![png](Python_Scatterplot_by_Ben_16_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_16_0.png)
 
 
 
@@ -256,7 +256,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='negbinomial', color='class_even')
 ```
 
 
-![png](Python_Scatterplot_by_Ben_17_0.png)
+![png](Python_Scatterplot_by_Ben_files/Python_Scatterplot_by_Ben_17_0.png)
 
 
 
