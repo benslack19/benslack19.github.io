@@ -1,5 +1,7 @@
 --- 
 title: 'My Python Jupyter cookbook'
+toc: true
+toc_label:  'contents'
 ---
 
 For stuff that I forget.

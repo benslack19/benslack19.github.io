@@ -1,5 +1,7 @@
 --- 
 title: 'Python and Jupyter setup'
+toc: true
+toc_label:  'contents'
 ---
 
 These notes describe some basic navigation around Python in the Jupyter environment.
