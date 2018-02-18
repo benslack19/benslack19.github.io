@@ -145,8 +145,7 @@ def g_scatter(df, x, y, size, color, ax):
 colors = ['red', 'orange', 'yellow', 'greenyellow', 'green', 'cyan', 'blue', 'magenta', 'purple', 'black']
 ```
 
-#### Test when zero is present
-<a href="#top">^</a>
+#### Test when zero is present<a href="#top">^</a>
 
 ```python
 # Plotting with g_scatter function
@@ -193,8 +192,7 @@ ggplot(df, aes(x='uniform', y='uniform', size='uniform', color='class_even')) + 
 
 
 
-#### Test when negative numbers, fractions are present
-<a href="#top">^</a>
+#### Test when negative numbers, fractions are present<a href="#top">^</a>
 
 ```python
 # Plotting with g_scatter function
@@ -237,8 +235,7 @@ ggplot(df, aes(x='uniform', y='gaussian', size='gaussian', color='class_even')) 
 
 
 
-#### Test with negative binomial distribution and all values are positiive
-<a href="#top">^</a>
+#### Test with negative binomial distribution and all values are positiive<a href="#top">^</a>
 
 ```python
 f, ax1 = plt.subplots(1,1);
