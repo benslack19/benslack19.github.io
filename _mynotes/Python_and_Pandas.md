@@ -7,9 +7,9 @@ toc_label:  'contents'
 - Navigating Python in the Jupyter environment.
 - Dataframe creation, indexing, and manipulation.
 
-# Python and Jupyter setup
+## Python and Jupyter setup
 
-## Identify pandas version
+### Identify pandas version
 
 
 ```python
@@ -24,7 +24,7 @@ pd.__version__
 
 
 
-## Install pip packages for Jupyter notebook
+### Install pip packages for Jupyter notebook
 
 
 ```python
@@ -50,7 +50,7 @@ import sys
     You should consider upgrading via the 'pip install --upgrade pip' command.[0m
 
 
-## Get help on a function. 
+### Get help on a function
 
 
 ```python
@@ -78,7 +78,7 @@ os.getcwd()   # Get current working directory
 
 
 
-## Identifying variables with iPython magic
+### Identifying variables with iPython magic
 
 
 ```python
@@ -100,7 +100,7 @@ x = 5
 del x
 ```
 
-## Measuring time of execution with iPython magic
+### Measuring time of execution with iPython magic
 
 
 ```python
@@ -115,9 +115,9 @@ x + y
     Wall time: 10 µs
 
 
-# Pandas
+## Pandas
 
-## Creating a dataframe from scratch
+### Creating a dataframe from scratch
 
 
 ```python
@@ -175,7 +175,7 @@ student_df
 
 
 
-## Creating a dataframe through column additions
+### Creating a dataframe through column additions
 
 
 ```python
