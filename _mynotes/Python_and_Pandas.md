@@ -78,7 +78,7 @@ os.getcwd()   # Get current working directory
 
 
 
-### Identify variables with iPython magic
+### Identify variables
 
 
 ```python
