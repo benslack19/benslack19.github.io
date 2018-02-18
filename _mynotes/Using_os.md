@@ -1,5 +1,7 @@
 --- 
 title: 'Using os.system and interpreting error messages'
+toc: true
+toc_label:  'contents'
 ---
 
 [StackOverflow discussion](https://stackoverflow.com/questions/31262614/handle-result-of-os-system)

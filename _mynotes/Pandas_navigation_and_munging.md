@@ -1,7 +1,7 @@
 --- 
 title: 'Pandas navigation and munging'
 toc: true
-toc_label: 'Pandas navigation and munging'
+toc_label:  'contents'
 ---
 
 Basic pandas functions including data frame creation, importing, navigation and series selection. Advanced pandas functions including merging, apply, and group by.
