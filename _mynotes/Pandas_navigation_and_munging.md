@@ -12,7 +12,7 @@ import pandas as pd
 ```
 
 ### Data frame indexing and navigation
-
+<a href="#top">^</a>
 
 ```python
 # Creating a datframe from scratch
@@ -413,7 +413,7 @@ df2 = df.iloc[:,:6]
 ```
 
 ### Data frame sorting and filtering
-
+<a href="#top">^</a>
 
 ```python
 # Sorting dataframe by column(s)
@@ -458,7 +458,7 @@ x['date'] = pd.to_datetime(x.index)
 
 
 ### Pivot table
-
+<a href="#top">^</a>
 
 ```python
 # Cool pivot table example
@@ -467,7 +467,7 @@ df.pivot_table(index='Account_number', columns='Product', aggfunc=len, fill_valu
 ```
 
 ### Merging
-
+<a href="#top">^</a>
 
 ```python
 pd.merge(staff_df, student_df, how='outer', left_index=True, right_index=True)
@@ -477,7 +477,7 @@ pd.merge(staff_df, student_df, how='left', left_index=True, right_index=True)
 ```
 
 ### Method chaining
-
+<a href="#top">^</a>
 
 ```python
 (df.where(df['SUMLEV']==50)
@@ -487,21 +487,21 @@ pd.merge(staff_df, student_df, how='left', left_index=True, right_index=True)
 ```
 
 ### Lambda
-
+<a href="#top">^</a>
 
 ```python
 df.apply(lambda x: np.sum(x[rows]), axis=1)
 ```
 
 ### Other vector functions
-
+<a href="#top">^</a>
 - df.iterrows
 - df.iterritems
 - zip
 - enumerate
 
 ### Apply function
-
+<a href="#top">^</a>
 
 ```python
 import numpy as np
@@ -517,7 +517,7 @@ df.apply(min_max, axis=1)
 ```
 
 ### Group by
-
+<a href="#top">^</a>
 Common workflow for groupby: split data, apply function, then combine results (split, apply, combine function).
 Groupby object has agg method (aggregate). This method applies a function to the column or columns of data in the group, and returns the results.
 
