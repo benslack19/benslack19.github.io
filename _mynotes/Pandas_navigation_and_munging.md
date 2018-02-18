@@ -11,8 +11,7 @@ Basic pandas functions including data frame creation, importing, navigation and 
 import pandas as pd
 ```
 
-### Data frame indexing and navigation
-<a href="#top">^</a>
+### Data frame indexing and navigation<a href="#top">^</a>
 
 ```python
 # Creating a datframe from scratch
@@ -412,8 +411,7 @@ df.columns
 df2 = df.iloc[:,:6]
 ```
 
-### Data frame sorting and filtering
-<a href="#top">^</a>
+### Data frame sorting and filtering<a href="#top">^</a>
 
 ```python
 # Sorting dataframe by column(s)
@@ -457,8 +455,7 @@ x['date'] = pd.to_datetime(x.index)
     NameError: name 'x' is not defined
 
 
-### Pivot table
-<a href="#top">^</a>
+### Pivot table<a href="#top">^</a>
 
 ```python
 # Cool pivot table example
@@ -466,8 +463,7 @@ df = pd.DataFrame({'Account_number':[1,1,2,2,2,3,3], 'Product':['A', 'A', 'A', '
 df.pivot_table(index='Account_number', columns='Product', aggfunc=len, fill_value=0)
 ```
 
-### Merging
-<a href="#top">^</a>
+### Merging<a href="#top">^</a>
 
 ```python
 pd.merge(staff_df, student_df, how='outer', left_index=True, right_index=True)
@@ -476,8 +472,7 @@ pd.merge(staff_df, student_df, how='inner', left_index=True, right_index=True)
 pd.merge(staff_df, student_df, how='left', left_index=True, right_index=True)
 ```
 
-### Method chaining
-<a href="#top">^</a>
+### Method chaining<a href="#top">^</a>
 
 ```python
 (df.where(df['SUMLEV']==50)
@@ -486,22 +481,19 @@ pd.merge(staff_df, student_df, how='left', left_index=True, right_index=True)
     .rename(columns={'ESTIMATESBASE2010': 'Estimates Base 2010'}))
 ```
 
-### Lambda
-<a href="#top">^</a>
+### Lambda<a href="#top">^</a>
 
 ```python
 df.apply(lambda x: np.sum(x[rows]), axis=1)
 ```
 
-### Other vector functions
-<a href="#top">^</a>
+### Other vector functions<a href="#top">^</a>
 - df.iterrows
 - df.iterritems
 - zip
 - enumerate
 
-### Apply function
-<a href="#top">^</a>
+### Apply function<a href="#top">^</a>
 
 ```python
 import numpy as np
@@ -516,8 +508,7 @@ def min_max(row):
 df.apply(min_max, axis=1)
 ```
 
-### Group by
-<a href="#top">^</a>
+### Group by<a href="#top">^</a>
 Common workflow for groupby: split data, apply function, then combine results (split, apply, combine function).
 Groupby object has agg method (aggregate). This method applies a function to the column or columns of data in the group, and returns the results.
 

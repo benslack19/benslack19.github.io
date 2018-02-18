@@ -9,8 +9,7 @@ toc_label:  'contents'
 
 ## Python and Jupyter
 
-### Identify pandas version
-<a href="#top">^</a>
+### Identify pandas version<a href="#top">^</a>
 
 ```python
 import pandas as pd
@@ -24,8 +23,7 @@ pd.__version__
 
 
 
-### Install pip packages
-<a href="#top">^</a>
+### Install pip packages<a href="#top">^</a>
 
 ```python
 # Super helpful link: https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/
@@ -50,8 +48,7 @@ import sys
     You should consider upgrading via the 'pip install --upgrade pip' command.[0m
 
 
-### Get help on a function
-<a href="#top">^</a>
+### Get help on a function<a href="#top">^</a>
 
 ```python
 # Example
@@ -78,8 +75,7 @@ os.getcwd()   # Get current working directory
 
 
 
-### Identify variables
-<a href="#top">^</a>
+### Identify variables<a href="#top">^</a>
 
 ```python
 %who
@@ -100,8 +96,7 @@ x = 5
 del x
 ```
 
-### Measure execution time
-<a href="#top">^</a>
+### Measure execution time<a href="#top">^</a>
 
 ```python
 %%time
@@ -117,8 +112,7 @@ x + y
 
 ## Pandas
 
-### Create dataframe
-<a href="#top">^</a>
+### Create dataframe<a href="#top">^</a>
 
 ```python
 student_df = pd.DataFrame([{'Name': 'James', 'School': 'Business'},
@@ -175,8 +169,7 @@ student_df
 
 
 
-### Create dataframe through column additions
-<a href="#top">^</a>
+### Create dataframe through column additions<a href="#top">^</a>
 
 ```python
 staff_df = pd.DataFrame()
