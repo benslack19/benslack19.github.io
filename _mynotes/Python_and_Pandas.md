@@ -10,7 +10,7 @@ toc_label:  'contents'
 ## Python and Jupyter
 
 ### Identify pandas version
-
+<a href="#top">^</a>
 
 ```python
 import pandas as pd
@@ -25,7 +25,7 @@ pd.__version__
 
 
 ### Install pip packages
-
+<a href="#top">^</a>
 
 ```python
 # Super helpful link: https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/
@@ -51,7 +51,7 @@ import sys
 
 
 ### Get help on a function
-
+<a href="#top">^</a>
 
 ```python
 # Example
@@ -79,7 +79,7 @@ os.getcwd()   # Get current working directory
 
 
 ### Identify variables
-
+<a href="#top">^</a>
 
 ```python
 %who
@@ -101,7 +101,7 @@ del x
 ```
 
 ### Measure execution time
-
+<a href="#top">^</a>
 
 ```python
 %%time
@@ -118,7 +118,7 @@ x + y
 ## Pandas
 
 ### Create dataframe
-
+<a href="#top">^</a>
 
 ```python
 student_df = pd.DataFrame([{'Name': 'James', 'School': 'Business'},
@@ -176,9 +176,7 @@ student_df
 
 
 ### Create dataframe through column additions
-<a href="#">Go to top</a>
-<a href="#top">Go to top</a>
-
+<a href="#top">^</a>
 
 ```python
 staff_df = pd.DataFrame()
