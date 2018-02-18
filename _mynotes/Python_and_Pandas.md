@@ -9,7 +9,8 @@ toc_label:  'contents'
 
 ## Python and Jupyter
 
-### Identify pandas version<a href="#top">^</a>
+### Identify pandas version
+<a href="#top">^</a>
 
 ```python
 import pandas as pd
@@ -23,32 +24,18 @@ pd.__version__
 
 
 
-### Install pip packages<a href="#top">^</a>
+### Install pip packages
+<a href="#top">^</a>
 
 ```python
 # Super helpful link: https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/
+
 import sys
-!{sys.executable} -m pip install ggplot
+!{sys.executable} -m pip install <package>
 ```
 
-    Requirement already satisfied (use --upgrade to upgrade): ggplot in /Users/lacar/anaconda/lib/python3.5/site-packages
-    Requirement already satisfied (use --upgrade to upgrade): numpy in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): matplotlib in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): scipy in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): patsy>=0.4 in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): cycler in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): pandas in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): six in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): brewer2mpl in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): statsmodels in /Users/lacar/anaconda/lib/python3.5/site-packages (from ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): python-dateutil in /Users/lacar/anaconda/lib/python3.5/site-packages (from matplotlib->ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): pytz in /Users/lacar/anaconda/lib/python3.5/site-packages (from matplotlib->ggplot)
-    Requirement already satisfied (use --upgrade to upgrade): pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=1.5.6 in /Users/lacar/anaconda/lib/python3.5/site-packages (from matplotlib->ggplot)
-    [33mYou are using pip version 8.1.1, however version 9.0.1 is available.
-    You should consider upgrading via the 'pip install --upgrade pip' command.[0m
-
-
-### Get help on a function<a href="#top">^</a>
+### Get help on a function
+<a href="#top">^</a>
 
 ```python
 # Example
@@ -75,14 +62,15 @@ os.getcwd()   # Get current working directory
 
 
 
-### Identify variables<a href="#top">^</a>
+### Identify variables
+<a href="#top">^</a>
 
 ```python
 %who
 ```
 
-    NamespaceMagics	 get_ipython	 getsizeof	 json	 os	 path	 pd	 sys	 var_dic_list	 
-    x	 y	 
+    NamespaceMagics	 get_ipython	 getsizeof	 json	 os	 path	 pd	 staff_df	 student_df	 
+    sys	 var_dic_list	 x	 y	 
 
 
 
@@ -96,7 +84,8 @@ x = 5
 del x
 ```
 
-### Measure execution time<a href="#top">^</a>
+### Measure execution time
+<a href="#top">^</a>
 
 ```python
 %%time
@@ -106,13 +95,14 @@ y = 6
 x + y
 ```
 
-    CPU times: user 4 µs, sys: 0 ns, total: 4 µs
-    Wall time: 10 µs
+    CPU times: user 5 µs, sys: 0 ns, total: 5 µs
+    Wall time: 29.1 µs
 
 
 ## Pandas
 
-### Create dataframe<a href="#top">^</a>
+### Create dataframe
+<a href="#top">^</a>
 
 ```python
 student_df = pd.DataFrame([{'Name': 'James', 'School': 'Business'},
@@ -169,7 +159,8 @@ student_df
 
 
 
-### Create dataframe through column additions<a href="#top">^</a>
+### Create dataframe through column additions
+<a href="#top">^</a>
 
 ```python
 staff_df = pd.DataFrame()
