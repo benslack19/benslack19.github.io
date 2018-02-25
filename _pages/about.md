@@ -5,6 +5,8 @@ author_profile: true
 permalink: /about/
 ---
 
-I'm a biotech applications scientist, neuroscientist, part-time educator, wanna-be data scientist, and full-time consumer of Mexican food.
+I'm a biotech applications scientist, neuroscientist, wanna-be data scientist, part-time educator, and full-time consumer of Mexican food.
 
-I studied biochemistry at UCLA before earning my doctorate in neuroscience at Yale. I then performed postdoctoral research at the Salk Institute before I turned into an adult. I can be found coding, surfing (or trying to), or eating at a Yelp-reviewed restaurant with my wife somewhere in California.
+I studied biochemistry at UCLA before earning my doctorate in neuroscience at Yale. I then performed postdoctoral research at the Salk Institute, before I turned into an adult. A list of my academic publications can be found [here](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=lacar+b&btnG=).
+
+I can be found coding, surfing (or trying to), or eating at a Yelp-reviewed restaurant with my wife somewhere in California.
