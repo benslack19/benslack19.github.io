@@ -1,6 +1,6 @@
 ---
 title: A study of high school dropouts in California
-excerpt: I looked at public school and demographic data on high school student dropouts to apply and practice Python data munging and visualization skills.
+excerpt: I looked at high school student dropout data to apply and practice data munging and visualization skills in Python. 
 header:
   image: /assets/edstudy/school-417612_1920.jpg
   teaser: /assets/edstudy/school-417612_1920.jpg

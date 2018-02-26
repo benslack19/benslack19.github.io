@@ -1,5 +1,5 @@
 ---
-title: Project 3
+title: Quantifying chance clustering
 excerpt: This page will serve as a project template.
 header:
   image: /assets/surfingBW.png

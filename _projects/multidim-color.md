@@ -1,6 +1,6 @@
 ---
 title: Multi-dimensional image visualization
-excerpt: Color-coded representations of time or depth dimensions in a single image.
+excerpt: Color-coded representations of time or depth dimensions in a single image with a script written in MATLAB.
 header:
   image: /assets/multidem_color/CMZ_DGcolorCodedRep_A.png
   teaser: /assets/multidem_color/CMZ_DGcolorCodedRep_A.png
