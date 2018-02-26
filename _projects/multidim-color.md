@@ -2,11 +2,11 @@
 title: Multi-dimensional image visualization
 excerpt: Color-coded representations of time or depth dimensions in a single image.
 header:
-  image: /assets/multidem_color/CMZ_DGcolorCodedRep_A.tif
-  teaser: /assets/multidem_color/CMZ_DGcolorCodedRep_A.tif
+  image: /assets/multidem_color/CMZ_DGcolorCodedRep_A.png
+  teaser: /assets/multidem_color/CMZ_DGcolorCodedRep_A.png
 gallery:
-  - url: /assets/multidem_color/080229b9_compositefilt.tif
-    image_path: /assets/multidem_color/080229b9_compositefilt.tif
+  - url: /assets/multidem_color/080229b9_compositefilt.png
+    image_path: /assets/multidem_color/080229b9_compositefilt.png
     alt: "Astrocytic calcium wave along a blood vessel. From Lacar et al., 2011, EJN." 
   - url: /assets/multidem_color/F8.large_edit.jpg
     image_path: /assets/multidem_color/F8.large_edit.jpg
