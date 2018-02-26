@@ -1,4 +1,5 @@
 ---
+title: Data science skill acquirement
 layout: single
 author_profile: false
 
