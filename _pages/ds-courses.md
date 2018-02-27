@@ -7,7 +7,7 @@ permalink: /ds-skills/
 
 This is a running list of courses I've taken as I've delved deeper into tech-related data science.
 
-| Course | Status | Comment |
+| Course | Status | 
 | --- | --- |  --- | 
 | Programming for Everybody ([Coursera](https://www.coursera.org/specializations/python)) | Completed | |
 | Python Data Structures ([Coursera](https://www.coursera.org/specializations/python)) | Completed | |
