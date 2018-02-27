@@ -1,5 +1,6 @@
 ---
 layout: single
+permalink: /about-the-cover/
 ---
 
 <img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ"  title="Image series by CMZ, color-coding by BL" align="left" width="25%" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;"> **The cover image** encapsulates my interests of education, neuroscience, and data science.
