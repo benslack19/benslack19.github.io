@@ -7,7 +7,7 @@ My wife and I have enjoyed living in the Bay Area where we've been able to satis
 ## Parameters for the social schedule
 
 These are the parameters that I'll consider when coming up with a simulated social schedule:
-1. My wife works 3 days in a work week, but not more than than 3 days in a row when .
+1. My wife works 3 days in a work week, but not more than than 3 days in a row, when considering consecutive weeks.
 2. She works every other weekend on both Saturday and Sunday.
 3. Hanging out on weekday evenings means she has to be off on the day of and the day after since she has to get up early for work.
 
