@@ -490,4 +490,4 @@ print('Sun day or evening: ', int(100*(schedule_by_week2[mask].shape[0]/count_fr
 
 As you can see, it's clear that Friday evening is most affected by our schedules. Of course, that's a common time to get together for most. I wouldn't have necessarily guessed that it would be this much lower but it makes sense when thinking about it. On weeks where my wife is assigned to weekends, Friday is the only weekday that also decreases in probability of getting together. It's also good to point out that these probabilities are likely overestimates. I didn't account for sick days, errands, family emergencies, or other things that affect our time. From one perspective, we wish we could find more time to get together. But on the other hand, when we do manage to get together, we're grateful for the chance (literally) to do so.
 
-p.s. This post is dated, but you could probably guess when I did most of the work even if you didn't look. It's a Friday night.
+This post is dated, but you could probably guess when I did most of the work even if you didn't look. It's a Friday night.
