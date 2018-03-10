@@ -2,7 +2,7 @@
 title: Data science skill development
 layout: single
 author_profile: false
-permalink: /ds-skills/
+
 ---
 
 This is a running list of courses I've taken as I've delved deeper into tech-related data science.
