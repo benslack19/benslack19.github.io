@@ -1,5 +1,9 @@
 ---
 title: Predicting phenotypic states from single cell analysis
+excerpt: Color-coded representations of time or depth dimensions in a single image with a script written in MATLAB.
+header:
+  image: _projects/predicting_states_sc_analysis/output_32_0.png
+  teaser: _projects/predicting_states_sc_analysis/output_32_0.png
 ---
 
 [Single-cell analysis](https://en.wikipedia.org/wiki/Single-cell_analysis) has revolutionized biological studies by providing greater resolution to tissue profiling and allowing for rare cell characterization. By far, the most popular application of single-cell analysis is transcriptional profiling of cells; that is, determining what cellular [mRNA](https://en.wikipedia.org/wiki/Messenger_RNA) is being expressed. I've been fortunate to have the opportunity to contribute to this field from my [academic](https://www.nature.com/articles/ncomms11022) and [industry](https://www.fluidigm.com/applications/single-cell-analysis) work.
@@ -443,7 +447,7 @@ df_tpm3[df_tpm3 > 1].count(axis=1).hist()
 
 
 
-![png](output_13_1.png)
+![png](_projects/predicting_states_sc_analysis/output_13_1.png)
 
 
 
