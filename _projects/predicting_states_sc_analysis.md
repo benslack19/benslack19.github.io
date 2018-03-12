@@ -4,8 +4,9 @@ excerpt: Using logistic regression to classify the activation state of a neuron 
 header:
   image: /assets/cellstate/nerve-cell-2213009_1280.jpg
   teaser: /assets/cellstate/nerve-cell-2213009_1280.jpg
+toc: true
+toc_label:  'contents'
 ---
-
 
 [Single-cell analysis](https://en.wikipedia.org/wiki/Single-cell_analysis) has revolutionized biological studies by providing greater resolution to tissue profiling and allowing for rare cell characterization. By far, the most popular application of single-cell analysis is transcriptional profiling of cells; that is, determining what cellular [mRNA](https://en.wikipedia.org/wiki/Messenger_RNA) is being expressed. I've been fortunate to have the opportunity to contribute to this field from my [academic](https://www.nature.com/articles/ncomms11022) and [industry](https://www.fluidigm.com/applications/single-cell-analysis) work.
 
@@ -411,14 +412,7 @@ df_tpm2[df_tpm2 > 1].count(axis=1).hist();
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x13eabd668>
-
-
-
-
-![png](output_9_1.png)
+![png](output_9_0.png)
 
 
 Removing samples that have less than 3000 genes seems like a logical cutoff.
@@ -441,16 +435,7 @@ df_tpm3[df_tpm3 > 1].count(axis=1).hist();
 ```
 
 
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-1-08ef841d9099> in <module>()
-          1 # Sanity check that appropriate filter is implemented
-    ----> 2 df_tpm3[df_tpm3 > 1].count(axis=1).hist();
-    
-
-    NameError: name 'df_tpm3' is not defined
+![png](output_13_0.png)
 
 
 
@@ -467,6 +452,12 @@ df_tpm3.drop('SampleName', axis=1, inplace=True)
     
     See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
       from ipykernel import kernelapp as app
+    /Users/lacar/anaconda/lib/python3.5/site-packages/pandas/core/indexing.py:357: SettingWithCopyWarning: 
+    A value is trying to be set on a copy of a slice from a DataFrame.
+    Try using .loc[row_indexer,col_indexer] = value instead
+    
+    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+      self.obj[key] = _infer_fill_value(value)
     /Users/lacar/anaconda/lib/python3.5/site-packages/pandas/core/indexing.py:537: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
@@ -713,6 +704,12 @@ df_tpm3.loc[:,'PCAx'] = X[:,0]
 df_tpm3.loc[:,'PCAy'] = X[:,1]
 ```
 
+    /Users/lacar/anaconda/lib/python3.5/site-packages/pandas/core/indexing.py:357: SettingWithCopyWarning: 
+    A value is trying to be set on a copy of a slice from a DataFrame.
+    Try using .loc[row_indexer,col_indexer] = value instead
+    
+    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+      self.obj[key] = _infer_fill_value(value)
     /Users/lacar/anaconda/lib/python3.5/site-packages/pandas/core/indexing.py:537: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
@@ -1109,8 +1106,8 @@ df_tpm5.head()
       <td>22.03</td>
       <td>0.00</td>
       <td>1</td>
-      <td>-98.443511</td>
-      <td>35.546565</td>
+      <td>-98.442336</td>
+      <td>35.550913</td>
     </tr>
     <tr>
       <th>nc_ui_ti_C12_141204</th>
@@ -1133,8 +1130,8 @@ df_tpm5.head()
       <td>0.00</td>
       <td>5.87</td>
       <td>1</td>
-      <td>-89.695505</td>
-      <td>58.960111</td>
+      <td>-89.691450</td>
+      <td>58.955329</td>
     </tr>
     <tr>
       <th>nc_ui_ti_C7_141204</th>
@@ -1157,8 +1154,8 @@ df_tpm5.head()
       <td>62.27</td>
       <td>0.00</td>
       <td>1</td>
-      <td>-73.874904</td>
-      <td>53.031325</td>
+      <td>-73.873524</td>
+      <td>53.025737</td>
     </tr>
     <tr>
       <th>nc_ui_ti_C8_141204</th>
@@ -1181,8 +1178,8 @@ df_tpm5.head()
       <td>2.99</td>
       <td>0.00</td>
       <td>1</td>
-      <td>-89.654770</td>
-      <td>43.962223</td>
+      <td>-89.653363</td>
+      <td>43.937353</td>
     </tr>
     <tr>
       <th>nc_ui_ti_C9_141204</th>
@@ -1205,8 +1202,8 @@ df_tpm5.head()
       <td>113.95</td>
       <td>0.00</td>
       <td>1</td>
-      <td>-77.416751</td>
-      <td>33.628965</td>
+      <td>-77.416201</td>
+      <td>33.667595</td>
     </tr>
   </tbody>
 </table>
@@ -1228,6 +1225,10 @@ from sklearn.model_selection import train_test_split
 from sklearn import metrics
 from sklearn.cross_validation import cross_val_score
 ```
+
+    /Users/lacar/anaconda/lib/python3.5/site-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+      "This module will be removed in 0.20.", DeprecationWarning)
+
 
 
 ```python
@@ -1405,244 +1406,244 @@ X_train.head(10)
   </thead>
   <tbody>
     <tr>
-      <th>nm_ui_tn_H3_141204</th>
-      <td>2.049631</td>
-      <td>7.710531</td>
-      <td>0.0</td>
+      <th>nc_ux_tn_A6_141204</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>10.985308</td>
+      <td>0.000000</td>
+      <td>9.227905</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>...</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>10.710161</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>6.257199</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>6.616475</td>
+    </tr>
+    <tr>
+      <th>nc_ui_ti_C8_141204</th>
+      <td>0.000000</td>
+      <td>6.443607</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
-      <td>6.246788</td>
-      <td>7.932982</td>
-      <td>2.572890</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.996389</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>nm_ux_ti_E10_141204</th>
-      <td>3.647315</td>
-      <td>2.025029</td>
-      <td>0.0</td>
+      <th>nm_ux_ti_F12_141204</th>
+      <td>3.693766</td>
+      <td>4.218781</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>...</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>10.468573</td>
+      <td>10.052269</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.459432</td>
-      <td>8.696620</td>
       <td>0.000000</td>
-      <td>6.900746</td>
+      <td>1.847997</td>
+      <td>0.000000</td>
+      <td>3.344828</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>nc_ux_ti_A7_141204</th>
+      <th>nc_ui_tn_C1_141204</th>
       <td>0.000000</td>
-      <td>0.000000</td>
+      <td>9.720073</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.0</td>
       <td>0.000000</td>
-      <td>9.122724</td>
+      <td>0.000000</td>
+      <td>3.705978</td>
+      <td>0.000000</td>
       <td>...</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>8.656067</td>
-      <td>0.0</td>
-      <td>0.0</td>
       <td>0.000000</td>
-      <td>2.424922</td>
-      <td>4.928370</td>
-      <td>4.731183</td>
-      <td>4.750070</td>
-    </tr>
-    <tr>
-      <th>nm_ui_tn_G1_141204</th>
-      <td>2.969012</td>
-      <td>0.000000</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>...</td>
-      <td>0.000000</td>
-      <td>2.639232</td>
-      <td>2.861955</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.169925</td>
-      <td>3.231125</td>
-      <td>0.000000</td>
-      <td>5.099716</td>
+      <td>7.086189</td>
+      <td>3.379898</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>nc_ux_tn_A4_141204</th>
-      <td>4.843481</td>
-      <td>6.498251</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>3.907852</td>
+      <th>nc_ux_tn_B1_141204</th>
       <td>0.000000</td>
+      <td>8.137811</td>
       <td>0.0</td>
+      <td>0.0</td>
+      <td>9.276031</td>
+      <td>6.100978</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>...</td>
-      <td>4.597531</td>
+      <td>3.906891</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
-      <td>4.794416</td>
+      <td>5.612058</td>
       <td>0.000000</td>
-      <td>5.205940</td>
+      <td>7.188440</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>nc_ux_tn_A2_141204</th>
+      <th>nm_ux_ti_F9_141204</th>
+      <td>1.169925</td>
+      <td>3.865919</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
-      <td>5.501121</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>6.123708</td>
       <td>0.000000</td>
-      <td>6.785943</td>
-      <td>0.0</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>...</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>7.232085</td>
+      <td>8.506367</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
-      <td>6.188243</td>
-      <td>0.000000</td>
-      <td>6.928607</td>
-      <td>7.432625</td>
-    </tr>
-    <tr>
-      <th>nm_ux_tn_F4_141204</th>
-      <td>3.253989</td>
-      <td>3.914565</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>4.081510</td>
-      <td>6.567119</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>8.909863</td>
-      <td>...</td>
-      <td>5.901591</td>
-      <td>0.713696</td>
-      <td>4.434295</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>1.144046</td>
-      <td>5.787119</td>
-      <td>5.939227</td>
-      <td>5.942515</td>
-    </tr>
-    <tr>
-      <th>nm_ui_tn_H4_141204</th>
-      <td>0.000000</td>
-      <td>4.636335</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>...</td>
-      <td>0.000000</td>
-      <td>2.773996</td>
-      <td>1.914565</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>3.913608</td>
+      <td>4.922198</td>
+      <td>0.992768</td>
+      <td>4.292782</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>nc_ux_tn_B4_141204</th>
-      <td>5.344828</td>
-      <td>6.056367</td>
-      <td>0.0</td>
+      <th>nm_ui_tn_H5_141204</th>
+      <td>3.580145</td>
+      <td>9.489045</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.0</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>2.070389</td>
       <td>0.000000</td>
       <td>...</td>
-      <td>7.488161</td>
       <td>0.000000</td>
-      <td>9.641709</td>
+      <td>0.000000</td>
+      <td>9.886215</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.673556</td>
+      <td>6.649759</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>nc_ui_ti_D7_141204</th>
-      <td>2.053111</td>
-      <td>3.632268</td>
-      <td>0.0</td>
+      <th>nm_ux_tn_E1_141204</th>
+      <td>2.160275</td>
+      <td>5.434962</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>4.426936</td>
+      <td>0.000000</td>
+      <td>3.240314</td>
+      <td>8.639702</td>
+      <td>...</td>
+      <td>6.805163</td>
+      <td>0.000000</td>
+      <td>7.471756</td>
       <td>0.0</td>
-      <td>7.530211</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>2.912650</td>
+      <td>0.000000</td>
+      <td>5.597829</td>
+      <td>7.555816</td>
+    </tr>
+    <tr>
+      <th>nc_ux_tn_B2_141204</th>
+      <td>0.000000</td>
+      <td>5.245648</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>5.044831</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.985500</td>
       <td>0.000000</td>
       <td>...</td>
       <td>0.000000</td>
-      <td>0.000000</td>
-      <td>8.633867</td>
+      <td>2.446256</td>
+      <td>9.375735</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>4.995032</td>
-      <td>2.107688</td>
+      <td>6.007196</td>
+      <td>5.561937</td>
+      <td>3.910733</td>
+      <td>3.897240</td>
+      <td>7.298017</td>
+    </tr>
+    <tr>
+      <th>nc_ui_tn_C6_141204</th>
       <td>0.000000</td>
-      <td>5.599615</td>
-      <td>4.838952</td>
+      <td>5.305606</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>3.711495</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>11.446024</td>
+      <td>3.165108</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
   </tbody>
 </table>
