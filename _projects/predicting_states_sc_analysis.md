@@ -2,9 +2,10 @@
 title: Predicting phenotypic states from single cell analysis
 excerpt: Using logistic regression to classify the activation state of a neuron from gene expression using Python and sci-kit learn.
 header:
-  image: /assets/cellstate/nerve-cell-2213009_1280.png
-  teaser: /assets/cellstate/nerve-cell-2213009_1280.png
----
+  image: /assets/cellstate/nerve-cell-2213009_1280.jpg
+  teaser: /assets/cellstate/nerve-cell-2213009_1280.jpg
+--
+
 
 [Single-cell analysis](https://en.wikipedia.org/wiki/Single-cell_analysis) has revolutionized biological studies by providing greater resolution to tissue profiling and allowing for rare cell characterization. By far, the most popular application of single-cell analysis is transcriptional profiling of cells; that is, determining what cellular [mRNA](https://en.wikipedia.org/wiki/Messenger_RNA) is being expressed. I've been fortunate to have the opportunity to contribute to this field from my [academic](https://www.nature.com/articles/ncomms11022) and [industry](https://www.fluidigm.com/applications/single-cell-analysis) work.
 
