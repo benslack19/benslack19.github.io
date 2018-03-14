@@ -84,7 +84,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "bslack"
+  name             : "Ben Lacar"
   avatar           : # "/assets/surfingBW.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "data+science+education"
   location         : # "Somewhere"

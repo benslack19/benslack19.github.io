@@ -1,5 +1,5 @@
 ---
-title: Why is it so hard to hang out with us?
+title: The probability of making your Friday night party
 ---
 
 My wife and I have enjoyed living in the Bay Area where we've been able to satisfy our love of outdoor activities while being near a cool city. While we're fortunate to have friends and family in the area, I've felt bad that we haven't been able to hang out with them as often as we'd like. We knew that part of this was due to our work schedules and occasional travel. I work a regular M-F schedule, but my wife has a very irregular schedule as a nurse. She "only" works three days a week, but those are 12-hour shifts and she's required to work every other weekend. This has limited us going from attending [trivia](https://www.yieldandpause.com/trivia/), [sporting events](https://www.nhl.com/sharks), or just your [average party](https://media.giphy.com/media/wAxlCmeX1ri1y/giphy.gif). In addition, since both of our immediate families are not in the area, we might be hosting or visiting on weekends that we both have off. While everyone is busy and has commitments, I wanted to quantify how much we could get together socially with our friends in the area. Therefore, in this post, I explore the question: **Given a social time, what is the probability that we're able to get together?**
