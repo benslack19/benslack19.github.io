@@ -1,6 +1,6 @@
 ---
 title: Schools overcoming circumstances
-excerpt: I analyzed California high school student dropout data with Python, Pandas and Matplotlib. 
+excerpt: I evaluated California high school student dropout data with pandas, matplotlib, and seaborn. 
 header:
   image: /assets/edstudy/school-417612_1920.jpg
   teaser: /assets/edstudy/school-417612_1920.jpg
