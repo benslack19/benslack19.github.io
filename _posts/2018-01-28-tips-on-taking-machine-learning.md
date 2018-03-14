@@ -1,5 +1,5 @@
 ---
-title: Tips on taking Andrew Ng’s Machine Learning Course
+title: A neuro-educational approach to taking Andrew Ng’s Machine Learning Course
 categories: [data science]
 ---
 

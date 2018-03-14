@@ -1,6 +1,6 @@
 ---
 title: Predicting phenotypic states from single cell analysis
-excerpt: Using logistic regression to classify the activation state of a neuron from gene expression using Python and sci-kit learn.
+excerpt: Classifying the activation state of a neuron from gene expression using logistic regression to using Python and sci-kit learn.
 header:
   image: /assets/cellstate/nerve-cell-2213009_1280.jpg
   teaser: /assets/cellstate/nerve-cell-2213009_1280.jpg
