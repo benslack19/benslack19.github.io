@@ -68,7 +68,7 @@ ax1.legend();
 ```
 
 
-![png](2018-03-18-ML-logistic-regression-in-python-on-neuronal-classification/output_8_0.png)
+![png](_posts/2018-03-18-ML-logistic-regression-in-python-on-neuronal-classification/output_8_0.png)
 
 
 ## Compute Cost and Gradient
