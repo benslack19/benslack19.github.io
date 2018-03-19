@@ -1,5 +1,6 @@
 ---
 title: Applying logistic regression in Python
+mathjax: true
 ---
 
 ...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the logistic regression assignment used MATLAB. Here, I also translate MATLAB code into Python. I apply the mathematical concepts and the Python code to a datset I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
