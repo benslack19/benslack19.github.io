@@ -1,5 +1,6 @@
 ---
 title: Applying logistic regression in Python
+mathjax: true
 ---
 
 ...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the logistic regression assignment used MATLAB. Here, I also translate MATLAB code into Python. I apply the mathematical concepts and the Python code to a datset I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
@@ -39,12 +40,12 @@ X = X.loc[:,['Arc', 'Plk2']]
 I use the naming conventions of the Ng course. The logistic regression model is such that we want the hypothesis to be within the bounds 0 and 1.
 
 
-<span $ 0 \leq h_{\theta}(x) \leq 1$ </span>
+$ 0 \leq h_{\theta}(x) \leq 1$
 
 If $ h_{\theta}(x) = g(\theta^Tx) $ and $ g(z) = \frac{1}{1 + \exp(-z)}\ $
 then
 
-<div $ h_{\theta}(x) = \frac{1}{1 + exp(-\theta^Tx)} $ </div>
+$$ h_{\theta}(x) = \frac{1}{1 + exp(-\theta^Tx)} $$
 
 The objective will be to determine the parameters $\theta$.
 
