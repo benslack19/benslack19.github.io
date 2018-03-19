@@ -64,7 +64,7 @@ ax1.legend();
 ```
 
 
-![png](output_8_0.png)
+![png](/assets/output_8_0.png)
 
 
 ## Compute Cost and Gradient
