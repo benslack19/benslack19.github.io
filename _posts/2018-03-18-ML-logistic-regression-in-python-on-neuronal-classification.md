@@ -1,5 +1,4 @@
-
---
+---
 title: Applying logistic regression in Python...
 ---
 
@@ -69,7 +68,7 @@ ax1.legend();
 ```
 
 
-![/_posts/2018-03-18-ML-logistic-regression-in-python-on-neuronal-classification/output_8_0.png](output_8_0.png)
+![png](/_posts/2018-03-18-ML-logistic-regression-in-python-on-neuronal-classification/output_8_0.png)
 
 
 ## Compute Cost and Gradient
