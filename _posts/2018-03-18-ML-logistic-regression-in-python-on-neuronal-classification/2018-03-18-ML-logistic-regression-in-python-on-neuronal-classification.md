@@ -1,4 +1,3 @@
-
 ---
 title: Applying logistic regression in Python
 ---
