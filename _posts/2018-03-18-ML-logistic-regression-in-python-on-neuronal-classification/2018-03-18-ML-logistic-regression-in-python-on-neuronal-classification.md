@@ -1,5 +1,6 @@
+
 ---
-title: Applying logistic regression in Python...
+title: Applying logistic regression in Python
 ---
 
 ...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the logistic regression assignment used MATLAB. Here, I also translate MATLAB code into Python. I apply the mathematical concepts and the Python code to a datset I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
@@ -38,10 +39,6 @@ X = X.loc[:,['Arc', 'Plk2']]
 
 I use the naming conventions of the Ng course. The logistic regression model is such that we want the hypothesis to be within the bounds 0 and 1.
 
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 $ 0 \leq h_{\theta}(x) \leq 1$
 
 If $ h_{\theta}(x) = g(\theta^Tx) $ and $ g(z) = \frac{1}{1 + \exp(-z)}\ $
@@ -68,7 +65,7 @@ ax1.legend();
 ```
 
 
-![png](_posts/2018-03-18-ML-logistic-regression-in-python-on-neuronal-classification/output_8_0.png)
+![png](output_8_0.png)
 
 
 ## Compute Cost and Gradient
