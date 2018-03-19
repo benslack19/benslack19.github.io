@@ -39,6 +39,10 @@ X = X.loc[:,['Arc', 'Plk2']]
 
 I use the naming conventions of the Ng course. The logistic regression model is such that we want the hypothesis to be within the bounds 0 and 1.
 
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 $ 0 \leq h_{\theta}(x) \leq 1$
 
 If $ h_{\theta}(x) = g(\theta^Tx) $ and $ g(z) = \frac{1}{1 + \exp(-z)}\ $
