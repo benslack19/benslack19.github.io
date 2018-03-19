@@ -1,5 +1,7 @@
 
-**Applying logistic regression in Python...**
+--
+title: Applying logistic regression in Python...
+---
 
 ...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the logistic regression assignment used MATLAB. Here, I also translate MATLAB code into Python. I apply the mathematical concepts and the Python code to a datset I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
 
@@ -63,7 +65,7 @@ ax1.legend();
 ```
 
 
-![png](output_8_0.png)
+![/_posts/2018-03-18-ML-logistic-regression-in-python-on-neuronal-classification/output_8_0.png](output_8_0.png)
 
 
 ## Compute Cost and Gradient
