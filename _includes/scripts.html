@@ -1,3 +1,8 @@
+{% if site.mathjax == true %}
+<!-- MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+{% endif %}
+
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
     {% if script contains "://" %}
@@ -28,12 +33,6 @@
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
 
-{% if site.mathjax == true %}
-<!-- MathJax -->
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-{% endif %}
 
 
 
