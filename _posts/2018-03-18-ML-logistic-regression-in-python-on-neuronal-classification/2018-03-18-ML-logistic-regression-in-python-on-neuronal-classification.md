@@ -244,7 +244,7 @@ plotDecisionBoundary(optimal_theta, X, y)
 ```
 
 
-![png](output_26_0.png)
+![png](/assets/output_26_0.png)
 
 
 This seems like a reasonable decision boundary.
