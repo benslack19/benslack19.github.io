@@ -43,12 +43,12 @@ I use the naming conventions of the Ng course. The logistic regression model is 
 
 $$ 0 \leq h_{\theta}(x) \leq 1$$
 
-If $ h_{\theta}(x) = g(\theta^Tx) $ and $ g(z) = \frac{1}{1 + \exp(-z)}\ $
+If $$ h_{\theta}(x) = g(\theta^Tx) $$ and $$ g(z) = \frac{1}{1 + \exp(-z)}\ $$
 then
 
 $$ h_{\theta}(x) = \frac{1}{1 + exp(-\theta^Tx)} $$
 
-The objective will be to determine the parameters $\theta$.
+The objective will be to determine the parameters $$\theta$$.
 
 ## Plotting
 We start the exercise by first plotting the top two features of the data. Blue is the negative class, red is the positive class.
@@ -181,15 +181,15 @@ In the course, the MATLAB function was given to us as ```plotDecisionBoundary.m`
 ### Determine the decision boundary linear equation.
 
 From the lectures:
-$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5$ when $\theta^Tx \geq 0$.
+$$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5$$ when $$\theta^Tx \geq 0$$.
 
 In the case of two features:
 
-$ h_{\theta}(x) = g(\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2})$
+$$ h_{\theta}(x) = g(\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2})$$
 
-Therefore: $\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} \geq 0$
+Therefore: $$\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} \geq 0$$
 
-We can re-arrange to solve for the linear equation: $ x_{2} = \frac{-\theta_{1}x_{1} - \theta_{0}}{\theta_{2}}\ $
+We can re-arrange to solve for the linear equation: $$ x_{2} = \frac{-\theta_{1}x_{1} - \theta_{0}}{\theta_{2}}\ $$
 
 
 
@@ -208,7 +208,7 @@ print('y-intercept: ', yint)
 
 
 The equation of the line is therefore:
-$ x_{2} = -4.380x_{1} + 12.837 $
+$$ x_{2} = -4.380x_{1} + 12.837 $$
 
 Looking at the plot of data above, this seems like a reasonable equation for the decision boundary.
 
