@@ -13,4 +13,4 @@ My academic work led to a life science industry position which blends my interes
 
 I have extensive experience performing independent research, analyzing and interpreting complex data sets, optimizing data analysis protocols and communicating my results through oral and written presentations.
 
-In my spare time, I can be found surfing (or trying to), hiking, or eating at a well-reviewed restaurant with my wife somewhere in California. I can be reached at \<myfirstname\<.\<mylastname\>@gmail.com.
+In my spare time, I can be found surfing (or trying to), hiking, or eating at a well-reviewed restaurant with my wife somewhere in California. I can be reached at \<myfirstname\>.\<mylastname\>@gmail.com.
