@@ -11,11 +11,11 @@ This is a running list of courses I've taken as I've delved deeper into tech-rel
 | --- | --- |  --- | 
 | Programming for Everybody ([Coursera](https://www.coursera.org/specializations/python)) | Completed | |
 | Python Data Structures ([Coursera](https://www.coursera.org/specializations/python)) | Completed | |
-| Using Python to Access Web Data ([Coursera](https://www.coursera.org/specializations/python)) | Completed | [Gene subpaneling project](https://github.com/benslack19/gene_subpanel) |
-| Using Databases with Python ([Coursera](https://www.coursera.org/specializations/python)) | Completed | [Gene subpaneling project](https://github.com/benslack19/gene_subpanel) |
-| Capstone: Retrieving, Processing, and Visualizing Data with Python ([Coursera](https://www.coursera.org/specializations/python)) | Completed | |
-| Introduction to Data Science in Python ([Coursera](https://www.coursera.org/learn/python-data-analysis)) | Completed | [Student dropout study](https://github.com/benslack19/CA_dropout_rates) |
-| Applied Plotting, Charting & Data Representation in Python ([Coursera](https://www.coursera.org/learn/python-plotting)) | Completed | [Student dropout study](https://github.com/benslack19/CA_dropout_rates) |
+| Using Python to Access Web Data ([Coursera](https://www.coursera.org/specializations/python)) | Completed | |
+| Using Databases with Python ([Coursera](https://www.coursera.org/specializations/python)) | Completed | |
+| Capstone: Retrieving, Processing, and Visualizing Data with Python ([Coursera](https://www.coursera.org/specializations/python)) | Completed | [Gene subpaneling project](https://github.com/benslack19/gene_subpanel) |
+| Introduction to Data Science in Python ([Coursera](https://www.coursera.org/learn/python-data-analysis)) | Completed | [Final assignment](https://github.com/benslack19/intro_ds_housing_prices) |
+| Applied Plotting, Charting & Data Representation in Python ([Coursera](https://www.coursera.org/learn/python-plotting)) | Completed | [Final assignment](https://github.com/benslack19/applied_plotting_python_padres) |
 | Machine Learning ([Coursera](https://www.coursera.org/learn/machine-learning)) | Completed | |
 | The Complete SQL Bootcamp ([Udemy](https://www.udemy.com/the-complete-sql-bootcamp/)) | Completed | |
 | A/B Testing by Google ([Udacity](https://www.udacity.com/course/ab-testing--ud257)) | Completed | |
