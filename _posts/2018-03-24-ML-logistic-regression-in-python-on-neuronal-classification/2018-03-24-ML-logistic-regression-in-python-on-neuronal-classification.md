@@ -27,8 +27,6 @@ I followed this StackOverflow [post](https://stackoverflow.com/questions/3162141
 %store -r y   # This is the activation state label.
 ```
 
-    no stored variable # This is the entire data
-    no stored variable # This is the activation state label.
 
 
 I chose two genes that showed reasonable, but not wide, separation between the groups.
@@ -51,7 +49,7 @@ then
 
 $$ h_{\theta}(x) = \frac{1}{1 + exp(-\theta^Tx)} $$
 
-The objective will be to determine the parameters $\theta$.
+The objective will be to determine the parameters $$ \theta $$.
 
 To do this, we will minimize the logistic regression cost function
 
@@ -60,7 +58,7 @@ $$ J(\theta) = \frac{1}{m} \sum_{i=1}^{m}[-y^{(i)}\log(h_{\theta}(x^{(i)}))-(1-y
 The gradient equation is $$ \frac{\partial J(\theta)}{\partial \theta_{j}} = \frac{1}{m} \sum_{i=1}^{m}(h_{\theta}(x^{(i)}))-y^{(i)})x^{(i)}_{j} $$
 
 ## Plotting
-We start the exercise by first plotting the top two features of the data. Blue is the negative class, red is the positive class.
+We start the exercise by first plotting two features of the data. Blue is the negative class, red is the positive class.
 
 
 ```python
@@ -81,10 +79,8 @@ ax1.legend();
 ## Compute Cost and Gradient
 
 These were the directions in the MATLAB code of the ML course assignment:
-"In this part of the exercise, you will implement the cost and gradient
-for logistic regression. You need to complete the code in costFunction.m."
-
-I'll make each function a separate Jupyter cell.
+*"In this part of the exercise, you will implement the cost and gradient
+for logistic regression. You need to complete the code in costFunction.m."*
 
 
 ```python
@@ -145,13 +141,13 @@ print('Gradient at test theta: \n', grad);
 
 ## Optimizing using fmin_tnc for Python (fminunc in MATLAB)
 
-Course directions say: "In this exercise, you will use a built-in function (fminunc) to find the optimal parameters theta."
+Course directions state: *"In this exercise, you will use a built-in function (fminunc) to find the optimal parameters theta."*
 
-Here's where things got tricky for me. I initially wasn't sure what optimization function to use. I was both informed and confused by what I found online, partly because sometimes cost and gradient were calculated in separate functions. In the MATLAB course, the cost and gradient were returned in the same function (```costFunction```) so I did the same. This is what course notes said about using ```fminunc```:
+Here's where things got tricky for me. I initially wasn't sure what optimization function to use. I was both informed and confused by what I found online, partly because sometimes cost and gradient were calculated in separate functions. In the MATLAB course, the cost and gradient were returned in the same function (```costFunction```) so I did the same. This is what course notes said about using the MATLAB optimization function `fminunc`:
 
-*"In this code snippet, we first defined the options to be used with fminunc. Specifically, we set the GradObj option to on, which tells ```fminunc``` that our function returns both the cost and the gradient. This allows fminunc to use the gradient when minimizing the function."*
+*"In this code snippet, we first defined the options to be used with fminunc. Specifically, we set the GradObj option to on, which tells `fminunc` that our function returns both the cost and the gradient. This allows fminunc to use the gradient when minimizing the function."*
 
-The Python minimizatioon function I settled on using was [```fmin_tnc```](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html) which I chose from looking at [this post](http://www.johnwittenauer.net/machine-learning-exercises-in-python-part-3/). In that example, the author had gradient as a separate function. From looking at the documentation, it looks like ```fmin_tnc``` can handle the optimized function either with or without the gradient being returned. If it's not returned, one has to specify the gradient function in the ```fprime``` parameter of ```fmin_tnc```.
+The Python minimization function I settled on using was [`fmin_tnc`](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html) which I chose from looking at [this post](http://www.johnwittenauer.net/machine-learning-exercises-in-python-part-3/). In that example, the author had gradient as a separate function. From looking at the documentation, it looks like `fmin_tnc` can handle the optimized function either with or without the gradient being returned. If it's not returned, one has to specify the gradient function in the `fprime` parameter of `fmin_tnc`.
 
 
 ```python
@@ -160,7 +156,7 @@ import scipy.optimize as opt
 
 
 ```python
-# The x0 parameter is the initial guess so I will set that to inital_theta.
+# The x0 parameter is the initial guess so I will set that to initial_theta.
 result = opt.fmin_tnc(func=costFunction, x0=initial_theta, args=(X, y))
 ```
 
@@ -184,20 +180,20 @@ print('Cost at theta found by scipy fmin_tnc: ', cost);
 
 ## Plotting the decision boundary
 
-In the course, the MATLAB function was given to us as ```plotDecisionBoundary.m```. Initially, my strategy was going to do a nearly line-for-line translation of the MATLAB code to Python syntax, but since the plotting is quite different, I just ended up testing code and coming up with my own function.
+In the course, the MATLAB function was given to us as ```plotDecisionBoundary.m```. Initially, my strategy was to do a line-for-line translation of the MATLAB code to Python syntax, but since the plotting is quite different, I just ended up testing code and coming up with my own function.
 
 ### Determine the decision boundary linear equation.
 
 From the lectures:
-$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5$ when $\theta^Tx \geq 0$.
+$$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5$ when $\theta^Tx \geq 0 $$.
 
 In the case of two features:
 
-$ h_{\theta}(x) = g(\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2})$
+$$ h_{\theta}(x) = g(\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2}) $$
 
-Therefore: $\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} \geq 0$
+Therefore: $$ \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} \geq 0 $$
 
-We can re-arrange to solve for the linear equation: $ x_{2} = \frac{-\theta_{1}x_{1} - \theta_{0}}{\theta_{2}}\ $
+We can re-arrange to solve for the linear equation: $$ x_{2} = \frac{-\theta_{1}x_{1} - \theta_{0}}{\theta_{2}}\ $$
 
 
 
@@ -282,6 +278,7 @@ print('Train Accuracy: ', np.mean(p == y) * 100);
 
     Train Accuracy:  97.2602739726
 
+The accuracy we obtained is pretty good.
 
 ## Using scikit-learn's logistic regression and regularization
 
@@ -344,13 +341,13 @@ print('Thetas found by fmin_tnc function: ', result[0])
     Thetas found by fmin_tnc function:  [-7.65282614  0.74252063  0.54925607]
 
 
-As you can see, the $\theta_1$ and $\theta_2$ values match nearly exactly. The $\theta_0$ values differ by exactly a factor of 2, which is reflective of an [optional factor](https://stats.stackexchange.com/questions/57628/why-is-the-logistic-regression-cost-function-scaled-by-the-number-of-examples) to include in the calculation.
+As you can see, the $$ \theta_1$ and $\theta_2 $$ values match nearly exactly. The $$ \theta_0 $$ values differ by exactly a factor of 2, which is reflective of an [optional factor](https://stats.stackexchange.com/questions/57628/why-is-the-logistic-regression-cost-function-scaled-by-the-number-of-examples) to include in the calculation.
 
 ## Conclusion
 
-Others had translated the MATLAB code to Python for the assignment of the course. Check out those Python implementations I found ([here](http://aimotion.blogspot.com/2011/11/machine-learning-with-python-logistic.html), [here](http://nbviewer.jupyter.org/github/tfolkman/learningwithdata/blob/master/Logistic%20Gradient%20Descent.ipynb), and [here](http://www.johnwittenauer.net/machine-learning-exercises-in-python-part-3/)) which also helped me as I was doing this small project. 
+Others had translated the MATLAB code to Python for the logistic regression "test scores" assignment in the ML course. Check out those very nice Python implementations I found ([here](http://aimotion.blogspot.com/2011/11/machine-learning-with-python-logistic.html), [here](http://nbviewer.jupyter.org/github/tfolkman/learningwithdata/blob/master/Logistic%20Gradient%20Descent.ipynb), and [here](http://www.johnwittenauer.net/machine-learning-exercises-in-python-part-3/)). These helped me as I was doing this project. 
 
-In this post, I chose a subset of data from a personal project, implemented step-by-step logistic regression by translating MATLAB code to Python, and compared the theta values produced by the optimization function to the theta values derived from scikit-learn's logistic regression function. This provided an opportunity to re-inforce lessons from the Machine Learning course. Seeing how the two methods arrive at the same values also provided cross-confirmation for me.
+In this post, I chose a subset of data from a personal project, implemented step-by-step logistic regression by translating MATLAB code to Python, and compared the theta values produced by the optimization function to the theta values derived from scikit-learn's logistic regression function. This provided an opportunity to reinforce lessons from the Machine Learning course. Seeing how the two methods arrive at the same values also provided cross-confirmation for me.
 
 Scikit-learn is an amazing package and for most technical projects, you would not write out your own logistic regression function. But writing the function and comparing values helps make the SKL logistic regression a little bit less of a black box.
 

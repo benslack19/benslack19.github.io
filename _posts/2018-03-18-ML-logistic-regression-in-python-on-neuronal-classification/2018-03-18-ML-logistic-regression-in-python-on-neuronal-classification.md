@@ -48,14 +48,14 @@ then
 
 $$ h_{\theta}(x) = \frac{1}{1 + exp(-\theta^Tx)} $$
 
-The objective will be to determine the parameters $$\theta$$.
+The objective will be to determine the parameters $$ \theta $$.
 
 ## Plotting
-We start the exercise by first plotting the top two features of the data. Blue is the negative class, red is the positive class.
+We start the exercise by first plotting the two features of the data. Blue is the negative class, red is the positive class.
 
 
 ```python
-# Matplotlib plotting syntax isdifferent from MATLAB
+# Matplotlib plotting syntax is different from MATLAB
 f, (ax1) = plt.subplots(1,1);
 mask = y==0;
 ax1.scatter(x=X.loc[mask,'Arc'], y=X.loc[mask,'Plk2'], color='blue', label='neg');
@@ -73,8 +73,8 @@ ax1.legend();
 ## Compute Cost and Gradient
 
 These were the directions in the MATLAB code of the ML course assignment:
-"In this part of the exercise, you will implement the cost and gradient
-for logistic regression. You need to complete the code in costFunction.m."
+*"In this part of the exercise, you will implement the cost and gradient
+for logistic regression. You need to complete the code in costFunction.m."*
 
 I'll make each function a separate Jupyter cell.
 
@@ -137,13 +137,13 @@ print('Gradient at test theta: \n', grad);
 
 ## Optimizing using fmin_tnc for Python (fminunc in MATLAB)
 
-Course directions say: "In this exercise, you will use a built-in function (fminunc) to find the optimal parameters theta."
+Course directions say: *"In this exercise, you will use a built-in function (fminunc) to find the optimal parameters theta."*
 
-Here's where things got tricky for me. I initially wasn't sure what optimization function to use. I was both informed and confused by what I found online, partly because sometimes cost and gradient were calculated in separate functions. In the MATLAB course, the cost and gradient were returned in the same function (```costFunction```) so I did the same. This is what course notes said about using ```fminunc```:
+Here's where things got tricky for me. I initially wasn't sure what optimization function to use. I was both informed and confused by what I found online, partly because sometimes cost and gradient were calculated in separate functions. In the MATLAB course, the cost and gradient were returned in the same function (`costFunction`) so I did the same. This is what course notes said about using the MATLAB `fminunc` optimization function:
 
-*"In this code snippet, we first defined the options to be used with fminunc. Specifically, we set the GradObj option to on, which tells ```fminunc``` that our function returns both the cost and the gradient. This allows fminunc to use the gradient when minimizing the function."*
+*"In this code snippet, we first defined the options to be used with fminunc. Specifically, we set the GradObj option to on, which tells `fminunc` that our function returns both the cost and the gradient. This allows `fminunc` to use the gradient when minimizing the function."*
 
-The Python minimizatioon function I settled on using was [```fmin_tnc```](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html) which I chose from looking at [this post](http://www.johnwittenauer.net/machine-learning-exercises-in-python-part-3/). In that example, the author had gradient as a separate function. From looking at the documentation, it looks like ```fmin_tnc``` can handle the optimized function either with or without the gradient being returned. If it's not returned, one has to specify the gradient function in the ```fprime``` parameter of ```fmin_tnc```.
+The Python minimization function I settled on using was [`fmin_tnc`](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html) which I chose from looking at [this post](http://www.johnwittenauer.net/machine-learning-exercises-in-python-part-3/). In that example, the author had gradient as a separate function. From looking at the documentation, it looks like ```fmin_tnc``` can handle the optimized function either with or without the gradient being returned. If it's not returned, one has to specify the gradient function in the ```fprime``` parameter of ```fmin_tnc```.
 
 
 ```python
@@ -176,18 +176,18 @@ print('Cost at theta found by scipy fmin_tnc: ', cost);
 
 ## Plotting the decision boundary
 
-In the course, the MATLAB function was given to us as ```plotDecisionBoundary.m```. Initially, my strategy was going to do a nearly line-for-line translation of the MATLAB code to Python syntax, but since the plotting is quite different, I just ended up testing code and coming up with my own function.
+In the course, the MATLAB function was given to us as ```plotDecisionBoundary.m```. Initially, my strategy was to do a line-for-line translation of the MATLAB code to Python syntax, but since the plotting is quite different, I just ended up testing code and coming up with my own function.
 
 ### Determine the decision boundary linear equation.
 
 From the lectures:
-$$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5$$ when $$\theta^Tx \geq 0$$.
+$$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5$$ when $$\theta^Tx \geq 0 $$.
 
 In the case of two features:
 
-$$ h_{\theta}(x) = g(\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2})$$
+$$ h_{\theta}(x) = g(\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2}) $$
 
-Therefore: $$\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} \geq 0$$
+Therefore: $$\theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} \geq 0 $$
 
 We can re-arrange to solve for the linear equation: $$ x_{2} = \frac{-\theta_{1}x_{1} - \theta_{0}}{\theta_{2}}\ $$
 
