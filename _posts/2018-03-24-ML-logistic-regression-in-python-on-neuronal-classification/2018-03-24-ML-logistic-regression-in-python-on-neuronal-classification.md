@@ -1,6 +1,7 @@
 ---
 title: Applying logistic regression in Python
 mathjax: True
+toc: true
 ---
 
 ...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the [logistic regression assignment](https://github.com/benslack19/machine_learning_assignments/tree/master/Lectures6-7_ProgAssign_machine-learning-ex2/machine-learning-ex2/ex2) used MATLAB. Here, I translate MATLAB code into Python, determine optimal theta values with cost function minimization, and then compare those values to [scikit-learn logistic regression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) theta values. Instead of using the course's assignment for this exercise, I apply the Python code to a subset of data I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
