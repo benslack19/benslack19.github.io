@@ -3,7 +3,7 @@ title: Applying logistic regression in Python
 mathjax: True
 ---
 
-...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the logistic regression assignment used MATLAB. Here, I translate MATLAB code into Python, determine optimal theta values with cost function minimization, and then compare those values to scikit-learn logistic regression theta values. Instead of using the course assignment for this exercise, I apply the Python code to a subset of data I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
+...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the [logistic regression assignment](https://github.com/benslack19/machine_learning_assignments/tree/master/Lectures6-7_ProgAssign_machine-learning-ex2/machine-learning-ex2/ex2) used MATLAB. Here, I translate MATLAB code into Python, determine optimal theta values with cost function minimization, and then compare those values to [scikit-learn logistic regression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)) theta values. Instead of using the course assignment for this exercise, I apply the Python code to a subset of data I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
 
 ## Import packages and data from project notebook
 
@@ -278,7 +278,7 @@ print('Train Accuracy: ', np.mean(p == y) * 100);
 
     Train Accuracy:  97.2602739726
 
-The accuracy we obtained is pretty good.
+The accuracy we obtained is pretty good!
 
 ## Using scikit-learn's logistic regression and regularization
 
@@ -341,7 +341,7 @@ print('Thetas found by fmin_tnc function: ', result[0])
     Thetas found by fmin_tnc function:  [-7.65282614  0.74252063  0.54925607]
 
 
-As you can see, the $$ \theta_1$ and $\theta_2 $$ values match nearly exactly. The $$ \theta_0 $$ values differ by exactly a factor of 2, which is reflective of an [optional factor](https://stats.stackexchange.com/questions/57628/why-is-the-logistic-regression-cost-function-scaled-by-the-number-of-examples) to include in the calculation.
+As you can see, the $$ \theta_1 $$ and $$ \theta_2 $$ values match nearly exactly. The $$ \theta_0 $$ values differ by exactly a factor of 2, which is reflective of an [optional factor](https://stats.stackexchange.com/questions/57628/why-is-the-logistic-regression-cost-function-scaled-by-the-number-of-examples) to include in the calculation.
 
 ## Conclusion
 
