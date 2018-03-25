@@ -1,9 +1,9 @@
-
 ---
 title: Applying logistic regression in Python
+mathjax: True
 ---
 
-...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the logistic regression assignment used MATLAB. Here, I also translate MATLAB code into Python. I apply the mathematical concepts and the Python code to a datset I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
+...from lessons learned from Andrew Ng's [ML course](https://www.youtube.com/watch?v=-la3q9d7AKQ). Like other assignments of the course, the logistic regression assignment used MATLAB. Here, I translate MATLAB code into Python, determine optimal theta values with cost function minimization, and then compare those values to scikit-learn logistic regression theta values. Instead of using the course assignment for this exercise, I apply the Python code to a subset of data I evaluated in another [project](https://benslack19.github.io/projects/predicting_states_sc_analysis/#supervised-machine-learning). Check out the project link for more context to this post.
 
 ## Import packages and data from project notebook
 
@@ -44,7 +44,7 @@ X = X.loc[:,[gene1, gene2]]
 
 I use the naming conventions of the Ng course. The logistic regression model is such that we want the hypothesis to be within the bounds 0 and 1.
 
-$$ 0 \leq h_{\theta}(x) \leq 1$$
+$$ 0 \leq h_{\theta}(x) \leq 1 $$
 
 If $$ h_{\theta}(x) = g(\theta^Tx) $$ and $$ g(z) = \frac{1}{1 + exp(-z)}\ $$
 then
@@ -255,7 +255,7 @@ plotDecisionBoundary(optimal_theta, X, y)
 ```
 
 
-![png](output_27_0.png)
+![png](/assets/log_regress_python/output_27_0.png)
 
 
 This seems like a very sensible decision boundary.
