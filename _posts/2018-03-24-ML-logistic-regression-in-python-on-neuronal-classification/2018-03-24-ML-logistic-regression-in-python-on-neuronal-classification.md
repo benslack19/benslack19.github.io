@@ -186,7 +186,7 @@ In the course, the MATLAB function was given to us as ```plotDecisionBoundary.m`
 ### Determine the decision boundary linear equation.
 
 From the lectures:
-$$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5$ when $\theta^Tx \geq 0 $$.
+$$ h_{\theta}(x) = g(\theta^Tx) \geq 0.5 $$ when $$ \theta^Tx \geq 0 $$.
 
 In the case of two features:
 
