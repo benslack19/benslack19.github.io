@@ -23,7 +23,8 @@ This is a running list of courses I've taken as I've delved deeper into tech-rel
 
 I acquired these tools through projects.
 
-| Tool | Context of use | Example projects | 
+| Tool | Context of use | Notes | 
 | --- | --- | --- |
 | MATLAB | Graduate school and postdoctoral academic projects | [Publication](http://onlinelibrary.wiley.com/doi/10.1111/j.1460-9568.2011.07901.x/full) |
 | R | Postdoctoral and biotech industry projects | |
+| Linux | Biotech industry projects | Run bioinformatics scripts  |
