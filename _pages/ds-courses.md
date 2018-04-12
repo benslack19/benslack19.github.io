@@ -21,6 +21,7 @@ This is a running list of courses I've taken as I've delved deeper into tech-rel
 | A/B Testing by Google ([Udacity](https://www.udacity.com/course/ab-testing--ud257)) | Completed | |
 | Intro to Hadoop and MapReduce ([Udacity](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617)) | Currently taking | |
 | Statistics and probability ([Khan Academy](https://www.khanacademy.org/math/statistics-probability)) | Currently taking | |
+| Recommender systems ([Coursera](https://www.coursera.org/specializations/recommender-systems)) | Future course | |
 
 I acquired these tools through projects.
 
