@@ -11,6 +11,6 @@ I studied biochemistry at UCLA, earned my Ph.D. in neuroscience at Yale Universi
 
 My academic work led to a life science industry position which blends my professional interests. I have a multi-faceted role that includes performing data analysis for developing applications, internal and commercial education, and serving as a technical liaison for product management.
 
-I have extensive experience performing independent research, analyzing and interpreting complex data sets, optimizing data analysis protocols and communicating my results through oral and written presentations. While lately I've been working more in Python, I'm happy being in front of a Jupiter notebook (with pandas, numpy, scipy, matplotlib) or RStudio (with tidyverse or various bioconductor packages).
+I have extensive experience performing independent research, analyzing and interpreting complex data sets, optimizing data analysis protocols and communicating my results through oral and written presentations. While lately I've been working more in Python, I'm happy being in front of a Jupyter notebook (with pandas, numpy, scipy, matplotlib) or RStudio (with tidyverse or various bioconductor packages).
 
 In my spare time, I can be found surfing (or trying to), hiking, or eating at a well-reviewed restaurant with my wife somewhere in California. I can be reached at ben.lacar AT gmail.com.
