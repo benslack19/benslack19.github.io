@@ -14,3 +14,7 @@ My academic work led to a life science industry position. I initially worked as 
 I have extensive experience performing independent research, analyzing and interpreting complex data sets, optimizing data analysis, and communicating my results through oral and written presentations. A glance over my shoulder at work and you'll likely see open windows of a Linux terminal, a Python Jupiter notebook, or RStudio (perhaps even all three).
 
 In my spare time, I can be found surfing, hiking, or eating at a well-reviewed restaurant with my wife somewhere in California. Mexican food is my weakness. I can be reached at ben.lacar AT gmail.com.
+
+I have extensive experience performing independent research, analyzing and interpreting complex data sets, optimizing data analysis protocols and communicating my results through oral and written presentations. While lately I've been working more in Python, I'm happy being in front of a Jupyter notebook (with pandas, numpy, scipy, matplotlib) or RStudio (with tidyverse or various bioconductor packages).
+
+In my spare time, I can be found surfing (or trying to), hiking, or eating at a well-reviewed restaurant with my wife somewhere in California. I can be reached at ben.lacar AT gmail.com.
