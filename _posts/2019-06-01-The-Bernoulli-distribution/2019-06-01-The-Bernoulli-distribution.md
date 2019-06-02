@@ -120,8 +120,11 @@ Var(*X*) = Pr(X=1) x (1 - E(*X*))^2 + Pr(X=0) x (0 - E(*X*))^2
 Note how we have to be more thoughtful about what we plug in for our probabilities and E(*X*).
 
 Var(*X*) = 0.6 x (1 - 0.6)^2 + 0.4 x (0 - 0.6)^2
+<br>
 Var(*X*) = 0.6 x (0.4)^2 + 0.4 x (-0.6)^2
+<br>
 Var(*X*) = 0.6 x (0.16) + 0.4 x (0.36)
+<br>
 Var(*X*) = 0.24
 
 And we arrive at the same answer as our formula.
