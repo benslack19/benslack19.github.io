@@ -36,7 +36,7 @@ ax1.set_title('Probability of 0.5');
 ```
 
 
-![png](output_4_0.png)
+![png](/_posts/2019-06-01-The-Bernoulli-distribution/output_4_0.png)
 
 
 # Finding the mean
@@ -104,7 +104,7 @@ ax1.set_title('Probability of 0.60');
 ```
 
 
-![png](output_9_0.png)
+![png](/2019-06-01-The-Bernoulli-distribution/output_9_0.png)
 
 
 One incorrect line of thought is to assume that the mean is in between the heights of the bars. But remember that the y-axis is the probability and the mean is somewhere on the x-axis. And using what we already know about a Bernoulli distribution, the mean or expected value simply takes on the probability *p*, commonly associated with the probability of our coin flip resulting in heads/1/true.
