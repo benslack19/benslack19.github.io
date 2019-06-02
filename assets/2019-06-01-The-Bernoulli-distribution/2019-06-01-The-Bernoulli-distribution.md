@@ -36,7 +36,7 @@ ax1.set_title('Probability of 0.5');
 ```
 
 
-![png](/assets/2019-06-01-The-Bernoulli-distribution/output_4_0.png)
+![png](/_posts/2019-06-01-The-Bernoulli-distribution/output_4_0.png)
 
 
 # Finding the mean
@@ -104,7 +104,7 @@ ax1.set_title('Probability of 0.60');
 ```
 
 
-![png](/assets/2019-06-01-The-Bernoulli-distribution/output_9_0.png)
+![png](/2019-06-01-The-Bernoulli-distribution/output_9_0.png)
 
 
 One incorrect line of thought is to assume that the mean is in between the heights of the bars. But remember that the y-axis is the probability and the mean is somewhere on the x-axis. And using what we already know about a Bernoulli distribution, the mean or expected value simply takes on the probability *p*, commonly associated with the probability of our coin flip resulting in heads/1/true.
@@ -164,7 +164,7 @@ ax1.set_ylabel('Variance');
 ```
 
 
-![png](/assets/2019-06-01-The-Bernoulli-distribution/output_14_0.png)
+![png](output_14_0.png)
 
 
 We observe an interesting relationship where as p moves away from 0.5, the variance gets smaller. If we go back to the coin flip example, this is intuitive. In the most extreme case, when the probability of landing heads is 100%, there obviously wouldn't be any variance since you will always get a 1.
