@@ -4,7 +4,7 @@ toc: true
 ---
 
 
-The [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) came up a in couple of different contexts the past week. First, I was trying to get started with Kaggle on the [Titanic set](https://www.kaggle.com/c/titanic) when one of the tutorials used the mean of the survival list (a vector of 0's and 1's, which is actually a binomial distirbution) to calculate survival probability. Calculating the mean wasn't something I immediately thought of but remembered it from Khan Academy lessons. The second reminder of the Bernoulli distribution came up when talking with my manager, who reminded me that the [Bernoulli distribution can be the starting point for deriving other common distributions](https://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/).
+The [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) came up a in couple of different contexts the past week. First, I was trying to get started with Kaggle on the [Titanic set](https://www.kaggle.com/c/titanic) when one of the tutorials used the mean of the survival list (a vector of 0's and 1's, which is actually a binomial distribution) to calculate survival probability. Calculating the mean wasn't something I immediately thought of but remembered it from Khan Academy lessons. The second reminder of the Bernoulli distribution came up when talking with my manager, who reminded me that the [Bernoulli distribution can be the starting point for deriving other common distributions](https://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/).
 
 In this post, I'll go over the Bernoulli distribution with some coding implementations and examples.
 
@@ -39,7 +39,7 @@ ax1.set_title('Probability of 0.5');
 ![png](/assets/2019-06-01-The-Bernoulli-distribution/output_4_0.png)
 
 
-# Finding the mean
+## Finding the mean
 
 Seen this way, it is intuitive to understand that its mean or expected value (0.5) is also equal to the probability of being heads. To help us understand when probabilities would *not* be 0.5, we can also see how we'd arrive at this answer when using the formula for average. While the common equation for average involves summing a list of numbers and dividing by the length of those numbers, there's also the approach of using [relative frequencies to determine the mean](https://www.khanacademy.org/math/statistics-probability/random-variables-stats-library/random-variables-discrete/v/expected-value-of-a-discrete-random-variable).
 
@@ -58,7 +58,7 @@ E(*X*) = 0.5
 
 In the end, we just have the generic formula: E(*X*) = *p*
 
-# Finding the variance
+## Finding the variance
 
 Determining the variance for Bernoulli seems a little less intuitive, but we can use our basic understanding of variance in other contexts to help explain.
 
@@ -84,7 +84,7 @@ Var(*X*) = p x q
 
 Where q = 1-p.
 
-# A case with a biased coin
+## A case with a biased coin
 
 Now let's imagine a case where we have a weighted coin, where heads is more likely to appear 60% of the time.
 
@@ -130,7 +130,7 @@ Var(*X*) = 0.24
 And we arrive at the same answer as our formula.
 
 
-# Understanding the relationship between probability and variance
+## Understanding the relationship between probability and variance
 
 You might notice that as we increased our probability from 0.5 to 0.6 between the two examples, the variance dropped a notch from 0.25 to 0.24. This prompts us to understand the relationship between *p* and Var(*X*). Let's create a series from *p*=0 to *p*=1 with 0.1 step intervals and find the variance at each. We'll use the formula Var(X) = *p* x *q*.
 
