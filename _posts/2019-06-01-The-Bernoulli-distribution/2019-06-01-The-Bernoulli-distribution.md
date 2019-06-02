@@ -1,4 +1,3 @@
-
 ---
 title: The Bernoulli distribution
 toc: true
