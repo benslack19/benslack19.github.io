@@ -14,16 +14,14 @@ import pandas as pd
 import numpy as np
 from scipy.stats import binom
 import matplotlib.pyplot as plt
-
-
 ```
 
-The Bernoulli distribution is the result of a single coin toss. It is one trial of a binomial distribution. I don't immediately think of a single trial as a "distribution" but it is and it consists of only two possible values, which are 0 (tails/false) and 1 (heads/true). In the case of an unbiased coin, the probability that the toss will result in a heads is the same probability that it will be a tails, 0.5. Hence, the height of the bars in the graph below are the same.
+The Bernoulli distribution is the result of a single coin toss. It is one trial of a binomial distribution. I don't immediately think of a single trial as a "distribution" but  there are two discrete possible values, which are 0 (tails/false) and 1 (heads/true). In the case of an unbiased coin, the probability that the toss will result in a heads is the same probability that it will be a tails, 0.5. Hence, the height of the bars in the graph below are the same.
 
 
 ```python
 f, ax1 = plt.subplots(1,1)
-n = 1   # 
+n = 1   # a trial of one in a binomial distribution is the same as Bernoulli
 b = 0.5
 x = np.arange(0, 2)
 dist = binom(n, b)
@@ -56,17 +54,17 @@ Therefore:
 <br>
 E(*X*) = 0.5
 
-In the end, we just have the generic formula: E(*X*) = *p*
+In the end, we just have the generic formula E(*X*) = *p*
 
 ## Finding the variance
 
 Determining the variance for Bernoulli seems a little less intuitive, but we can use our basic understanding of variance in other contexts to help explain.
 
-If I were asked to calculate variance for a set of values, I would take the squared distance from the mean of each number, then divide by n (the size of that set). We can use the same application of probabilities (relative frequencies) as we did for mean when calculating variance.
+If I were asked to calculate variance for a set of values, I would take the squared distance from the mean of each number, then divide by n (the size of that set). We can use the same application of probabilities (relative frequencies) as we did for mean when calculating variance. Note that the distances are simply 1 minus the mean in the first term and 0 minus the mean in the second.
 
 Var(*X*) = Pr(X=1) x (1 - E(X))^2 + Pr(X=0) x (0 - E(X))^2
 
-I like the idea of relating it back to the equation of variance I mentioned a few lines ago, because it reminds me that the probabilities are not being squared. (When calculate variance from a list of numbers, only the terms in the denominator are squared).
+I like the idea of relating it back to the equation of variance I mentioned above, because it reminds me that the probabilities are not being squared. (When one calculates variance from a list of numbers, only the terms in the denominator are squared).
 
 From our example above, we simply plug in the probabilities and expected values.
 
@@ -81,8 +79,7 @@ Var(*X*) = 0.25
 While not immediately obvious, this answer also has the generic formula of:
 
 Var(*X*) = p x q
-
-Where q = 1-p.
+where q = 1-p.
 
 ## A case with a biased coin
 
@@ -91,7 +88,7 @@ Now let's imagine a case where we have a weighted coin, where heads is more like
 
 ```python
 f, ax1 = plt.subplots(1,1)
-n = 1   # 
+n = 1
 b = 0.60
 x = np.arange(0, 2)
 dist = binom(n, b)
@@ -133,18 +130,6 @@ And we arrive at the same answer as our formula.
 ## Understanding the relationship between probability and variance
 
 You might notice that as we increased our probability from 0.5 to 0.6 between the two examples, the variance dropped a notch from 0.25 to 0.24. This prompts us to understand the relationship between *p* and Var(*X*). Let's create a series from *p*=0 to *p*=1 with 0.1 step intervals and find the variance at each. We'll use the formula Var(X) = *p* x *q*.
-
-
-
-```python
-1-np.arange(0,1.1,0.1)
-```
-
-
-
-
-    array([1. , 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0. ])
-
 
 
 
