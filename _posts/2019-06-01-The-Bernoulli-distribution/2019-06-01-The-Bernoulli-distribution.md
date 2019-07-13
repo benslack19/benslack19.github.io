@@ -1,12 +1,13 @@
 ---
-title: The Bernoulli distribution
+title: Coin toss, shmoin toss
 toc: true
 ---
 
+Whenever you realize it's ignorant, it always helps to start at the beginning. Seems like every statistics class starts off with a coin toss. It's simple enough for me. Some fancy teachers might start right off the bat and get into the [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution), but I'd rather just think about flipping a coin.
 
-The [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) came up a in couple of different contexts the past week. First, I was trying to get started with Kaggle on the [Titanic set](https://www.kaggle.com/c/titanic) when one of the tutorials used the mean of the survival list (a vector of 0's and 1's, which is actually a binomial distribution) to calculate survival probability. Calculating the mean wasn't something I immediately thought of but remembered it from Khan Academy lessons. The second reminder of the Bernoulli distribution came up when talking with my manager, who reminded me that the [Bernoulli distribution can be the starting point for deriving other common distributions](https://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/).
+This past week, I got started with Kaggle on the [Titanic set](https://www.kaggle.com/c/titanic) when one of the tutorials used the mean of the survival list (a vector of 0's and 1's, which is actually a binomial distribution) to calculate survival probability. Calculating the mean wasn't something I immediately thought of but remembered it from Khan Academy lessons. The second reminder of Bernoulli came up when talking with my manager, who reminded me that the [Bernoulli distribution can be the starting point for deriving other common distributions](https://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/).
 
-In this post, I'll go over the Bernoulli distribution with some coding implementations and examples.
+I'll go over the Bernoulli distribution with some coding implementations and examples.
 
 
 ```python
