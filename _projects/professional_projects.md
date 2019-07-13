@@ -7,7 +7,7 @@ header:
 
 ---
 
-The following are examples of external-facing collateral that I helped produce while in my applications and bioinformatics scientist roles. My responsibilities on the projects included developing the full pipeline (examples 1 and 4), producing the tables and figures and developing the content. This does not include analysis projects performed internally. My data science tools include bash scripts, Python, and R. 
+The following are examples of external-facing collateral that I produced through my applications and bioinformatics scientist roles. My data science tools include bash scripts, Python, and R to develop pipelines, wrangle data, and create analysis visualizations. I author papers, presentations, and posters for these and other projects.
 
 
 **Single-Cell Stranded Total RNA Sequencing**
