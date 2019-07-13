@@ -1,4 +1,4 @@
----
+ter/as---
 title: Professional projects 1
 excerpt: Examples of external-facing work projects.
 header:
@@ -17,7 +17,7 @@ In this project, I developed the full pipeline (starting from FASTQ files) to an
 
 This is now a [launched product](https://www.fluidigm.com/c1openapp/scripthub/script/2018-09/total-rna-seq-1537231959922-5). I presented this work at the [Human Cell Atlas Asia meeting](http://medical-genome.kribb.re.kr/hca/index.html) in South Korea and a colleague presented a poster at the [Single Cell Genomics meeting](http://www.weizmann.ac.il/conferences/SCG2018/program) in Cambridge, MA.
 
-[presentation](https://github.com/benslack19/benslack19.github.io/blob/master//⁨assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx)
+[presentation](https://github.com/benslack19/benslack19.github.io/blob/master/assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx)
 
 [poster](https://github.com/benslack19/benslack19.github.io/blob/master//assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Conference%20Poster%2074%20Ooi%20et%20al%2020181025.pdf)
 
@@ -27,7 +27,7 @@ Our product, the [C1](https://www.fluidigm.com/products/c1-system), has enabled 
 
 In this technical note, I produced the customer-facing figures, which includes a regression model, and contributed to authoring the paper. My data science tools were Python packages pandas, matplotlib, and scikit-learn. This technical note is shared with relevant customers to facilitate the success of their experiments.
 
-[technical note](https://github.com/benslack19/benslack19.github.io/blob/master//⁨assets⁩/⁨fldm_projects⁩/C1%20Processing%20Flow-Sorted%20Cryopreserved%20cells%20for%20mRNA%20sequencing%20(101-8419%20A1)%20201808.pdf)
+[technical note](https://github.com/benslack19/benslack19.github.io/blob/master/assets⁩/⁨fldm_projects⁩/C1%20Processing%20Flow-Sorted%20Cryopreserved%20cells%20for%20mRNA%20sequencing%20(101-8419%20A1)%20201808.pdf)
 
 
 **Advanta CFTR NGS Library Prep data collateral**

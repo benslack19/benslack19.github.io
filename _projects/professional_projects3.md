@@ -14,16 +14,16 @@ The following are external-facing collateral produced while in my applications a
 
 In this project, I developed the full pipeline (starting from FASTQ files) to analyze the data, produced the figures, and contributed to the presentation story. My data science tools included bash scripts, and both Python and R for data wrangling and figure generation.
 
-[presentation](https://github.com/benslack19/benslack19.github.io/blob/master//⁨assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx)
+[presentation](https://github.com/benslack19/benslack19.github.io/blob/master/assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx)
 
-[poster](https://github.com/benslack19/benslack19.github.io/blob/master//assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Conference%20Poster%2074%20Ooi%20et%20al%2020181025.pdf)
+[poster](https://github.com/benslack19/benslack19.github.io/blob/master/assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Conference%20Poster%2074%20Ooi%20et%20al%2020181025.pdf)
 
 
 **Processing flow-sorted cells for C1 mRNA-seq applications**
 
 In this technical note, I produced the customer-facing figures, which includes a regression model, and contributed to authoring the paper. My data science tools were Python packages pandas, matplotlib, and scikit-learn. This technical note is shared with relevant customers to facilitate the success of their experiments.
 
-[technical note](https://github.com/benslack19/benslack19.github.io/blob/master//⁨assets⁩/⁨fldm_projects⁩/C1%20Processing%20Flow-Sorted%20Cryopreserved%20cells%20for%20mRNA%20sequencing%20(101-8419%20A1)%20201808.pdf)
+[technical note](https://github.com/benslack19/benslack19.github.io/blob/master/assets⁩/⁨fldm_projects⁩/C1%20Processing%20Flow-Sorted%20Cryopreserved%20cells%20for%20mRNA%20sequencing%20(101-8419%20A1)%20201808.pdf)
 
 
 **Advanta CFTR NGS Library Prep data collateral**
