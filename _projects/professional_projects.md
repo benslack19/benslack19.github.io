@@ -1,6 +1,6 @@
 ---
 title: Professional projects
-excerpt: Examples of external-facing work projects.
+excerpt: Examples of external-facing work projects through my applications and bioinformatics scientist roles.
 header:
   image: /assets/fldm_projects/pca_trs.png
   teaser: /assets/fldm_projects/pca_trs.png
