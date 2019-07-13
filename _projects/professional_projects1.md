@@ -1,13 +1,13 @@
 ---
-title: Professional projects
-excerpt: Work-related projects.
+title: Professional projects 1
+excerpt: Examples of external-facing work projects.
 header:
   image: /assets/fldm_projects/pca_trs.png
   teaser: /assets/fldm_projects/pca_trs.png
 
 ---
 
-The following are a list of external-facing collateral produced while in my applications and bioinformatics scientist roles. This does not include analysis projects performed internally.
+The following are external-facing collateral produced while in my applications and bioinformatics scientist roles. This does not include analysis projects performed internally.
 
 
 **Single-Cell Stranded Total RNA Sequencing**
@@ -18,6 +18,7 @@ In this project, I developed the full pipeline (starting from FASTQ files) to an
 This is now a [launched product](https://www.fluidigm.com/c1openapp/scripthub/script/2018-09/total-rna-seq-1537231959922-5). I presented this work at the [Human Cell Atlas Asia meeting](http://medical-genome.kribb.re.kr/hca/index.html) in South Korea and a colleague presented a poster at the [Single Cell Genomics meeting](http://www.weizmann.ac.il/conferences/SCG2018/program) in Cambridge, MA.
 
 [presentation](https://github.com/benslack19/benslack19.github.io/blob/master//⁨assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx)
+
 [poster](https://github.com/benslack19/benslack19.github.io/blob/master//assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Conference%20Poster%2074%20Ooi%20et%20al%2020181025.pdf)
 
 
@@ -35,8 +36,10 @@ Cystic fibrosis (CF) profiling is a laboratory test common for new parents among
 I produced the tables, figures, and was the primary author of the presentation and white paper. My data science tools were Python packages pandas, matplotlib, and seaborn. These documents are shared with customers upon request. This is a [launched product](https://www.fluidigm.com/applications/advanta-cftr-ngs). The data collateral is shared with customers of interest. 
 
 [presentation](https://github.com/benslack19/benslack19.github.io/blob/master/assets/fldm_projects/AdvantaCFTR_datapack_main-deck_FINAL.pdf)
+
 [white paper](https://github.com/benslack19/benslack19.github.io/blob/master/assets/fldm_projects/AdvantaCFTR_datapack_white_paper_FINAL.pdf)
 
 
 **Juno mRNA-Seq Library Prep**
+
 [poster](https://github.com/benslack19/benslack19.github.io/blob/master/assets/fldm_projects/Juno%20RNA%20Seq%20Poster%20ESHG%202019%2020190619.pdf)
