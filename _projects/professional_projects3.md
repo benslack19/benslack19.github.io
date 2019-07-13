@@ -2,8 +2,8 @@
 title: Professional projects 3
 excerpt: Examples of external-facing work projects.
 header:
-  image: /assets/fldm_projects/pca_trs.png
-  teaser: /assets/fldm_projects/pca_trs.png
+  image: /assets/fldm_projects/variants.png
+  teaser: /assets/fldm_projects/variants.png
 
 ---
 
