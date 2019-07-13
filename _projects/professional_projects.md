@@ -14,7 +14,7 @@ The following are examples of external-facing collateral that I produced through
 
 We adapted a method to be used in our instruments to obtain poly(A) and non-poly(A) RNA at the single-cell level. This provides our customers with a more comprehensive understanding of cellular profiles.
 
-[presentation](https://github.com/benslack19/benslack19.github.io/blob/master/⁨assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx), [poster](https://github.com/benslack19/benslack19.github.io/blob/master//assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Conference%20Poster%2074%20Ooi%20et%20al%2020181025.pdf)
+[presentation](https://github.com/benslack19/benslack19.github.io/blob/master/⁨assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx), [poster](https://github.com/benslack19/benslack19.github.io/blob/master/assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Conference%20Poster%2074%20Ooi%20et%20al%2020181025.pdf)
 
 
 **Processing flow-sorted cells for C1 mRNA-seq applications**
