@@ -12,14 +12,14 @@ The following are examples of external-facing collateral produced while in my ap
 
 **Single-Cell Stranded Total RNA Sequencing**
 
-[presentation](https://github.com/benslack19/benslack19.github.io/blob/master//⁨assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx)
+[presentation](https://github.com/benslack19/benslack19.github.io/blob/master/⁨assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Apps%20and%20Total%20RNA%20Seq%20Customer%20deck%2020181205.pptx)
 
 [poster](https://github.com/benslack19/benslack19.github.io/blob/master//assets⁩/⁨fldm_projects⁩/C1%20Single-Cell%20Genomics%20Conference%20Poster%2074%20Ooi%20et%20al%2020181025.pdf)
 
 
 **Processing flow-sorted cells for C1 mRNA-seq applications**
 
-[technical note](https://github.com/benslack19/benslack19.github.io/blob/master//⁨assets⁩/⁨fldm_projects⁩/C1%20Processing%20Flow-Sorted%20Cryopreserved%20cells%20for%20mRNA%20sequencing%20(101-8419%20A1)%20201808.pdf)
+[technical note](https://github.com/benslack19/benslack19.github.io/blob/master/⁨assets⁩/⁨fldm_projects⁩/C1%20Processing%20Flow-Sorted%20Cryopreserved%20cells%20for%20mRNA%20sequencing%20(101-8419%20A1)%20201808.pdf)
 
 
 **Advanta CFTR NGS Library Prep data collateral**
