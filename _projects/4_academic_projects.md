@@ -7,7 +7,7 @@ header:
 
 ---
 
-The following are selected examples of publications from my graduate studies at Yale and post-doctoral research at the Salk Institute in the field of neuroscience. A complete list of my papers can be found [here](https://scholar.google.com/citations?hl=en&user=wGG8V78AAAAJ&view_op=list_works).
+The following are selected examples of publications from my graduate studies at Yale and post-doctoral research at the Salk Institute in the field of neuroscience.
 
 
 - Nuclear RNA-seq of single neurons reveals molecular signatures of activation [(link)](https://www.nature.com/articles/ncomms11022)
@@ -21,4 +21,4 @@ The following are selected examples of publications from my graduate studies at 
 - Gap junction‐mediated calcium waves define communication networks among murine postnatal neural progenitor cells [(link)](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1460-9568.2011.07901.x)
 
 
-*The banner image was obtained from [here.](https://www.needpix.com/photo/778912/brain-human-anatomy-anatomy-human-science-head-intelligence-memory-mind)*
+*A full list of my papers can be found [here](https://scholar.google.com/citations?hl=en&user=wGG8V78AAAAJ&view_op=list_works).*
