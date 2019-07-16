@@ -1,5 +1,5 @@
 ---
-title: SILT: Substrings in SQL
+title: SILT - Substrings in SQL
 categories: [data science]
 ---
 
