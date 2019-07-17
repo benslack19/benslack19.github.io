@@ -1,9 +1,9 @@
 ---
-title: SILT: Opening files and file handles in Python
+title: SILT Files vs. file handles in Python
 categories: [data science]
 ---
 
-Something I learned today was files and file handles in Python. 
+Something I learned today was opening files and using file handles in Python. 
 
 Actually it's more of "something I keep forgetting about and have to look up on Stack Overflow because I don't use it enough".
 
