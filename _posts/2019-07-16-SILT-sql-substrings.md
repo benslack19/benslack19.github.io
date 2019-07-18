@@ -1,9 +1,9 @@
 ---
-title: SILT - Substrings in SQL
+title: SILT Substrings in SQL
 categories: [data science]
 ---
 
-Something I learned today was Substrings in SQL. 
+Something I Learned Today was Substrings in SQL. 
 
 Using my [favorite tutorial](https://sqlbolt.com/lesson/select_queries_introduction) I played around with the [substring function](https://www.techonthenet.com/sql_server/functions/substring.php). But depending on the server, the function might be known as "substr" which I discovered was necessary in the tutorial.
 
