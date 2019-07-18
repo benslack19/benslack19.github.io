@@ -10,8 +10,8 @@ Actually it's more of "something I keep forgetting about and have to look up on 
 I use pandas a ton and don't always read in data using file handles so thought it'd be good to review and document. The way I've liked to open files from a file handle is using `with` since I don't have to deal with closing the file. [Here](https://stackoverflow.com/questions/40096612/how-do-i-open-a-text-file-in-python) is one post that uses `with`.
 
 
-`with open('my_text_file.txt', 'r') as fhand:
-    for line in fhand:
+`with open('my_text_file.txt', 'r') as fhand:<br>
+    for line in fhand:<br>
         print(line)
 `
 
