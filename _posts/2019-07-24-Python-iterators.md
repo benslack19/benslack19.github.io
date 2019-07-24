@@ -1,4 +1,3 @@
-
 ---
 title: Iterators in Python
 toc: true
