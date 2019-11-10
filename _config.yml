@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Ben Lacar"
-  avatar           : # "/assets/surfingBW.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/surfingBW.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "data+science+education"
   location         : # "Somewhere"
   email            :
@@ -256,7 +256,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true
@@ -267,7 +267,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: false
       comments: # true
       share: false
