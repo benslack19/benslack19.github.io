@@ -3,9 +3,9 @@ title: PostgreSQL and Jupyter notebooks
 toc: true
 ---
 
-PostgreSQL is one of the more popular flavors of SQL. A common way to use PostgreSQL is with pgadmin but I do not think their [UI](https://www.pgadmin.org/screenshots/) is the most user-friendly. By contrast, interacting with PostgreSQL through a Jupyter notebook has several benefits. The most immediately apparent benefit is that SQL queries can be brought directly into pandas for data analysis, visualization, and machine learning. But the process of learning SQL itself is supported by the notebook structure. Notebooks are inherently good formats for note-taking, such as with markdown. In addition, with different cells in the same notebook, one can build complicated queries by first writing, understanding, and having a record of simple queries.
+[PostgreSQL](https://www.postgresql.org) is one of the most popular variants of SQL. It is common to use PostgreSQL with pgadmin but I am not a big fan of their [UI](https://www.pgadmin.org/screenshots/). By contrast, interacting with PostgreSQL through a [Jupyter notebook](https://jupyter-notebook.readthedocs.io/en/stable/) has several benefits. Most immediately apparent is that SQL queries can be brought directly into a Python environment for data analysis, visualization, and machine learning. But the process of learning SQL itself is supported by the notebook format. Jupyter make it easy to adopt [literate programming](https://en.wikipedia.org/wiki/Literate_programming) practices since note-taking is easy. In addition, with different cells in the same notebook, one can build complex SQL queries by first writing, understanding, and recording simpler commands.
 
-Here is an example of a complicated looking query in a Jupyter notebook cell based on baseball data I collected for my Insight Data Science Fellowship project. (For the baseball aficionados, the question I asked was "What is each team's hit average against the infield shift versus a standard alignment?" The query is not perfect for a performance metric but this gives me a decent approximation.)
+Here is an example of a complicated-looking query in a Jupyter notebook cell. This is based on data for [my baseball project](https://github.com/benslack19/baseball_player_selector) that I worked on as a fellow at [Insight Data Science](https://www.insightdatascience.com). (For the baseball aficionados, the question I asked was "What is each team's hit average against the infield shift versus a standard alignment?" The output provides an approximation of team batting average.)
 
 ```
 sql_query = """
@@ -46,4 +46,4 @@ ON
 df_query = pd.read_sql_query(sql_query,con)
 ```
 
-You can see how I built this query and find ways to setup PostgreSQL with Jupyter yourself on my Insight project repo located [here](https://github.com/benslack19/baseball_player_selector/blob/master/SQLqueries_postgreSQL.ipynb).
+You can see the output of this query (shift against the Angels and Orioles!), see how I built it, and learn how to setup PostgreSQL with Jupyter yourself in [this notebook](https://github.com/benslack19/baseball_player_selector/blob/master/SQLqueries_postgreSQL.ipynb) located on my project repo.
