@@ -5,7 +5,7 @@ toc: true
 
 PostgreSQL is one of the more popular flavors of SQL. A common way to use PostgreSQL is with pgadmin but I do not think their [UI](https://www.pgadmin.org/screenshots/) is the most user-friendly. By contrast, interacting with PostgreSQL through a Jupyter notebook has several benefits. The most immediately apparent benefit is that SQL queries can be brought directly into pandas for data analysis, visualization, and machine learning. But the process of learning SQL itself is supported by the notebook structure. Notebooks are inherently good formats for note-taking, such as with markdown. In addition, with different cells in the same notebook, one can build complicated queries by first writing, understanding, and having a record of simple queries.
 
-Here is an example of a complicated looking query, based on baseball data I collected for my Insight Data Science Fellowship project. (For the baseball aficionados, the question I asked was "What is each team's hit average against the infield shift versus a standard alignment?" The query is not perfect for a performance metric but this gives me a decent approximation.)
+Here is an example of a complicated looking query in a Jupyter notebook cell based on baseball data I collected for my Insight Data Science Fellowship project. (For the baseball aficionados, the question I asked was "What is each team's hit average against the infield shift versus a standard alignment?" The query is not perfect for a performance metric but this gives me a decent approximation.)
 
 ```
 sql_query = """
@@ -44,18 +44,6 @@ ON
     ob_events_table.if_fielding_alignment=total_ab_table.if_fielding_alignment;
 """
 df_query = pd.read_sql_query(sql_query,con)
-print(df_query)
 ```
 
-```
-# code block test
-test = x + 1
-```
-
-~~~~{.python}
-# code block test with tildes
-test = x + 1
-~~~~
-
-
-You can find the answer, see how I built this query, and find ways to setup PostgreSQL with Jupyter yourself on my Insight project repo located [here](https://github.com/benslack19/baseball_player_selector/blob/master/SQLqueries_postgreSQL.ipynb).
+You can see how I built this query and find ways to setup PostgreSQL with Jupyter yourself on my Insight project repo located [here](https://github.com/benslack19/baseball_player_selector/blob/master/SQLqueries_postgreSQL.ipynb).
