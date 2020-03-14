@@ -7,6 +7,7 @@ PostgreSQL is one of the more popular flavors of SQL. A common way to use Postgr
 
 Here is an example of a complicated looking query, based on baseball data I collected for my Insight Data Science Fellowship project. (For the baseball aficionados, the question I asked was "What is each team's hit average against the infield shift versus a standard alignment?" The query is not perfect for a performance metric but this gives me a decent approximation.)
 
+```
 sql_query = """
 SELECT 
     ob_events_table.team_name,
@@ -44,5 +45,17 @@ ON
 """
 df_query = pd.read_sql_query(sql_query,con)
 print(df_query)
+```
+
+```
+# code block test
+test = x + 1
+```
+
+~~~~{.python}
+# code block test with tildes
+test = x + 1
+~~~~
+
 
 You can find the answer, see how I built this query, and find ways to setup PostgreSQL with Jupyter yourself on my Insight project repo located [here](https://github.com/benslack19/baseball_player_selector/blob/master/SQLqueries_postgreSQL.ipynb).
