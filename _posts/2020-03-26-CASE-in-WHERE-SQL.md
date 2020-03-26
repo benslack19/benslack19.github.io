@@ -3,7 +3,7 @@ title: Using CASE in the WHERE statement of SQL
 toc: true
 ---
 
-I was working on a baseball query when I discovered that I could not use a simple WHERE statement to select Padres at-bats. However, I knew the information was there. The teams were under the "away_team" and "home_team" columns. Here's what I was working with
+I was working on a baseball query when I discovered that I could not use a simple WHERE statement to select Padres at-bats. However, I knew the information was there. The teams were under the "away_team" and "home_team" columns. Here's what I was working with:
 
 ```
 batter	game_date	events	inning_topbot	away_team	home_team
