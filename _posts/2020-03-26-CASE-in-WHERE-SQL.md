@@ -3,6 +3,8 @@ title: Using CASE in the WHERE statement of SQL
 toc: true
 ---
 
+# Problem statement
+
 I was working on a baseball query when I discovered that I could not use a simple WHERE statement to select Padres at-bats. However, I knew the information was there. The teams were under the "away_team" and "home_team" columns. Here's what I was working with:
 
 ```
@@ -14,7 +16,9 @@ batter	game_date	events	inning_topbot	away_team	home_team
 4	602922.0	2019-07-19	strikeout	Top	CWS	TB
 ```
 
-I could use the "inning_topbot" as a conditional for my selection. I had used CASE in a SELECT statement before, but not in a WHERE statement. Luckily, I realized that the use of CASE . Here is the query that gave me what I wanted. (I'm doing this in a Jupyter notebook hence some of the pandas syntax.)
+I could use the "inning_topbot" as a conditional for my selection. I had used CASE in a SELECT statement before, but luckily I realized CASE can be used in a variety of statements including with WHERE. Here is the query that gave me what I wanted. (I'm doing this in a Jupyter notebook hence some of the pandas syntax.)
+
+# Working query
 
 ```
 sql_query = """
