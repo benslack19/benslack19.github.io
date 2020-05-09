@@ -1,5 +1,7 @@
 ---
 title: 'F-in' statistic
+mathjax: True
+toc: true
 ---
 
 I recently read this passage in the section on multiple linear regression from the fantastic book [Introduction to Statistical Learning](https://link.springer.com/chapter/10.1007/978-1-4614-7138-7_3#Sec7):
