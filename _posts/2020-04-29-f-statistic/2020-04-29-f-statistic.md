@@ -1,16 +1,16 @@
 ---
-title: F-in statistic
+title: F-in statistics!
 mathjax: True
 toc: true
 ---
 
 I recently read this passage in the section on multiple linear regression from the fantastic book [Introduction to Statistical Learning](https://link.springer.com/chapter/10.1007/978-1-4614-7138-7_3#Sec7):
 
->The hypothesis test is performed by computing the *F-statistic*,
+"The hypothesis test is performed by computing the *F-statistic*,
 
 $$ F = \frac{(TSS - RSS)/p}{(RSS)/(n-p-1)} $$
 
->where, as with simple linear regression, TSS = $\Sigma(y_i - \bar{y_i})^2$ and RSS = $\Sigma(y_i - \hat{y_i})^2$. ... When there's no relationship between the response and predictors, one would expect the F-statistic to take on a value close to 1.
+where, as with simple linear regression, TSS = $\Sigma(y_i - \bar{y_i})^2$ and RSS = $\Sigma(y_i - \hat{y_i})^2$. ... When there's no relationship between the response and predictors, one would expect the F-statistic to take on a value close to 1."
 
 I then thought to myself, "Wait, why is the F-statistic appearing here? I came across the F-statistic in the [Khan Academy lesson on ANOVA](https://www.khanacademy.org/math/statistics-probability/analysis-of-variance-anova-library)."
 
@@ -92,7 +92,7 @@ df_2f
 
 
 
-### Using one-way ANOVA to calculate the F-statistic
+## Using one-way ANOVA to calculate the F-statistic
 
 Let's apply the traditional one-way ANOVA formulas towards get the F-statistic. 
 
