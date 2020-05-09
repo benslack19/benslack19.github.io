@@ -602,7 +602,7 @@ ax.set_zlabel('y');
 ```
 
 
-![png](/assets/2020-04-20-f-statistic/output_40_0.png)
+![png](output_40_0.png)
 
 
 TSS is the squared sum of the distance of all datapoints to the red plane, which is the average of all values for the target. RSS is the squared sum of the distance of all values to the gray plane representing the model prediction. But since each dummy variable is essentially used to group, the model predictions are 1.5 for the datapoints encoded for group A and 4.5 for those in group B (opposite ends in the gray plane).
