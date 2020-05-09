@@ -14,7 +14,7 @@ where, as with simple linear regression, TSS = $\Sigma(y_i - \bar{y_i})^2$ and R
 
 I then thought to myself, "Wait, why is the F-statistic appearing here? I came across the F-statistic in the [Khan Academy lesson on ANOVA](https://www.khanacademy.org/math/statistics-probability/analysis-of-variance-anova-library)."
 
-In a span of 5 seconds, my mind made zipped around to a few places including to a conversation I had with Insight fellows and re-thinking the F-statistic calculation statistic on ANOVA and then I had a [whoa](https://media.giphy.com/media/uPnKU86sFa2fm/giphy.gif) moment: the F-statistic in multiple linear regression and in ANOVA are the same thing.
+In a span of 5 seconds, my mind made zipped around to a few places that included a conversation I had with fellow [Insight Data Science](https://insightfellows.com/data-science) fellows and re-thinking the F-statistic calculation statistic on ANOVA and then I had a [whoa](https://media.giphy.com/media/uPnKU86sFa2fm/giphy.gif) moment: the F-statistic in multiple linear regression and in ANOVA are the same thing.
 
 Let's investigate!
 
@@ -513,7 +513,7 @@ We are left with:
 <br>
 $ 4.5 = \beta_0 + \beta_2 $
 
-4.5 is the mean of the group B in the ANOVA case! [Don't act like you're not impressed!](https://makeameme.org/meme/dont-act-like-5dx76t) 
+4.5 is the mean of the group B in the ANOVA case! Interesting!
 
 OK let's geek out a little bit more and see if we can tie that back into the formula that uses total sum of squares (TSS) and residual sum of squares (RSS). From above, we have:
 
@@ -640,19 +640,5 @@ Well it's satisfying that the software package gives us the same f-statistic val
 
 ## Conclusion
 
-I went down this rabbit hole because I think it's great to connect theory across different settings. Doing things manually allows you to see connections about where some statistics are applicable. In addition, this can provide additional context to what numbers software packages like statsmodels can provide. Hope you learned something, because I know I have!
+I went down this rabbit hole because I think it's great to connect theory across different settings. Sometimes you see things differently when carrying out equations manually. In addition, this can provide additional context to what numbers software packages like statsmodels can provide. Hope you learned something, because I know I have!
 
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
