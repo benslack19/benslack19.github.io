@@ -1,5 +1,5 @@
 ---
-title: 'F-in' statistic
+title: F-in statistic
 mathjax: True
 toc: true
 ---
