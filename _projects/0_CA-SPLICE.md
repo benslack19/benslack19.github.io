@@ -1,6 +1,7 @@
 ---
 title: School and community features that promote low income student success
 excerpt:  I investigated the variables of high schools and their local areas which are associated with low income student college eligiblity.
+toc: true
 header:
   image: /assets/edstudy/school-417612_1920.jpg
   teaser: /assets/edstudy/school-417612_1920.jpg
