@@ -84,9 +84,8 @@ While I assessed multiple evaluation metrics, I optimized for F1 score for both 
 ![png](/assets/2020-05-25-CA-ed-study/features_highcoef_lowMWpvalue.png)
 
 ### School and community features of exceptional SPLICE
-
-*School features important in exceptional SPLICE prediction*
 <br>
+*School features important in exceptional SPLICE prediction*
 <br>
 *Student population and test performance.* By far, the top feature with exceptional SPLICE, is the percentage of non-low income students who are college eligible. This feature is positively associated with SPLICE suggesting that academic environments provide benefits across the socioeconomic spectrum of their students. However, a [gap between non-low income students and low income students within a school for college eligibility](/assets/2020-05-25-CA-ed-study/nonLI_vs_LI_gap.png) is still prevalent. A [school’s percentage of low-income students (regardless of college eligibility) was not correlated with SPLICE overall](/assets/2020-05-25-CA-ed-study/pct_LI_vs_SPLICE.png), but it was positively associated in predicting schools with exceptional SPLICE. In addition, while the percent of low income students that have tested for both English proficiency and math proficiency were positively associated with exceptional SPLICE, the English test scores had a higher coefficient, suggesting that it is more predictive of the target.
 
