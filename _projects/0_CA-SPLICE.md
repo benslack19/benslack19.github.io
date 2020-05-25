@@ -113,6 +113,6 @@ The questions of what it takes to support low income students to succeed academi
 Continuing to probe what factors would help low income students succeed and implementing those that are actionable can help address an important societal problem.
 
 ## Acknowledgements
-While this project was started before my [Insight Data Science Fellowship](https://insightfellows.com), I thank the Insight SV 20.A cohort for feedback, code sharing, support, and their lessons as I finished this project. I am grateful to my wife for her feedback and encouragement in posting this article.
+While this project was started before my [Insight Data Science Fellowship](https://insightfellows.com), I thank the Insight SV 20A cohort for their teachings, feedback, code sharing, and support as I finished this project. I am also grateful to my wife for her feedback and encouragement in posting this article. I appreciate in advance any additional questions and comments.
 
-The [project repository](https://github.com/benslack19/CA-ed-study) contains Jupyter notebooks where additional figures can be found. This article was first posted on this blog on May 25, 2020. It will be updated as I receive feedback. I can be reached at ben.lacar AT gmail.com.
+The [project repository](https://github.com/benslack19/CA-ed-study) contains Jupyter notebooks where additional figures can be found. This article was first posted on this blog on May 25, 2020. I can be reached at ben.lacar AT gmail.com.
