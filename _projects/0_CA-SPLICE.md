@@ -85,15 +85,16 @@ While I assessed multiple evaluation metrics, I optimized for F1 score for both 
 
 ### School and community features of exceptional SPLICE
 <br>
-*School features important in exceptional SPLICE prediction*
+*School features important in exceptional SPLICE prediction: student population, school size, charter status, and staff characteristics*
 <br>
+
 *Student population and test performance.* By far, the top feature with exceptional SPLICE, is the percentage of non-low income students who are college eligible. This feature is positively associated with SPLICE suggesting that academic environments provide benefits across the socioeconomic spectrum of their students. However, a [gap between non-low income students and low income students within a school for college eligibility](/assets/2020-05-25-CA-ed-study/nonLI_vs_LI_gap.png) is still prevalent. A [school’s percentage of low-income students (regardless of college eligibility) was not correlated with SPLICE overall](/assets/2020-05-25-CA-ed-study/pct_LI_vs_SPLICE.png), but it was positively associated in predicting schools with exceptional SPLICE. In addition, while the percent of low income students that have tested for both English proficiency and math proficiency were positively associated with exceptional SPLICE, the English test scores had a higher coefficient, suggesting that it is more predictive of the target.
 
 *School size.* Interestingly, smaller schools, but not necessarily smaller class sizes, are common in schools of exceptional SPLICE. Features indicative of overall school size, such as number of enrolled 12th graders (`E12`), enrollment, and student-per-counselor ratio were negatively associated with exceptional SPLICE. However, the ratio of student-per-teacher did not necessarily need to be small and, in fact, shows a small positive correlation with schools that performed highly for SPLICE.
 
 *Charter/magnet status.* A charter school positively associated with exceptional SPLICE. (This feature was also the second-most significant feature by the Mann-Whitney test). Magnet school status was not predictive of exceptional SPLICE.
 
-*Staff features.* An unexpected finding with regards to staff features is that schools with exceptional SPLICE tended to have a lower percentage of teachers who are certified, especially since this metric is [heavily left-skewed](/assets/2020-05-25-CA-ed-study/staff_info.png). Non-significant features to the model also included the percent of teachers who have 3 or more years of experience and average teacher salary, suggesting that schools with exceptional SPLICE do not necessarily have the most experienced and best paid teachers.
+*Staff characteristics.* An unexpected finding with regards to staff features is that schools with exceptional SPLICE tended to have a lower percentage of teachers who are certified, especially since this metric is [heavily left-skewed](/assets/2020-05-25-CA-ed-study/staff_info.png). Non-significant features to the model also included the percent of teachers who have 3 or more years of experience and average teacher salary, suggesting that schools with exceptional SPLICE do not necessarily have the most experienced and best paid teachers.
 
 *Community features of a school associated with exceptional SPLICE prediction*
 <br>
