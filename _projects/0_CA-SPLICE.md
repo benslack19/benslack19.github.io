@@ -43,14 +43,16 @@ To be eligible for University of California (UC) or California State System (CSU
 
 Exploration and visualization of data provides context and assists in model interpretability. Here I assess the geographic representation of schools and the distribution of school and community features before modeling.
 
-**Geographic representation of schools**
+*Geographic representation of schools*
+<br>
 The dataset contained schools that reflected the state’s population density. The county with the most schools is Los Angeles with 234, comprising 24.2% of the dataset. Next was San Diego county with 73 schools (7.5% of the data). This was followed by Orange (59 schools), Riverside (52), San Bernardino (52), Sacramento (43), Santa Clara (42), and Alameda (32 schools). Overall, 55 counties in the state were represented with the majority (34) containing fewer than ten schools represented in the data. District representation of schools matched the geographic distribution, with the largest Los Angeles Unified (114 schools) having much more than the second-biggest district San Diego Unified (23). Other large districts included East Side Union High in San Jose (15), San Francisco Unified (13), and Sweetwater Union High in the South Bay of San Diego County (12). However, most districts were very small--204 of the 378 districts were represented by only one school.
 
-![png](/assets/2020-05-25-CA-ed-study/Map_school_exceptionalSPLICE.png)
+![png](/assets/2020-05-25-CA-ed-study/Map_school_exceptionalSPLICE_CA.png)
 
 From map inspection and quantitative analysis, a large proportion of exceptional SPLICE schools are located in the San Francisco Bay Area counties (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma) or Southern California coastal counties (San Diego, Orange, Los Angeles) compared to the rest of the state. The percentage of schools that are in these two areas represent 54.1% of the entire state. However, 87.0% of schools with exceptional SPLICE are in the nine Bay Area counties or three Southern California coastal counties. (The figures are similar when counting students instead of schools.) This point will be re-visited in the [Discussion section](#discussion).
 
-**School features**
+*School features*
+<br>
 Enrollment was one metric for filtering (see [Methods](#methods)). Out of the remaining schools, the total enrollment average is 1547 but the high standard deviation of 897 is an indication of school size variablity. The smallest school had 90 students (Round Valley High in Mendocino County) while the largest enrolled 8000 (Opportunities for Learning - Baldwin Park). Interestingly, distribution of total enrollment and the number of enrolled seniors [shows bimodality](/assets/2020-05-25-CA-ed-study/enrollment_E12.png).
 
 With regards to student demographics, the average percentage of under-represented minorities is 60% (SD 27.5%) and the percentage of low-income students was 57% (SD 25.7%) The correlation between these two metrics is highly correlated (Pearson r of 0.86).
@@ -59,14 +61,18 @@ Features related to staff included the number of students per teacher (23 +/- 3.
 
 119 schools in the set were designated as a charter school and 99 were magnet; five schools were both magnet and charter.
 
-**Community features**
-
+*Community features*
+<br>
 Census information at the level of zip codes provided insight on an area’s income benefits, industries, health insurance status, employment, worker class, and work commute.
 
 [Local median income](/assets/2020-05-25-CA-ed-study/Local_median_income_dist.png) averages $62,520 (SD of $24,807) across all communities in the dataset. The distribution shows right skewness demonstrating that few communities in the upper ends of income levels. When looking at a map of income, the variability was striking.
+
 ![png](/assets/2020-05-25-CA-ed-study/CA_map_income.png)
+
 I also looked at the predominant industries in a given area, acknowledging that all communities must have a diverse set of occupations. I first determined the average and standard deviation of the percent of workers in each industry category across the dataset. This was followed by calculating the z-statistic for each category and zip code. The industry category with the highest z-statistic for that community was then assigned as representative. Only areas where schools were in the dataset were plotted. (Note that to reduce multicollinearity, the feature associated with percent of workers in the “arts, entertainment, and recreation, and accommodation and food services” was removed prior to model fitting.) 
+
 ![png](/assets/2020-05-25-CA-ed-study/Map_main_industry_CA.png)
+
 The exploration and additional details on income benefits, industry, health insurance status, employment, worker class, and work commute features can be found in the [data visualization notebook](https://github.com/benslack19/CA-ed-study/blob/master/deliver/BL-2b-eda-visualization_b.ipynb). Some community features are discussed further below.
 
 ### Model performance for predicting schools with exceptional SPLICE
@@ -79,7 +85,8 @@ While I assessed multiple evaluation metrics, I optimized for F1 score for both 
 
 ### School and community features of exceptional SPLICE
 
-**Schools features associated with exceptional SPLICE**
+*Schools features important in exceptional SPLICE prediction*
+<br>
 *Student population and test performance.* By far, the top feature with exceptional SPLICE, is the percentage of non-low income students who are college eligible. This feature is positively associated with SPLICE suggesting that academic environments provide benefits across the socioeconomic spectrum of their students. However, a [gap between non-low income students and low income students within a school for college eligibility](/assets/2020-05-25-CA-ed-study/nonLI_vs_LI_gap.png) is still prevalent. A [school’s percentage of low-income students (regardless of college eligibility) was not correlated with SPLICE overall](/assets/2020-05-25-CA-ed-study/pct_LI_vs_SPLICE.png), but it was positively associated in predicting schools with exceptional SPLICE. In addition, while the percent of low income students that have tested for both English proficiency and math proficiency were positively associated with exceptional SPLICE, the English test scores had a higher coefficient, suggesting that it is more predictive of the target.
 
 *School size.* Interestingly, smaller schools, but not necessarily smaller class sizes, are common in schools of exceptional SPLICE. Features indicative of overall school size, such as number of enrolled 12th graders (`E12`), enrollment, and student-per-counselor ratio were negatively associated with exceptional SPLICE. However, the ratio of student-per-teacher did not necessarily need to be small and, in fact, shows a small positive correlation with schools that performed highly for SPLICE.
@@ -88,10 +95,12 @@ While I assessed multiple evaluation metrics, I optimized for F1 score for both 
 
 *Staff features.* An unexpected finding with regards to staff features is that schools with exceptional SPLICE tended to have a lower percentage of teachers who are certified, especially since this metric is [heavily left-skewed](/assets/2020-05-25-CA-ed-study/staff_info.png). Non-significant features to the model also included the percent of teachers who have 3 or more years of experience and average teacher salary, suggesting that schools with exceptional SPLICE do not necessarily have the most experienced and best paid teachers.
 
-**Community features of a school associated with exceptional SPLICE**
+*Community features of a school associated with exceptional SPLICE prediction*
+<br>
 Economic characteristics of a school’s community is taken from census data. This data was obtained at the zip code level and not directly from the associated school population. This means that students and their families may live in one zip code and attend schools or work in another zip code. With these caveats noted, the assumption here is that the features are largely reflective of the community. One observation from the analysis is that schools with exceptional SPLICE are in an area where many commuting workers took public transportation instead of driving alone. Exceptional SPLICE schools were negatively associated with communities where the predominant industry involved agriculture, forestry, fishing and hunting, and mining or retail trade. This is reflective of the [locations of schools with exceptional SPLICE](/assets/2020-05-25-CA-ed-study/Map_school_exceptionalSPLICE.png) and an [area’s predominant industry](/assets/2020-05-25-CA-ed-study/Map_main_industry_CA.png).
 
-**Features that had low predictive value or statistical significance in MW test**
+*Features that had low predictive value or statistical significance in MW test*
+<br>
 Most features related to income benefits (local median income, percent of community receiving supplemental security income, etc.) were not predictive, but a percent of a community receiving social security benefits had a significant MW p-value and logistic regression coefficient of -0.094 (just under the 0.10 absolute value threshold). Most features related to health insurance coverage (percent of community with public health insurance coverage and percent of children without health insurance coverage) were not predictive or significantly different. Interestingly, for the percentage of a community with health insurance, the MW test shows no statistical significance between the negative and positive classes for exceptional SPLICE but the logistic regression coefficient was -0.30. Magnet schools were not positively or negatively associated with exceptional SPLICE. Ethnic composition of a school, represented as the percent of under-represented minorities, had a LR coefficient of 0.239 but was not significant by MW.
 
 ## Discussion: Placing the results in context
@@ -113,6 +122,6 @@ The questions of what it takes to support low income students to succeed academi
 Continuing to probe what factors would help low income students succeed and implementing those that are actionable can help address an important societal problem.
 
 ## Acknowledgements
-While this project was started before my [Insight Data Science Fellowship](https://insightfellows.com), I thank the Insight SV 20A cohort for their teachings, feedback, code sharing, and support as I finished this project. I am also grateful to my wife for her feedback and encouragement in posting this article. I appreciate in advance any additional questions and comments.
+While this project was started before my [Insight Data Science Fellowship](https://insightfellows.com), I thank the Insight SV 20A cohort for their teachings, feedback, code sharing, and support as I finished this project. I am also grateful to my wife for her feedback and encouragement in posting this article. Finally, I appreciate in advance any additional questions and comments.
 
 The [project repository](https://github.com/benslack19/CA-ed-study) contains Jupyter notebooks where additional figures can be found. This article was first posted on this blog on May 25, 2020. I can be reached at ben.lacar AT gmail.com.
