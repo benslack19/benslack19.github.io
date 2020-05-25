@@ -15,4 +15,4 @@ I have extensive experience performing independent research, analyzing and inter
 
 In parallel to my work experiences, I was engaged in various educational efforts. While I was an undergraduate, I served as an AmericaReads tutor. During graduate school, I mentored elementary and middle-school age children on a weekly basis, in addition to my teaching fellow responsibilities. When I was in my postdoc, I served as a consultant to educators interested in knowing more about the brain. I also started to guest lecture on neural stem cells in an online course. Finally, my first biotech role included instruction in classroom, lab, and online formats.
 
-In my spare time, I can be found surfing, hiking, or eating at a well-reviewed restaurant with my wife somewhere in California. Mexican food is my weakness. I can be reached at ben.lacar AT gmail.com.
+In my spare time (and in the absence of a global pandemic), I can be found surfing, hiking, or eating with my wife somewhere in California. Mexican food is my weakness. I can be reached at ben.lacar AT gmail.com.
