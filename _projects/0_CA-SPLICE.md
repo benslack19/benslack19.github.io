@@ -8,7 +8,7 @@ header:
 
 ---
 
-*To those not familiar with the field of data science, terms like "association", "correlation", and "high feature importance" can be misconstrued to imply causation. Features that are shown as "important" should be interpreted carefully. I place the results of my analysis in more context for possible follow-up directions, but even there, my suggestions are stated with reservation. I welcome feedback from others including data scientists, economists, and, especially, educators.*
+*To those not familiar with the field of data science, terms like "association", "correlation", and "high feature importance" can be misconstrued to imply causation. Features that are reported as "important" should be interpreted carefully. I place the results of my analysis in more context for possible follow-up directions, but even there, my suggestions are stated with reservation. I welcome feedback from others including data scientists, economists, and, especially, educators.*
 
 ## Summary
 
