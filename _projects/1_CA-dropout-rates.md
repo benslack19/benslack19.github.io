@@ -7,13 +7,13 @@ header:
 gallery:
   - url: /assets/edstudy/output_52_1.png
     image_path: /assets/edstudy/output_52_1.png
-    alt: "Dropout percentage by ethnicity"
+    title: "Dropout percentage by ethnicity"
   - url: /assets/edstudy/output_60_1.png
     image_path: /assets/edstudy/output_60_1.png
-    alt: "Dropout percentage by school median income"
+    title: "Dropout percentage by school median income"
   - url: /assets/edstudy/output_66_1.png
     image_path: /assets/edstudy/output_66_1.png
-    alt: "Dropout percentage by school type"
+    title: "Dropout percentage by school type"
 ---
 
 Since I'm interested in education as a driver of societal change, I wondered what schools are doing well in the face of apparently adverse circumstances. Therefore, I explored trends of high school student dropout data from 2015-16 which is available from the California Department of Education [website](https://www.cde.ca.gov/ds/sd/sd/filesdropouts.asp). I also obtained supplementary information from the [United States Census Bureau](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml).
