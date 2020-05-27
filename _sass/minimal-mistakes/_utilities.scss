@@ -165,6 +165,22 @@ body:hover .visually-hidden button {
   }
 }
 
+
+/* adding options for image size  
+taken from from here https://github.com/mmistakes/minimal-mistakes/issues/1583 */
+
+.width-quarter {
+  width: 25%
+}
+
+.width-half {
+    width: 50%
+}
+
+.width-three-quarter {
+  width: 75%
+}
+
 /*
    Icons
    ========================================================================== */
