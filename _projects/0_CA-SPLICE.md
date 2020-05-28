@@ -59,7 +59,7 @@ From map inspection and quantitative analysis, most exceptional SPLICE schools w
 <br>
 Enrollment was one metric for filtering (see [Methods](#methods)). Out of the remaining schools, the total enrollment average is 1547 but the standard deviation of 897 is an indication of high school size variablity. The smallest school had 90 students (Round Valley High in Mendocino County) while the largest enrolled 8000 (Opportunities for Learning - Baldwin Park). Interestingly, distribution of total enrollment and the number of enrolled seniors [shows bimodality](/assets/2020-05-25-CA-ed-study/enrollment_E12.png).
 
-With regards to student demographics, the average percentage of under-represented minorities is 60% (SD 27.5%) and the percentage of low-income students was 57% (SD 25.7%) The correlation between these two metrics is highly correlated (Pearson r of 0.86).
+With regards to student demographics, the average percentage of under-represented minorities is 60% (SD 27.5%) and the percentage of low-income students was 57% (SD 25.7%) The correlation between these two metrics was high (Pearson r of 0.86).
 
 Features related to staff included the number of students per teacher (23 +/- 3.9), number of students per counselor (408 +/- 267.5), the percentage of teachers with 3 or more years of experience (87 +/- 12.0) and the percent of teachers who are certified (98 +/- 5.6). The latter two have [left-skewed distributions](/assets/2020-05-25-CA-ed-study/staff_info.png). [Teacher salary](/assets/2020-05-25-CA-ed-study/teacher_salary.png) averaged $76,200 (SD $22,250) and correlated weakly with a community’s local median income (Pearson r of 0.15).
 
