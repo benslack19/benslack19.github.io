@@ -2,11 +2,12 @@
 title: Responses to "School and community features associated with low income student success"
 toc: false
 ---
-
+<br>
 *I recently posted my project [School and community features associated with low income student success](https://benslack19.github.io/projects/0_CA-SPLICE/). It was important to me to get reactions from educators or those that work with low income students about the analysis. I reached out to my network and, with their permission, I am sharing some of their thoughts here. Content may be lightly edited for grammatical or space reasons. This post will be updated as I receive responses.*
 
 
-Grace Heim, an educator with X years of experience. She has taught in Michigan, California, North Carolina, Florida and overseas.
+**Grace Heim**
+*An elementary school teacher of 15+ years with background in gifted education, math, science, ESL, and international education. She has taught in Michigan, North Carolina, Brazil, Uruguay, and Florida. She is a National Board Certified Teacher.*
 
 > Wow! Super interesting. Not surprised by some of your results. The smaller school size (smaller student to counselor ratio) I think is a widely accepted contributor to student success and I have heard of large high schools attempting to adopt this model by splitting groups into smaller “cohorts” or “teams” to replicate the idea of a smaller “school within a school.” Also, not super surprised by “the percentage of non-low income students who are college eligible” as a positive factor in SPLICE but I have to say that  I was surprised by how much. Makes me think of the 5 years I taught in Wake County, North Carolina during a period where they had very aggressive busing policies to try and bridge the achievement gap. Basically, every school had about the same percentage of free and reduced lunch students. They also, interestingly enough, had and continue to have strong magnet programs.
 >
