@@ -7,7 +7,7 @@ A few weeks ago, while making a histogram in a SQL query, I discovered that some
 
 For my example, I'll be using some baseball data, but this should work with whatever kind of data you have. The [SQL queries are done within a Jupyter notebook](https://benslack19.github.io/SQL-and-jupyter/).
 
-[I'm in a rush, can I just see the final solution?](#final-query-fully-represented-histogram-using-recursion)
+[*I'm in a rush, can I just see the final solution?*](#final-query-fully-represented-histogram-using-recursion)
 
 
 ```python
