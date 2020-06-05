@@ -3,9 +3,11 @@ title: Histograms and recursion in SQL
 toc: true
 ---
 
-I came across a problem a few weeks ago about making a histogram in a SQL query. I did not expect to learn about recursion when I first started on this problem, but it's something I came across when working on this solution. For my example, I'll be using some baseball data, but this should work with whatever kind of data you have. The [SQL queries are done within a Jupyter notebook](https://benslack19.github.io/SQL-and-jupyter/).
+A few weeks ago, while making a histogram in a SQL query, I discovered that some solutions out there do not include bins with 0 counts. This bugged me so I figured out how to do it. I did not know about recursion in SQL when I first started on this problem, but it was fun to learn so that's a bit of a bonus here.
 
-[I don't care that much how it's done, just take me to the answer!](#final-query-fully-represented-histogram using recursion)
+For my example, I'll be using some baseball data, but this should work with whatever kind of data you have. The [SQL queries are done within a Jupyter notebook](https://benslack19.github.io/SQL-and-jupyter/).
+
+[I'm in a rush, can I just see the final solution?](#final-query-fully-represented-histogram%20using%20recursion)
 
 
 ```python
