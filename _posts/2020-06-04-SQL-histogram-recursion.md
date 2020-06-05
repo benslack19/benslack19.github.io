@@ -5,7 +5,7 @@ toc: true
 
 I came across a problem a few weeks ago about making a histogram in a SQL query. I did not expect to learn about recursion when I first started on this problem, but it's something I came across when working on this solution. For my example, I'll be using some baseball data, but this should work with whatever kind of data you have. The [SQL queries are done within a Jupyter notebook](https://benslack19.github.io/SQL-and-jupyter/).
 
-[I don't care that much how it's done, just take me to the answer!](##final-query-fully-represented-histogram using recursion)
+[I don't care that much how it's done, just take me to the answer!](#final-query-fully-represented-histogram using recursion)
 
 
 ```python
@@ -699,9 +699,6 @@ GROUP BY ab_floor
 ORDER BY ab_floor) AS padres_ab
 
 ON no_bins_t.bin_number*50=padres_ab.ab_floor;
-;
-
-
 """
 df_query = pd.read_sql_query(sql_query,con)    
 df_query
@@ -866,9 +863,6 @@ GROUP BY ab_floor
 ORDER BY ab_floor) AS padres_ab
 
 ON no_bins_t.bin_number*50=padres_ab.ab_floor;
-;
-
-
 """
 df_query = pd.read_sql_query(sql_query,con)    
 df_query
@@ -1157,9 +1151,4 @@ df_query
 
 
 
-There you have it. One thing to keep in mind is that the recursive query uses a CTE and I haven't yet figured out a way to use another one. If you, figure this out, please let me know! (Contact information is on my About Me page).
-
-
-```python
-
-```
+There you have it. One thing to keep in mind is that the recursive query uses a CTE and I haven't yet figured out a way to use another one. If you, figure this out, please let me know!
