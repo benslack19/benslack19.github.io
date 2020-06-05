@@ -1151,4 +1151,4 @@ df_query
 
 
 
-There you have it. One thing to keep in mind is that the recursive query uses a CTE and I haven't yet figured out a way to use another one. If you, figure this out, please let me know!
+There you have it. One thing to keep in mind is that the recursive query uses a CTE and I haven't yet figured out a way to use another CTE at the same time. If you figure this out, please let me know!
