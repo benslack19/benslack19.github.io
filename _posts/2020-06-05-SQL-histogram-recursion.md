@@ -121,7 +121,7 @@ pd.read_sql_query(sql_query,con)
 
 
 
-From this table, each player's number of at-bats is on a separate line. This makes the query pretty straightforward. Assuming we set it to bins of 50 at-bats, we can take each player's number of at-bats, divide by 50, and `FLOOR` the result. By then multiplying by 50, you can then get back the bin groups based on the original at-bats, and then use `COUNT` to produce the number in that bin.
+From this table, each player's number of at-bats is on a separate line. [This tutorial](http://www.wagonhq.com/sql-tutorial/creating-a-histogram-sql) describes how to go about it. I won't repeat their lesson in detail, but I encourage you to take a look at it if what I write below does not make sense. I essentially applied their example to my query. We can take each player's number of at-bats, divide by 50, and `FLOOR` the result. By then multiplying by 50, you can then get back the bin groups based on the original at-bats, and then use `COUNT` to produce the number in that bin.
 
 
 ```python
@@ -345,10 +345,10 @@ If you look closely, there are [missing bins!](https://media.giphy.com/media/iGv
 
 (We did not have to worry about this when we were looking at at-bats across 990 players from all 30 teams. With more players, "gaps" in the histogram are less likely. But since we limited this to the Padres only, this last query was with data from only 34 players.)
 
-I searched around for tutorials and I couldn't seem to find an answer of how to include a bin and display a count of 0. [This tutorial](http://www.wagonhq.com/sql-tutorial/creating-a-histogram-sql) acknowledges the issue in the example they provided and had this quote:
+I searched around for tutorials and I couldn't seem to find an answer of how to include a bin and display a count of 0. [The same tutorial](http://www.wagonhq.com/sql-tutorial/creating-a-histogram-sql) I mentioned above acknowledges the issue in the example they provided and had this quote:
 > It has one failing in that if we have no data in a bucket (e.g. no purchases of 55 to 60 dollars), then that row will not appear in the results. We can fix that with a more complex query, but let’s skip it for now.
 
-I did not see a more complex query later and the missing bin observation bugged me. This felt like a challenge :-)
+I did not see a more complex query later and the missing bin observation bugged me. [This felt like a challenge](https://media.giphy.com/media/dyurnr89XDS64mwV9f/giphy.gif).
 
 ## Recursion
 
