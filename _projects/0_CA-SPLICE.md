@@ -1,6 +1,6 @@
 ---
 title: School and community features associated with low income student success
-excerpt:  I investigated the variables of high schools and their local areas which are associated with low income student college eligiblity.
+excerpt:  I investigated the variables of high schools and their local areas which are associated with low income student college eligibility.
 toc: true
 toc_sticky: true
 header:
@@ -9,6 +9,8 @@ header:
   teaser: /assets/2020-05-25-CA-ed-study/CA_map_school_SPLICE_hires_crop.png
 
 ---
+
+*A more condensed version of this article was [posted on Medium](https://medium.com/@ben.lacar01/school-and-community-features-associated-with-low-income-student-success-42797cd6baad) as of June 7, 2020. The version on this page includes additional details, especially with regards to the Methods and Data Exploration section.*
 
 ## Summary
 
@@ -20,7 +22,7 @@ I find that schools with exceptional SPLICE are more likely to:
 3. Be a charter school.
 4. Be located in the Bay Area or a Southern California coastal county compared to the rest of the state.
 5. Have a high percentage of low income students that scored proficiently in English and math (although interestingly English proficiency was a better predictor.)
-6. Surpringly staff a lower percentage of certified teachers.
+6. Surprisingly staff a lower percentage of certified teachers.
 
 This study highlights policy implications and points to unexpected areas of investigation for facilitating low income student success.
 
