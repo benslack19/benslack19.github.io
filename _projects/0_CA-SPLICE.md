@@ -10,7 +10,7 @@ header:
 
 ---
 
-*A more condensed version of this article was [posted on Medium](https://medium.com/@ben.lacar01/school-and-community-features-associated-with-low-income-student-success-42797cd6baad) as of June 7, 2020. The version on this page includes additional details, especially with regards to the Methods and Data Exploration section.*
+*A more condensed version of this article was [posted on Medium](https://medium.com/@ben.lacar01/school-and-community-features-associated-with-low-income-student-success-42797cd6baad) on June 7, 2020. The version here was posted on May 25, 2020 and was updated with mainly minor edits. It will remain here since it includes additional details, especially with regards to the Methods and Data Exploration section.*
 
 ## Summary
 
@@ -141,4 +141,4 @@ Continuing to probe what factors help low income students succeed and implementi
 ## Acknowledgements
 While this project was started before my [Insight Data Science Fellowship](https://insightfellows.com), I thank the Insight SV 20A cohort for their teachings, feedback, code sharing, and support as I updated and finished this study. I am also grateful to my wife for her feedback and encouragement in posting this article. Finally, I appreciate in advance other questions and comments. I can be reached at ben.lacar AT gmail.com. Feedback from educators and those that work with low income students will be shared [here](https://benslack19.github.io/responses-to-splice-project/) with permission.
 
-The [project repository](https://github.com/benslack19/CA-ed-study) contains Jupyter notebooks where additional figures can be found. This article was first posted on this blog on May 25, 2020. It was last updated on June 4, 2020. Updates thus far have been for grammatical edits, clarity, or figure improvements and not to changes in the main results.
+The [project repository](https://github.com/benslack19/CA-ed-study) contains Jupyter notebooks where additional figures can be found. This article was first posted on this blog on May 25, 2020. It was last updated on June 11, 2020. Updates thus far have been for grammatical edits, clarity, or figure improvements and not to changes in the main results.
