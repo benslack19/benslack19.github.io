@@ -1,6 +1,6 @@
 ---
 title: Bayes-ball
-mathjax: True
+mathjax: true
 toc: true
 ---
 
