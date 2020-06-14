@@ -273,4 +273,4 @@ After all that math, we have (drumroll) $\text{P}(\text{T10} \| \text{18H}) = 0.
 Therefore, there is 24.3% probability that Aguila has a true talent level of a 10% hit rate.
 
 
-The baseball example is also the diachronic interpretation** of Bayes' theorem, which is a fancy way of saying that the hypothesis can be updated with time (in this case, after 100 plate appearances).
+The baseball example is also the diachronic interpretation of Bayes' theorem, which is a fancy way of saying that the hypothesis can be updated with time (in this case, after 100 plate appearances).
