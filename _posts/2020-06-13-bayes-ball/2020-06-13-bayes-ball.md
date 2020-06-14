@@ -113,15 +113,15 @@ One advantage of the simulation approach is that not many assumptions have to be
 
 Let's remind ourselves how Bayes' theorem uses conditional probability.
 
-$\text{P}(A\|B) = $\frac{\text{P}(B\|A)\text{P}(A)}{\text{P}(B)}$
+$\text{P}(A\|B) = \frac{\text{P}(B\|A)\text{P}(A)}{\text{P}(B)}$
 
 Huh? Let's translate the terms into words.
 
-$\text{P}(A|B)$ = The probability of event A occurring given that B is true. The left side of the equation is what we are trying to find. 
+$\text{P}(A\|B)$ = The probability of event A occurring given that B is true. The left side of the equation is what we are trying to find. 
 
 The entire right side of the equation is information that we are given (although we have to make sure we put in the right numbers).
 
-$\text{P}(B|A)$ = The probability of event B occurring given that A is true. This is *not* equivalent to the left side of the equation.
+$\text{P}(B\|A)$ = The probability of event B occurring given that A is true. This is *not* equivalent to the left side of the equation.
 <br>
 $\text{P}(A)$ = The probability of event A occurring, regardless of conditions.
 <br>
@@ -129,13 +129,13 @@ $\text{P}(B)$ = The probability of event B occurring, regardless of conditions.
 
 Another way of stating the problem is asking "What is the probability that the box chosen is A, given that you have also selected a gold coin?" Substituting the words in to Bayes' theorem would give us something like this:
 
-$\text{P}(\text{box A} | \text{gold coin}) = \frac{\text{P}(\text{gold coin} | \text{box A})\text{P}(\text{box A})}{\text{P}(\text{gold coin})}$
+$\text{P}(\text{box A} \| \text{gold coin}) = \frac{\text{P}(\text{gold coin} \| \text{box A})\text{P}(\text{box A})}{\text{P}(\text{gold coin})}$
 
 The entire right side of the equation is information that we are given. The parameters in the numerator are the easiest for which we can plug in numbers.
 
 We know that there is 100% probability of picking a gold coin if we choose box A.
 <br>
-$\text{P}(\text{gold coin} | \text{box A})$ = 1
+$\text{P}(\text{gold coin} \| \text{box A})$ = 1
 
 We are choosing box A randomly out of the 3 boxes.
 <br>
@@ -143,7 +143,7 @@ $\text{P}(\text{box A})$ = 1/3
 
 The denominator ($\text{P}(\text{gold coin}$) might require a closer look. The probability of choosing a gold coin, independent of any other condition, is the sum of the probability of choosing a gold coin in the three boxes.
 
-$\text{P}(\text{gold coin})$ = $\text{P}(\text{gold coin} | \text{box A})$ + $\text{P}(\text{gold coin} | \text{box B})$ + $\text{P}(\text{gold coin} | \text{box C})$
+$\text{P}(\text{gold coin})$ = $\text{P}(\text{gold coin} \| \text{box A})$ + $\text{P}(\text{gold coin} \| \text{box B})$ + $\text{P}(\text{gold coin} \| \text{box C})$
 
 $\text{P}(\text{gold coin})$ = $1 \times \frac{1}{3} + 0 \times \frac{1}{3} + \frac{1}{2} \times \frac{1}{3}$
 
@@ -151,7 +151,7 @@ $\text{P}(\text{gold coin})$ = $\frac{1}{2}$
 
 Therefore,
 
-$\text{P}(\text{box A} | \text{gold coin}) = \frac{1 \times \frac{1}{3}}{\frac{1}{2}} = \frac{2}{3} $
+$\text{P}(\text{box A} \| \text{gold coin}) = \frac{1 \times \frac{1}{3}}{\frac{1}{2}} = \frac{2}{3} $
 
 Awesome. This is how we apply Bayesian statistics in this problem. Let's level up and try a problem that is a little more complicated, using a baseball scenario as an example.
 
@@ -171,7 +171,7 @@ The original question could be phrased as "What is the probability that Aguila h
 
 In Bayes' theorem, we can therefore structure our equation like this:
 
-$\text{P}(\text{T10} | \text{18H}) = \frac{\text{P}(\text{18H} | \text{T10})\text{P}(\text{T10})}{\text{P}(\text{18H})}$
+$\text{P}(\text{T10} \| \text{18H}) = \frac{\text{P}(\text{18H} \| \text{T10})\text{P}(\text{T10})}{\text{P}(\text{18H})}$
 
 
 ### Connecting with Bertrand's box paradox
@@ -184,9 +184,9 @@ Note that this is analogous to $\text{P}(\text{box A})$ in Bertrand's box proble
 
 The other parameters of the baseball question are less obvious to determine, but we can get some clues after  translating back to words. Let's start with $\text{P}(\text{18H})$. This is equivalent to ${\text{P}(\text{gold coin})}$ in Bertrand's box paradox. In the box problem, we broke this down by summing up the probabilities for a gold coin for each drawer. Here, we would sum up the probabilities of a hitter getting 18 hits in 100 at-bats if he is in the T10 group and in the T25 group.
 
-${\text{P}(\text{18H})}$ = $\text{P}(\text{18H} | \text{T10})$ + $\text{P}(\text{18H} | \text{T25})$
+${\text{P}(\text{18H})}$ = $\text{P}(\text{18H} \| \text{T10})$ + $\text{P}(\text{18H} \| \text{T25})$
 
-$\text{P}(\text{18H} | \text{T10})$ is asking "What is the probability of getting 18 hits in 100 at-bats, given that they have a true talent level of 10% hit rate?" $\text{P}(\text{18H} | \text{T25})$ is basically the same question but for the T25 group. Here is where we need to recognize that this is an application of the [binomial distribution](https://www.khanacademy.org/math/ap-statistics/random-variables-ap/binomial-random-variable/a/binomial-probability-basic). Let's digress briefly.
+$\text{P}(\text{18H} \| \text{T10})$ is asking "What is the probability of getting 18 hits in 100 at-bats, given that they have a true talent level of 10% hit rate?" $\text{P}(\text{18H} \| \text{T25})$ is basically the same question but for the T25 group. Here is where we need to recognize that this is an application of the [binomial distribution](https://www.khanacademy.org/math/ap-statistics/random-variables-ap/binomial-random-variable/a/binomial-probability-basic). Let's digress briefly.
 
 ### Application of the binomial distribution
 
@@ -246,29 +246,29 @@ https://benslack19.github.io/The-Bernoulli-distribution/#understanding-the-relat
 The height of the black and red lines at 18 hits should add up to 1, but weighted by what we know about the two groups of baseball hitters (our "priors"). If we were to use the graph above, the probability of getting 18 hits in 100 at-bats, given that they have a true talent level of 10% hit rate would be:
 <br>
 
-$\text{P}(\text{T10} | \text{18H}) = \frac{\text{height of black line at 18 hits} \times 0.6}{\text{height of black line at 18 hits} \times 0.6 + \text{height of red line at 18 hits} \times 0.4}$
+$\text{P}(\text{T10} \| \text{18H}) = \frac{\text{height of black line at 18 hits} \times 0.6}{\text{height of black line at 18 hits} \times 0.6 + \text{height of red line at 18 hits} \times 0.4}$
 
 ### Putting it all together
 
 Let's return to the parameters of the Bayes' theorem equation and start bringing the pieces together.
 
-${\text{P}(\text{18H})}$ = $\text{P}(\text{18H} | \text{T10})$ + $\text{P}(\text{18H} | \text{T25})$
+${\text{P}(\text{18H})}$ = $\text{P}(\text{18H} \| \text{T10})$ + $\text{P}(\text{18H} \| \text{T25})$
 
 We can apply the probability mass function starting first with the T10 group. (Note that we can ignore calculation of the binomial coefficient since this will cancel out in the final equation. I'll use the term $\propto$ to represent "in proportion to." in the equations below.)
 
-$\text{P}(\text{18H} | \text{T10}) \propto (0.1^{18} \times 0.9^{82}) $
+$\text{P}(\text{18H} \| \text{T10}) \propto (0.1^{18} \times 0.9^{82}) $
 
-$\text{P}(\text{18H} | \text{T25}) \propto (0.25^{18} \times 0.75^{82}) $
+$\text{P}(\text{18H} \| \text{T25}) \propto (0.25^{18} \times 0.75^{82}) $
 
 We now have everything we need to plug into our equation.
 
 
-$\text{P}(\text{T10} | \text{18H}) = \frac{\text{P}(\text{18H} | \text{T10})\text{P}(\text{T10})}{\text{P}(\text{18H})}$
+$\text{P}(\text{T10} \| \text{18H}) = \frac{\text{P}(\text{18H} \| \text{T10})\text{P}(\text{T10})}{\text{P}(\text{18H})}$
 
-$\text{P}(\text{T10} | \text{18H}) = \frac{(0.1^{18} \times 0.9^{82}) \times 0.6}{(0.1^{18} \times 0.9^{82}) \times 0.6 + (0.25^{18} \times 0.75^{82}) \times 0.4} $
+$\text{P}(\text{T10} \| \text{18H}) = \frac{(0.1^{18} \times 0.9^{82}) \times 0.6}{(0.1^{18} \times 0.9^{82}) \times 0.6 + (0.25^{18} \times 0.75^{82}) \times 0.4} $
 
 
-After all that math, we have (drumroll) $\text{P}(\text{T10} | \text{18H}) = 0.243$.
+After all that math, we have (drumroll) $\text{P}(\text{T10} \| \text{18H}) = 0.243$.
 
 Therefore, there is 24.3% probability that Aguila has a true talent level of a 10% hit rate.
 
