@@ -2,20 +2,20 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-last_modified_at: 2018-01-08T20:10:30-05:00
+last_modified_at: 2018-11-25T19:38:20-05:00
 toc: true
 ---
 
-If you're using the [Ruby Gem]({{ "/docs/quick-start-guide/#ruby-gem-method" | absolute_url }}) or [remote theme]({{ "/docs/quick-start-guide/#github-pages-method" | absolute_url }}) versions of Minimal Mistakes, upgrading is fairly painless.
+If you're using the [Ruby Gem]({{ "/docs/quick-start-guide/#ruby-gem-method" | relative_url }}) or [remote theme]({{ "/docs/quick-start-guide/#github-pages-method" | relative_url }}) versions of Minimal Mistakes, upgrading is fairly painless.
 
 To check which version you are currently using, view the source of your built site and you should see something similar to:
 
 ```
 <!--
-  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
-  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 ```
 
@@ -28,16 +28,16 @@ Simply run `bundle update` if you're using Bundler (have a `Gemfile`) or `gem up
 When using Bundler you can downgrade or lock the theme to a specific release ([tag](https://github.com/mmistakes/minimal-mistakes/tags)), branch, or commit. Instead of `gem "minimal-mistakes-jekyll"` you'd add the following to your `Gemfile`:
 
 ```ruby
-gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "4.9.0"
+gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "4.19.3"
 ```
 
 For more information on [installing gems from git repositories](http://bundler.io/v1.16/guides/git.html) consult Bundler's documentation.
 
-## Remote Theme
+## Remote theme
 
-When setting `remote_theme: "mmistakes/minimal-mistakes"` in your `_config.yml` you may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref.
+When setting `remote_theme: "mmistakes/minimal-mistakes@4.19.3"` in your `_config.yml` you may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref.
 
-For example you can roll back to release 4.8.1 with `mmistakes/minimal-mistakes@4.8.1` or a specific commit with `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`).
+For example you can roll back to release 4.8.1 with `mmistakes/minimal-mistakes@4.8.1` or a specific commit with `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). For a complete list of theme versions consult the [releases page](https://github.com/mmistakes/minimal-mistakes/releases).
 
 To update the theme on GitHub Pages you'll need to push up a commit to force a rebuild. An empty commit works well if you don't have anything to push at the moment:
 
@@ -57,7 +57,7 @@ To add it you can do the following:
 git remote add upstream https://github.com/{{ site.repository }}.git
 ```
 
-### Pull Down Updates
+### Pull down updates
 
 Now you can pull any commits made to theme's `master` branch with:
 
@@ -67,7 +67,7 @@ git pull upstream master
 
 Depending on the amount of customizations you've made after forking, there's likely to be merge conflicts. Work through any conflicting files Git flags, staging the changes you wish to keep, and then commit them.
 
-## Update Files Manually
+## Update files manually
 
 Another way of dealing with updates is [downloading the theme](https://github.com/{{ site.repository }}/archive/master.zip) --- replacing your layouts, includes, and assets with the newer ones manually. To be sure that you don't miss any changes it's probably a good idea to review the theme's [commit history](https://github.com/{{ site.repository }}/commits/master) to see what's changed since.
 
