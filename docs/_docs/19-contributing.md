@@ -11,7 +11,7 @@ Minimal Mistakes has been designed as a base for you to customize and fit your s
 
 This goes for author sidebar links and "share button" additions -- I have no intention of merging in every possibly option, the essentials are there to get you started :smile:.
 
-## Pull requests
+## Pull Requests
 
 When submitting a pull request:
 

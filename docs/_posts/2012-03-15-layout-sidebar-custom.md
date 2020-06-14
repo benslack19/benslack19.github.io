@@ -9,7 +9,6 @@ sidebar:
     text: "Some text here."
   - title: "Another Title"
     text: "More text here."
-    nav: sidebar-sample
 ---
 
 This post has a custom sidebar set in the post's YAML Front Matter.
@@ -24,5 +23,4 @@ sidebar:
     text: "Some text here."
   - title: "Another Title"
     text: "More text here."
-    nav: sidebar-sample
 ```

@@ -9,4 +9,4 @@ tags:
   - layout
 ---
 
-This post should display comments if a `provider` is enabled.
+This post should display comments.
