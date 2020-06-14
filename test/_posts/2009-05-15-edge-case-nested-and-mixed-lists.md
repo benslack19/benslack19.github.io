@@ -58,3 +58,11 @@ Nested and mixed lists are an interesting beast. It's a corner case to make sure
     2. **ordered item**
 * unordered item
 * unordered item
+
+### Task Lists
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+  - [ ] Follow discussions
+  - [x] Push new commits
