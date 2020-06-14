@@ -113,7 +113,7 @@ One advantage of the simulation approach is that not many assumptions have to be
 
 Let's remind ourselves how Bayes' theorem uses conditional probability.
 
-$\text{P}(A|B)$ = $\frac{\text{P}(B|A)\text{P}(A)}{\text{P}(B)}$
+$\text{P}(A\|B) = $\frac{\text{P}(B\|A)\text{P}(A)}{\text{P}(B)}$
 
 Huh? Let's translate the terms into words.
 
