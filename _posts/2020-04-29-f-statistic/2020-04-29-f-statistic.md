@@ -1,6 +1,6 @@
 ---
 title: F-in statistics!
-mathjax: True
+mathjax: true
 toc: true
 ---
 
