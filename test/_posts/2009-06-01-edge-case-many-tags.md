@@ -44,8 +44,6 @@ tags:
   - Unseen
   - video
   - YouTube
-  - U:R:COOL
-  - C#
 ---
 
 This post has many tags.

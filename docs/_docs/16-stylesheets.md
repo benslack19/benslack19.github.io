@@ -2,7 +2,7 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-last_modified_at: 2018-11-25T19:47:43-05:00
+last_modified_at: 2018-01-09T09:59:16-05:00
 toc: true
 ---
 
@@ -71,18 +71,18 @@ $link-color: red;
 
 Before any `@import` lines.
 
-### Paragraph indention 
+### Paragraph Indention 
 
 To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` indents are added to each sibling and the margin below each paragraph is removed.
 
 <figure>
-  <img src="{{ '/assets/images/mm-paragraph-indent-example.jpg' | relative_url }}" alt="indented paragraph example">
+  <img src="{{ '/assets/images/mm-paragraph-indent-example.jpg' | absolute_url }}" alt="indented paragraph example">
   <figcaption>Example of indented paragraphs.</figcaption>
 </figure>
 
 The size of the indent can also be customized by changing the value of `$indent-var`.
 
-### Font stacks
+### Font Stacks
 
 By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.
 
@@ -98,7 +98,7 @@ Sans-serif fonts have been used for most of the type, with serifs reserved for c
 **ProTip:** To use webfonts from services like [Adobe TypeKit](https://typekit.com/) or [Google Fonts](https://www.google.com/fonts) simply update the font stacks and then add their scripts to `_includes/head/custom.html`.
 {: .notice--info}
 
-#### Typography from older versions
+#### Typography from Older Versions
 
 Not a fan of the refreshed typography of the theme and want to revert back an older version? Easy enough.
 
@@ -118,7 +118,7 @@ $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
 ```
 
-### Type scale
+### Type Scale
 
 Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file. 
 
@@ -149,7 +149,7 @@ $type-size-8 : 0.625em;  // ~10px
 
 Change the mood of your site by altering a few color variables. `$body-color`, `$background-color`, `$text-color`, `$link-color`, and `$masthead-link-color` will have the most affect when changed.
 
-#### Syntax highlighting
+#### Syntax Highlighting
 
 To make customizing the colors used in code highlighted blocks, a base of sixteen colors ([Base16](http://chriskempson.com/projects/base16/)) have been used.
 
@@ -157,7 +157,7 @@ Code block colors can easily be changed by overriding any of the following color
 
 ##### Default
 
-![default-code-block]({{ '/assets/images/default-code-block.jpg' | relative_url }})
+![default-code-block]({{ '/assets/images/default-code-block.jpg' | absolute_url }})
 
 ```scss
 /* default syntax highlighting (base16) */
@@ -179,9 +179,9 @@ $base0e: #c792ea;
 $base0f: #ff5370;
 ```
 
-##### Solarized light
+##### Solarized Light
 
-![solarized-light-code-block]({{ '/assets/images/solarized-light-code-block.jpg' | relative_url }})
+![solarized-light-code-block]({{ '/assets/images/solarized-light-code-block.jpg' | absolute_url }})
 
 ```scss
 /* solarized light syntax highlighting (base16) */
@@ -205,7 +205,7 @@ $base0f: #d33682 !default;
 
 ##### Contrast
 
-![contrast-code-block]({{ '/assets/images/contrast-code-block.jpg' | relative_url }})
+![contrast-code-block]({{ '/assets/images/contrast-code-block.jpg' | absolute_url }})
 
 ```scss
 /* contrast syntax highlighting (base16) */
@@ -229,7 +229,7 @@ $base0f: #b18a3d;
 
 ##### Dark
 
-![dark-code-block]({{ '/assets/images/dark-code-block.jpg' | relative_url }})
+![dark-code-block]({{ '/assets/images/dark-code-block.jpg' | absolute_url }})
 
 ```scss
 /* dark syntax highlighting (base16) */
@@ -253,7 +253,7 @@ $base0f: #cc6633;
 
 ##### Dirt
 
-![dirt-code-block]({{ '/assets/images/dirt-code-block.jpg' | relative_url }})
+![dirt-code-block]({{ '/assets/images/dirt-code-block.jpg' | absolute_url }})
 
 ```scss
 /* dirt syntax highlighting (base16) */
@@ -275,34 +275,9 @@ $base0e: #bb90e2;
 $base0f: #b49368;
 ```
 
-##### Dracula
-
-![dracula-code-block]({{ '/assets/images/dracula-code-block.jpg' | relative_url }})
-
-```scss
-/* dracula syntax highlighting (base16) */
-/* https://github.com/dracula/base16-dracula-scheme */
-$base00: #282936;
-$base01: #3a3c4e;
-$base02: #4d4f68;
-$base03: #626483;
-$base04: #62d6e8;
-$base05: #e9e9f4;
-$base06: #f1f2f8;
-$base07: #f7f7fb;
-$base08: #ea51b2;
-$base09: #b45bcf;
-$base0a: #00f769;
-$base0b: #ebff87;
-$base0c: #a1efe4;
-$base0d: #62d6e8;
-$base0e: #b45bcf;
-$base0f: #00f769;
-```
-
 ##### Neon
 
-![neon-code-block]({{ '/assets/images/neon-code-block.jpg' | relative_url }})
+![neon-code-block]({{ '/assets/images/neon-code-block.jpg' | absolute_url }})
 
 ```scss
 /* neon syntax highlighting (base16) */
@@ -326,7 +301,7 @@ $base0f: #cc6633;
 
 ##### Plum
 
-![plum-code-block]({{ '/assets/images/plum-code-block.jpg' | relative_url }})
+![plum-code-block]({{ '/assets/images/plum-code-block.jpg' | absolute_url }})
 
 ```scss
 /* plum syntax highlighting (base16) */
@@ -350,7 +325,7 @@ $base0f: #cc6633;
 
 ##### Sunrise
 
-![sunrise-code-block]({{ '/assets/images/sunrise-code-block.jpg' | relative_url }})
+![sunrise-code-block]({{ '/assets/images/sunrise-code-block.jpg' | absolute_url }})
 
 ```scss
 /* sunrise syntax highlighting (base16) */
@@ -372,18 +347,18 @@ $base0e: #b294bb;
 $base0f: #a3685a;
 ```  
 
-### Breakpoints and grid stuff
+### Breakpoints and Grid Stuff
 
 Probably won't need to touch these, but they're there if you need to. Width variables are used with the [`@include breakpoint()`](http://breakpoint-sass.com/) mixin to adapt the design of certain elements.
 
 And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme uses. Uncommenting the lines under `debug` can be useful if you want to show the columns when adjusting the layout.
 
 <figure>
-  <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' | relative_url }}" alt="Susy grid overlay for debugging">
+  <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' | absolute_url }}" alt="Susy grid overlay for debugging">
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>
 
-### Disabling animations
+### Disabling Animations
 
 You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
 

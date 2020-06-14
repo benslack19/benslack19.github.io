@@ -1,7 +1,7 @@
 ---
 title:  "Welcome to Jekyll!"
 header:
-  teaser: "/assets/images/500x300.png"
+  teaser: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
 categories: 
   - Jekyll
 tags:
