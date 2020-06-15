@@ -1,6 +1,7 @@
 ---
 title: Iterators in Python
 toc: true
+categories: [data science, coding]
 ---
 
 

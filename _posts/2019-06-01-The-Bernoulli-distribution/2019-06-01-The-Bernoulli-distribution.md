@@ -1,6 +1,7 @@
 ---
 title: Heads or tails?
 toc: true
+categories: [data science, statistics]
 ---
 
 Seems like every statistics class starts off with a coin toss. It's simple enough for me. Some fancy teachers might start right off the bat and get into the [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution), but I'd rather just think about flipping a coin.
