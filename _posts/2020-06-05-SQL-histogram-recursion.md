@@ -1,6 +1,7 @@
 ---
 title: Histograms and recursion in SQL
 toc: true
+categories: [data science, SQL]
 ---
 
 A few weeks ago, while making a histogram in a SQL query, I discovered that some solutions out there do not include bins with 0 counts. This bugged me so I figured out how to do it. I did not know about recursion in SQL when I first started on this problem, but it was fun to learn so that's a bit of a bonus here.

@@ -1,6 +1,7 @@
 ---
 title: Responses to "School and community features associated with low income student success"
 toc: false
+categories: [data science, education]
 ---
 <br>
 *I recently posted my project [School and community features associated with low income student success](https://benslack19.github.io/projects/0_CA-SPLICE/). It was important to me to get reactions from educators or those that work with low income students. I reached out to my network and, with their permission, I am sharing some of their thoughts here. Content may be lightly edited for grammatical or space reasons. This post will be updated as I receive responses.*

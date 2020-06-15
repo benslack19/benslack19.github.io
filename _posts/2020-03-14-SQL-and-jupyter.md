@@ -1,6 +1,7 @@
 ---
 title: PostgreSQL and Jupyter notebooks
 toc: false
+categories: [data science, SQL]
 ---
 
 [PostgreSQL](https://www.postgresql.org) is one of the most popular variants of SQL. It is common to use PostgreSQL with pgadmin but I am not a big fan of their [UI](https://www.pgadmin.org/screenshots/). By contrast, interacting with PostgreSQL through a [Jupyter notebook](https://jupyter-notebook.readthedocs.io/en/stable/) has several benefits. Most immediately apparent is that SQL queries can be brought directly into a Python environment for data analysis, visualization, and machine learning. But the process of learning SQL itself is supported by the notebook format. Jupyter make it easy to adopt [literate programming](https://en.wikipedia.org/wiki/Literate_programming) practices since note-taking is easy. In addition, with different cells in the same notebook, one can build complex SQL queries by first writing, understanding, and recording simpler commands.
