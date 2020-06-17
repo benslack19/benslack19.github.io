@@ -2,6 +2,7 @@
 title: Approaching Bertrand's box paradox, including with Bayes' theorem
 mathjax: true
 toc: true
+toc_sticky: true
 categories: [data science, statistics]
 ---
 

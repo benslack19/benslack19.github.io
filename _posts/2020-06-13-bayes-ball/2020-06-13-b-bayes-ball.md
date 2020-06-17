@@ -2,6 +2,7 @@
 title: Bayes-ball
 mathjax: true
 toc: true
+toc_sticky: true
 categories: [data science, statistics]
 ---
 
