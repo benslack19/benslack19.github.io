@@ -3,7 +3,7 @@ title: What to say
 toc: false
 ---
 
-"I’m trying to write a blog entry but I don’t know where to start. I’ve thought about race for so long."
+"I’m trying to write but I don’t know where to start."
 
 "The heart is always a good place."
 
