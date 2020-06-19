@@ -3,6 +3,7 @@ title: Bayes-ball
 mathjax: true
 toc: true
 toc_sticky: true
+toc_label:  'Contents'
 categories: [data science, statistics]
 ---
 
@@ -35,7 +36,7 @@ In Bayes' theorem, we can therefore structure our equation like this:
 $\text{P}(\text{T10} \| \text{18H}) = \frac{\text{P}(\text{18H} \| \text{T10})\text{P}(\text{T10})}{\text{P}(\text{18H})}$
 
 
-## Connecting with Bertrand's box paradox
+# Connecting with Bertrand's box paradox
 
 The easiest parameters to plug in is the probability that the hitter, in the absence of any condition (without knowing anything else), is from the T10 group. We were given that explicitly in the problem:
 
@@ -49,7 +50,7 @@ ${\text{P}(\text{18H})}$ = $\text{P}(\text{18H} \| \text{T10})$ + $\text{P}(\tex
 
 $\text{P}(\text{18H} \| \text{T10})$ is asking "What is the probability of getting 18 hits in 100 at-bats, given that they have a true talent level of 10% hit rate?" $\text{P}(\text{18H} \| \text{T25})$ is basically the same question but for the T25 group. Here is where we need to recognize that this is an application of the [binomial distribution](https://www.khanacademy.org/math/ap-statistics/random-variables-ap/binomial-random-variable/a/binomial-probability-basic). Let's digress briefly.
 
-## Application of the binomial distribution
+# Application of the binomial distribution
 
 This problem fits the binomial assumptions:
 1. **Two outcomes**: For each plate appearance, we care that he is getting a hit (1) or no hit (0).
@@ -109,7 +110,7 @@ Another way to think about solving the problem is to use the heights of the blac
 
 $\text{P}(\text{T10} \| \text{18H}) = \frac{\text{height of black line at 18 hits} \times 0.6}{\text{height of black line at 18 hits} \times 0.6 + \text{height of red line at 18 hits} \times 0.4}$
 
-## Putting it all together
+# Putting it all together
 
 Let's return to the parameters of the Bayes' theorem equation and start bringing the pieces together.
 

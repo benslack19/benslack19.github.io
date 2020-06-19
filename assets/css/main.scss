@@ -3,6 +3,11 @@
 ---
 
 
+
+// My customizations (changed links to gray)
+$link-color: #606060;
+
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -30,5 +35,5 @@ $base0d: #268bd2 !default;
 $base0e: #6c71c4 !default;
 $base0f: #d33682 !default;
 
-
 @import "minimal-mistakes"; // main partials
+
