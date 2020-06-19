@@ -3,6 +3,7 @@ title: School and community features associated with low income student success
 excerpt:  I investigated the variables of high schools and their local areas which are associated with low income student college eligibility.
 toc: true
 toc_sticky: true
+toc_label:  'Sections'
 header:
   image: /assets/2020-05-25-CA-ed-study/CA_map_school_SPLICE_hires_crop.png
   image_description: "Schools in this study are color-coded by the percentage of low income students that are college eligible. Red is low, blue is high."
