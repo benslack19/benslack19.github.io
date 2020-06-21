@@ -170,7 +170,7 @@
   @include breakpoint($medium) {
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    width: span(1 of 3);  //  BL custom edit to have 3 columns (original was 3 of 12)
 
     &:nth-child(2n + 1) {
       clear: none;
