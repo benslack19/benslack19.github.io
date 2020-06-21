@@ -3,11 +3,14 @@
    ========================================================================== */
 
 table {
+  display: block;
   margin-bottom: 1em;
   width: 100%;
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
+  border: 0;   // eliminate border
+  overflow-x: auto;
 
   & + table {
     margin-top: 1em;
@@ -34,12 +37,4 @@ tr,
 td,
 th {
   vertical-align: middle;
-}
-
-// removed borders around pandas table output
-// taken from https://github.com/mmistakes/minimal-mistakes/issues/759
-.gsc-control-cse table, 
-.gsc-control-cse tr, 
-.gsc-control-cse td {
-    border: 0;
 }
