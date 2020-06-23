@@ -1,0 +1,7 @@
+I ended up doing more improvements to the theme_upgrade2 branch that I don't want to save anything from the master branch. It looks like the strategy to replace the master branch would be this: https://stackoverflow.com/questions/2763006/make-the-current-git-branch-a-master-branch
+
+git checkout better_branch
+git merge --strategy=ours master    # keep the content of this branch, but record a merge
+git checkout master
+git merge better_branch             # fast-forward master up to the merge
+
