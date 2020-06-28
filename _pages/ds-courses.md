@@ -21,6 +21,8 @@ This is a running list of courses I've taken as I've delved deeper into tech-rel
 | A/B Testing by Google ([Udacity](https://www.udacity.com/course/ab-testing--ud257)) | Completed | |
 | Statistics and probability ([Khan Academy](https://www.khanacademy.org/math/statistics-probability)) | Completed | |
 | Bayesian Statistics: From Concept to Data Analysis ([Coursera](https://www.coursera.org/learn/bayesian-statistics)) | Completed | |
+| Python for Data Structures, Algorithms, and Interviews! ([Udemy](https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/)) | Currently taking | |
+| Intermediate SQL ([DataCamp](https://www.datacamp.com/courses/intermediate-sql)) | Currently taking | |
 
 I acquired these tools through projects.
 
