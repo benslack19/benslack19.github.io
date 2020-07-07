@@ -3,11 +3,11 @@ title: School and community features associated with low income student success
 excerpt:  I investigated the variables of high schools and their local areas which are associated with low income student college eligibility.
 toc: true
 toc_sticky: true
-toc_label:  'Sections'
+toc_label: 'Sections'
 header:
-  image: /assets/2020-05-25-CA-ed-study/CA_map_school_SPLICE_hires_crop.png
-  image_description: "Schools in this study are color-coded by the percentage of low income students that are college eligible. Red is low, blue is high."
-  teaser: /assets/2020-05-25-CA-ed-study/CA_map_school_SPLICE_hires_crop.png
+  image: /assets/2020-05-25-CA-ed-study/markus-spiske-IFCloi6PYOA-unsplash.jpg
+  caption: "Photo credit: [Markus Spiske](https://unsplash.com/@markusspiske) from Unsplash."
+  teaser: /assets/2020-05-25-CA-ed-study/markus-spiske-IFCloi6PYOA-unsplash.jpg
 
 ---
 
@@ -63,7 +63,7 @@ Exploration and visualization of data provides context and assists in model inte
 <br>
 The dataset contained schools that reflected the state’s population density. The county with the most schools is Los Angeles with 234, which comprised 24.2% of the dataset. Next was San Diego county with 73 schools (7.5% of the data) and Orange County (59 schools). Overall, 55 counties in the state were represented with most (34) represented by fewer than than ten schools in the data. District representation of schools matched the geographic distribution, with the largest Los Angeles Unified (114 schools) having much more than the next largest districts, San Diego Unified (23) and East Side Union High in San Jose (15). Most districts were very small--204 of the 378 districts were represented by only one school.
 
-{% include figure image_path="/assets/2020-05-25-CA-ed-study/Map_school_exceptionalSPLICE_CA_labeled_county.png" caption="**Figure 2. California map of high school locations, coded by classification for exceptional SPLICE.** Black dots represent schools that are below the threshold for exceptional SPLICE while teal dots are schools that meet or exceed the threshold. Shading is transparent so that nearby or co-localized schools can be visualized. Gray internal lines represent county borders. Only some county names are shown so that school locations are not obscured." %}
+{% include figure image_path="/assets/2020-05-25-CA-ed-study/Map_school_exceptionalSPLICE_CA_labeled_county_clean.png" caption="**Figure 2. California map of high school locations, coded by classification for exceptional SPLICE.** Black dots represent schools that are below the threshold for exceptional SPLICE while teal dots are schools that meet or exceed the threshold. Shading is transparent so that nearby or co-localized schools can be visualized. Gray internal lines represent county borders. Only some county names are shown so that school locations are not obscured." %}
 
 From map inspection and quantitative analysis, most exceptional SPLICE schools were located in the San Francisco Bay Area or Southern California coastal counties (San Diego, Orange, Los Angeles) compared to the rest of the state. These two areas represent 54.1% of schools in the state, but make up 87.0% of CA schools with exceptional SPLICE. This point will be re-visited in [the discussion section](#discussion-placing-the-results-in-context).
 

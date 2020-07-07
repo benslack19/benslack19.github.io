@@ -113,6 +113,7 @@ defaults:
       comments: true
       share: true
       related: true
+
   # _pages
   - scope:
       path: "_pages"
@@ -120,6 +121,7 @@ defaults:
     values:
       layout: single
       author_profile: false
+
   # _projects
   - scope:
       path: ""
@@ -127,8 +129,10 @@ defaults:
     values:
       layout: single
       author_profile: false
+      read_time: true
+      comments: true
       share: true
-
+      related: true
 
 category_archive:
   type: liquid
@@ -136,3 +140,15 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# Analytics
+analytics:
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : UA-167983398-1
+
+# Comments - TBD
+# comments:
+#   provider: "disqus"
+#   disqus:
+#     shortname: "your-disqus-shortname"
