@@ -24,10 +24,11 @@ This is a running list of courses I've taken as I've delved deeper into tech-rel
 | Python for Data Structures, Algorithms, and Interviews! ([Udemy](https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/)) | Currently taking | |
 | Intermediate SQL ([DataCamp](https://www.datacamp.com/courses/intermediate-sql)) | Currently taking | |
 
-I acquired these tools through projects.
+Tool development through projects.
 
 | Tool | Context of use | Notes | 
 | --- | --- | --- |
 | MATLAB | Graduate school academic projects | [Publication](http://onlinelibrary.wiley.com/doi/10.1111/j.1460-9568.2011.07901.x/full) |
-| R | Postdoctoral and biotech industry projects | |
-| Bash | Biotech industry projects | Run bioinformatics scripts  |
+| R | Postdoctoral and biotech industry projects | [Industry projects](https://benslack19.github.io/projects/5_professional_projects/) |
+| Python | Multiple projects | [Projects](https://benslack19.github.io/projects/) |
+| Bash | Biotech industry projects | Bioinformatics scripts  |
