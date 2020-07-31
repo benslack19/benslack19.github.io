@@ -34,7 +34,7 @@ I won't restate the whole problem, but you can find it in the [previous post](ht
 
 What if we weren't asking for a single probability if Aguila was in the 10% hit rate group versus the 25% hit group? What if we asked where Aguila's batting average (hitting rate) would be across a *range* of talent levels? Let's take these steps in a couple of iterations. First, let's take the original Bernoulli distribution example and show how the prior distribution gets updated with data to produce the posterior distribution. I show this differently than I did in the last post.
 
-# Using a Bernoulli distriubtion as the prior
+# Using a Bernoulli distribution as the prior
 
 
 ```python
