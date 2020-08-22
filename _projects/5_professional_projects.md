@@ -7,8 +7,7 @@ header:
 
 ---
 
-The following are examples of external-facing collateral that I produced through my applications and bioinformatics scientist roles. My data science tools include bash scripts, Python, and R to develop pipelines, wrangle data, and create analysis visualizations. I author papers, presentations, and posters for these and other projects.
-
+The following are examples of external-facing collateral that I produced through my applications and bioinformatics scientist roles. My data science tools include bash scripts, Python, and R to develop pipelines, wrangle data, and create analysis visualizations. I authored papers, presentations, and posters for these and other projects.
 
 **Single-Cell Stranded Total RNA Sequencing**
 
@@ -36,3 +35,5 @@ Cystic fibrosis profiling is a laboratory test common for new parents in some de
 Bulk RNA-seq is one of the most popular sequencing methods in academic and commercial labs. We developed an assay that increases the scale of samples that can be prepared.
 
 [poster](https://github.com/benslack19/benslack19.github.io/blob/master/assets/fldm_projects/Juno%20RNA%20Seq%20Poster%20ESHG%202019%2020190619.pdf)
+
+ *Disclosure: I am a shareholder of Fluidigm Corporation. I am including these examples of data science projects I have done in industry.*

@@ -1,5 +1,5 @@
 ---
-title: Bayes-ball
+title: "Bayes-ball part 1: determining a true talent level"
 mathjax: true
 toc: true
 toc_sticky: true

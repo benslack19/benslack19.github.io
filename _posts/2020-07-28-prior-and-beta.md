@@ -1,5 +1,5 @@
 ---
-title: Bayes-ball with a more realistic prior
+title: "Bayes-ball part 2: a more realistic prior"
 mathjax: true
 toc: true
 toc_sticky: true
