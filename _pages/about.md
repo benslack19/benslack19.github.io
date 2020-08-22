@@ -5,7 +5,7 @@ author_profile: true
 permalink: /about/
 ---
 
-I'm a data scientist, bioinformatics scientist, neuroscientist, and part-time educator.
+I'm a data scientist, bioinformatics scientist, neuroscientist, and educator.
 
 I studied biochemistry at UCLA, earned my Ph.D. in neuroscience at Yale University, and performed postdoctoral research at the Salk Institute. My research on neural plasticity was fueled by my interests in learning. I investigated signaling mechanisms in a neurogenic niche and the molecular changes that occur within neurons in response to an organism having new experiences. A list of my publications can be found [here](https://scholar.google.com/citations?user=wGG8V78AAAAJ&hl=en).
 
