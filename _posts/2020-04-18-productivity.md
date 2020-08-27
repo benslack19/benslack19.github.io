@@ -1,6 +1,7 @@
 ---
 title: Working productively towards my data science goals
 toc: true
+toc_sticky: true
 ---
 
 With the current days of COVID and working from home, I initially felt my data science learning and productivity slow down as my routine was disrupted. But in late March, I created a schedule for myself which helped keep me in the rhythm of studying and staying sane. I've committed to this now for about 4 weeks and it's good to look back and reflect on how this schedule has worked for me.

@@ -7,7 +7,7 @@ toc_label:  'Contents'
 categories: [data science, statistics]
 ---
 
-In the [last post](https://benslack19.github.io/data%20science/statistics/prior-and-beta/), we learned about the beta distribution and why it would be a more realistic prior in the context of our problem. We also selected appropriate $\alpha$ and $\beta$ hyperparameters. Now we need to add in the data, see what kind of posterior distribution would result, and look at the [credible interval](https://en.wikipedia.org/wiki/Credible_interval). I was curious how the "easy" way of getting the posterior results so I work out the math as a bonus.
+In the [last post](https://benslack19.github.io/data%20science/statistics/prior-and-beta/), we learned about the beta distribution and why it would be a more realistic prior in the context of our problem. We also selected appropriate $\alpha$ and $\beta$ hyperparameters. Now we need to factor in the data, see what kind of posterior distribution would result, and look at the [credible interval](https://en.wikipedia.org/wiki/Credible_interval). I was curious how the "easy" way of getting the posterior results so I look at the math in detail.
 
 Let's get started!
 
@@ -75,7 +75,7 @@ ax1.legend();
 ![png](/assets/2020-08-21-credible-interval-and-math_files/2020-08-21-credible-interval-and-math_5_1.png)
 
 
-Now let's add in the data from the original problem but make it more interesting. The original problem had Aguila getting 18 hits in 100 at-bats, which would essentially be the mean that we found above. I don't think we would learn as much this way. Therefore, let's say instead that he goes on a small streak and **gets 20 hits in only 50 at-bats**, for a .400 batting average in that streak. The [Robinson post](http://varianceexplained.org/statistics/beta_distribution_and_baseball/) highlights that it can be very easy to get the posterior beta distribution. We only need to update the values of $\alpha$ and $\beta$ with the new "successes" (20) and "failures" (total new at-bats minus "successes" = 30). We will call these new values "a" and "b" below to distinguish from the "a0" and "b0" values of our prior.
+Now let's add in the data from the original problem but make it more interesting. The original problem had Aguila getting 18 hits in 100 at-bats, which would essentially be the mean that we found above. I don't think we would learn as much this way. Therefore, let's say instead that he goes on a small streak and **gets 20 hits in only 50 at-bats**, for a .400 batting average in that streak. The [Robinson post](http://varianceexplained.org/statistics/beta_distribution_and_baseball/) highlights that it can be very easy to get the posterior beta distribution. We only need to update the values of $\alpha$ and $\beta$ by adding the new "successes" (20) and "failures" (total new at-bats minus "successes" = 30) to $\alpha_0$ and $\beta_0$, respectively. We will call these new values "a" and "b" below to distinguish from the "a0" and "b0" values of our prior.
 
 
 ```python
@@ -125,11 +125,11 @@ print("95% credible interval: ", beta.ppf([0.025, 0.975], a_post, b_post))
 
 We now have our posterior distribution! The expected value of this new distribution is 0.250 with a 95% **posterior prediction interval** of 0.184 and 0.322. This is also referred to as a [credible interval](https://en.wikipedia.org/wiki/Credible_interval). In a Bayesian framework, the parameter (hit rate in this case) is treated as a random variable with the bounds as fixed. We would expect Aguila's final hit rate to fall in this interval with 95% probability. 
 
-My method for choosing the interval is an **equal-tailed interval**: 2.5% of the posterior probability distribution is above 0.322 and 2.5% of the distribution is below 0.184. An alternate method of taking the interval is to use the **highest posterior density (HPD)**. However, by looking at the plot, we can see that the distributions show symmetry and the bounds that would result from using HPD would not be too different from the equal-tailed approach. 
+My method for choosing the interval is an **equal-tailed interval**: 2.5% of the posterior probability distribution is above 0.322 and 2.5% of the distribution is below 0.184. An alternate method of taking the interval is to use the **highest posterior density (HPD)**. However, by looking at the plot, we can see that the distributions show symmetry and the bounds that would result from using HPD would not be very different from the equal-tailed approach. 
 
 # A deeper understanding of the math
 
-Creating an updated posterior distribution was easy to do . However, I felt a little bit unsatisified at this level of understanding. I went a little bit deeper as to why the beta distribution's $\alpha$ and $\beta$ terms can be updated with addition of the new data's number of successes and failures, respectively. In addition to other sources I have referenced, I found [this post](https://stats.stackexchange.com/questions/181383/understanding-the-beta-conjugate-prior-in-bayesian-inference-about-a-frequency) useful. Another excellent video which helped me look at Bayes theorem differently is [this video by 3Blue1Brown](https://www.youtube.com/watch?v=HZGCoVF3YvM).
+Creating an updated posterior distribution was easy to do . However, I was unsatisified at this level of understanding. I went a little bit deeper as to why the beta distribution's $\alpha$ and $\beta$ terms can be updated with addition of the new data's number of successes and failures, respectively. In addition to other sources I have referenced, I found [this post](https://stats.stackexchange.com/questions/181383/understanding-the-beta-conjugate-prior-in-bayesian-inference-about-a-frequency) useful. Another excellent video which helped me look at Bayes theorem differently is [this video by 3Blue1Brown](https://www.youtube.com/watch?v=HZGCoVF3YvM).
 
 Let's start simple with the textbook definition of Bayes again.
 
@@ -139,7 +139,7 @@ $\text{P}(A|B) = \frac{\text{P}(B|A)\text{P}(A)}{\text{P}(B)}$
 
 Now let's translate these terms into words and the context of our problem like we did in the previous post. One change we have to consider is that in [the original problem statement](https://benslack19.github.io/data%20science/statistics/b-bayes-ball/), we applied Bayes' Theorem towards a *point probability*. That is, we calculated a single, numerical value when we asked what probability would Aguila be in the T10 group. The prior was also a numerical value ("40% of all hitters were in the T10 group").
 
-What we are doing in this iteration of the problem is applying Bayes' Theorem towards a *probability distribution*. Therefore, we would Bayes in a similar form as what we have above, but amended it to reflect a distribution as we are in this equation:
+What we are doing in this iteration of the problem is applying Bayes' Theorem towards a *probability distribution*. Therefore, the Bayes equation in a similar form as what we have above, but amended to reflect a distribution:
 
 <p><span style="color:darkblue">
 $f(x|\text{data}) = \frac{f(\text{data}|x)f(x)}{f(\text{data})}$
@@ -151,11 +151,11 @@ Let's work through these terms as we did in the previous post.
 
 <p><span style="color:darkblue">$f(x|\text{data})$</span>  The posterior probability distribution, resulting from updating the prior after seeing data. The left side of the equation is what we are trying to work out. We are finding a function parameterized by a range of hit rates given the beta distribution we started with. </p>
 
-The entire right side of the equation is information that we are given but is a little bit less intuitive to see.
+The entire right side of the equation is information that we are given but it is less intuitive to see.
 
 <p><span style="color:darkblue">$f(\text{data}|x)$</span>  This is the likelihood or the sampling density for the data. We can work with the binomial probability mass function as we did originally:
-
-$ = \binom n k x^k(1-x)^{n-k}$
+<br>
+$= \binom n k x^k(1-x)^{n-k}$
 <br>
 As stated above, "x" is a random variable representing the hit rate. We already know the values of n and k. The number of trials (at-bats) is n=50 and the number of successes (hits) is k=20. One thing we can recognize is that the binomial coefficient portion of this term is a constant. Constants will be easier to deal with as we work out the math.
 </p>
@@ -168,11 +168,12 @@ $= \frac{x^{\alpha_0-1}(1-x)^{\beta_0-1} }{\text{B}(\alpha_0, \beta_0)}\$
 The denominator, a beta function, is also a constant.
     
 <p><span style="color:darkblue">$f(\text{data})$</span> This is all instances of observing the data, independent of the conditions. Functionally in this equation, it acts as a normalizing constant.
-
-$= \int_0^1 f(\text{data}|x)f(x)dx$ 
-
-One way I think about this is that it is like taking all possible values of a prior, multiplying by the likelihood, and then summing. We do not have to worry too much about this normalizing term as we'll see. For me it, helped to look at what this term was in the [original Bayes-ball problem](https://benslack19.github.io/data%20science/statistics/b-bayes-ball/#putting-it-all-together) or even in the [Bertrand's box paradox problem](https://benslack19.github.io/data%20science/statistics/a-bertrands-box/#bayesian-approach). 
 </p>
+<br>
+$= \int_0^1 f(\text{data}|x)f(x)dx$ 
+<br>
+One way I think about this is that it is like taking all possible values of a prior, multiplying by the likelihood, and then summing. We do not have to worry too much about this normalizing term as we'll see. For me it, helped to look at what this term was in the [original Bayes-ball problem](https://benslack19.github.io/data%20science/statistics/b-bayes-ball/#putting-it-all-together) or even in the [Bertrand's box paradox problem](https://benslack19.github.io/data%20science/statistics/a-bertrands-box/#bayesian-approach). 
+
 
 ## Calculating the likelihood
 
@@ -358,7 +359,7 @@ You can see that we're getting close to the form of the posterior. The denominat
 
 ![jpg](/assets/2020-08-21-credible-interval-and-math_files/IMG_0565_integral_term.jpg)
 
-The integral term in the denominator is the beta function term.
+The integral term in the denominator is the beta function term. We can therefore make a substitution, shown in green, below.
 
 ![jpg](/assets/2020-08-21-credible-interval-and-math_files/IMG_0567_substitute.jpg)
 
@@ -366,7 +367,7 @@ And this is how we get the posterior as a beta distribution parameterized by $\a
 
 # Using Bayesian statistics to predict Tatis' hit rate
 
-Writing this post and forcing myself to work through the math was a bit painful. However, this helped me find other sources about Bayesian statistics and think more deeply about the subject. In the end, understanding the concept is probably the point anyway.
+Writing this post and forcing myself to work through the math. However, this helped me find other sources about Bayesian statistics and think more deeply about the subject. In the end, understanding the concept is probably the point anyway.
 
 But now we can have a little bit more fun with this. [Fernando Tatis](https://www.baseball-reference.com/players/t/tatisfe02.shtml) has had an incredible start to this season. He's been in the news quite a bit lately, especially with his [infamous grand slam on a 3-0 count](https://www.sandiegouniontribune.com/sports/padres/story/2020-08-17/padres-rangers-fernando-tatis-home-run-austin-hedges-zach-davies). Can we make a prediction on what his hit rate will be? (To the baseball fans: yes, I know hit rate is not a real thing. I am using this to simplify the problem.) The prior I will use will be a beta distribution paramaterized by his number of hits (106) and number of plate appearances without a hit (266) in the 2019 season. The binomial likelihood will be the number of hits (34) and plate appearances without a hit (75) as of today (8/21/20). (Today's game against the Astros is starting in 20 minutes as I type this.) 
 

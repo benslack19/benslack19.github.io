@@ -1,6 +1,7 @@
 ---
 title: Heads or tails?
 toc: true
+toc_sticky: true
 categories: [data science, statistics]
 ---
 
