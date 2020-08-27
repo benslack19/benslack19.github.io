@@ -155,7 +155,9 @@ The entire right side of the equation is information that we are given but it is
 
 <p><span style="color:darkblue">$f(\text{data}|x)$</span>  This is the likelihood or the sampling density for the data. We can work with the binomial probability mass function as we did originally:
 <br>
+<br>
 $= \binom n k x^k(1-x)^{n-k}$
+<br>
 <br>
 As stated above, "x" is a random variable representing the hit rate. We already know the values of n and k. The number of trials (at-bats) is n=50 and the number of successes (hits) is k=20. One thing we can recognize is that the binomial coefficient portion of this term is a constant. Constants will be easier to deal with as we work out the math.
 </p>
@@ -169,7 +171,6 @@ The denominator, a beta function, is also a constant.
     
 <p><span style="color:darkblue">$f(\text{data})$</span> This is all instances of observing the data, independent of the conditions. Functionally in this equation, it acts as a normalizing constant.
 </p>
-<br>
 $= \int_0^1 f(\text{data}|x)f(x)dx$ 
 <br>
 One way I think about this is that it is like taking all possible values of a prior, multiplying by the likelihood, and then summing. We do not have to worry too much about this normalizing term as we'll see. For me it, helped to look at what this term was in the [original Bayes-ball problem](https://benslack19.github.io/data%20science/statistics/b-bayes-ball/#putting-it-all-together) or even in the [Bertrand's box paradox problem](https://benslack19.github.io/data%20science/statistics/a-bertrands-box/#bayesian-approach). 
@@ -367,7 +368,7 @@ And this is how we get the posterior as a beta distribution parameterized by $\a
 
 # Using Bayesian statistics to predict Tatis' hit rate
 
-Writing this post and forcing myself to work through the math. However, this helped me find other sources about Bayesian statistics and think more deeply about the subject. In the end, understanding the concept is probably the point anyway.
+By writing this post, it forced myself to work through the math. However, this helped me find other sources about Bayesian statistics and think more deeply about the subject. In the end, understanding the concept is probably the point anyway.
 
 But now we can have a little bit more fun with this. [Fernando Tatis](https://www.baseball-reference.com/players/t/tatisfe02.shtml) has had an incredible start to this season. He's been in the news quite a bit lately, especially with his [infamous grand slam on a 3-0 count](https://www.sandiegouniontribune.com/sports/padres/story/2020-08-17/padres-rangers-fernando-tatis-home-run-austin-hedges-zach-davies). Can we make a prediction on what his hit rate will be? (To the baseball fans: yes, I know hit rate is not a real thing. I am using this to simplify the problem.) The prior I will use will be a beta distribution paramaterized by his number of hits (106) and number of plate appearances without a hit (266) in the 2019 season. The binomial likelihood will be the number of hits (34) and plate appearances without a hit (75) as of today (8/21/20). (Today's game against the Astros is starting in 20 minutes as I type this.) 
 
