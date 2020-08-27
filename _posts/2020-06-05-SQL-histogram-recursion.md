@@ -1,6 +1,7 @@
 ---
 title: Histograms and recursion in SQL
 toc: true
+toc_sticky: true
 categories: [data science, SQL]
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: The probability of making your Friday night party
 toc: true
+toc_sticky: true
 categories: [data science, statistics]
 ---
 

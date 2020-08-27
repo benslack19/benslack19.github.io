@@ -2,6 +2,7 @@
 title: F-in statistics!
 mathjax: true
 toc: true
+toc_sticky: true
 categories: [data science, statistics]
 ---
 

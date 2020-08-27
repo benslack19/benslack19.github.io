@@ -1,6 +1,7 @@
 ---
 title: Using CASE in the WHERE statement of SQL
 toc: true
+toc_sticky: true
 categories: [data science, SQL]
 ---
 
