@@ -1,0 +1,13 @@
+---
+title: Looking back and looking ahead
+---
+
+A year ago, I was anxious and excited about a planned life change. I had put in my notice and would start a data science program on January 13, 2020. I had been gradually transitioning towards a data science career the previous few years, but this program felt like a step change in my  trajectory. The program itself was meant to be temporary. The informal phase of the program, which consists of support in our job applications and interviews, was inherently a period of uncertainty. However, at least this was "expected uncertainty" and some planning can be done.
+
+Of course, a year ago, none of us could plan for the changes that would affect us all within a few months.
+
+The new year naturally marks a period of reflection and setting of goals (that may or may not be attained). One of my personal goals for 2020 was writing in this blog more consistently as I stated [here](https://benslack19.github.io/education/writing/). How did I do? I wrote 11 blog posts and one Medium article. In 2019, I only wrote two posts. Yes I could have written more in 2020, but I clearly made tangible progress. My last 2020 post was in August. Part of the reason why my production tailed off at the end of the year was because of a new job I was excited to start. I made that a greater focus. Writing did not have to detract from my work goals. In fact, I regret not being more intentional in my work-related writing activities.
+
+I can renew my writing commitment in 2021. What are other goals may I have for the upcoming year? [One article](https://www.nytimes.com/2020/12/29/well/live/new-years-resolutions-2021.html) suggests we need not be too ambitious with our resolutions. I'd concur since we're not out yet of the pandemic prison. But I will aim to write more, do well in my job, stay healthy, and overall [be productive](https://benslack19.github.io/productivity/) while keeping in mind what it means to be [effective](https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People).
+
+I should be optimistic with my personal goals for several reasons. My position affords me flexibility towards causes I care about, while allowing me to maintain growth in data science skills. The vaccine distribution has had its issues, but the fact that we have one means there's light at the end. A normal looking work routine is feasible in 2021. I do not know yet what a year will look like from now. But after looking back, I have only reasons to be excited about looking ahead.
