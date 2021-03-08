@@ -1,0 +1,20 @@
+current directory: /Users/lacar/benslack19.github.io/vendor/cache/ruby/2.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20210220-58878-cnbuqj.rb extconf.rb
+checking for main() in -lstdc++... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/lacar/benslack19.github.io/vendor/cache/ruby/2.3.0/extensions/universal-darwin-18/2.3.0/unf_ext-0.0.7.7/mkmf.log
+
+current directory: /Users/lacar/benslack19.github.io/vendor/cache/ruby/2.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /Users/lacar/benslack19.github.io/vendor/cache/ruby/2.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.bundle
+
+current directory: /Users/lacar/benslack19.github.io/vendor/cache/ruby/2.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20210220-58878-6ydfdf
