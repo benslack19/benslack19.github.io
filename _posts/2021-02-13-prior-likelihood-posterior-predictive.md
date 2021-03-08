@@ -11,7 +11,7 @@ The answer went on to explain in more detail. However, [this](https://media.giph
 He tosses an inflatable globe to a student and when they catch it, he asks whether their right index finger is touching land or water. The objective is to determine what proportion of the globe is covered by water. Like the lecture, we'll do nine tosses of the globe with a little bit of [a lemon twist](https://www.youtube.com/watch?v=YJqkciXqhOM): I'll simply focus on the first six tosses, divided up into two datasets of three tosses each.
 
 
-```
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -27,7 +27,7 @@ import seaborn as sns
 
 
 
-```
+```python
 def plot_beta(a_val, b_val, label_val, style, color, ax):
     """
     Analytical analysis to compare with sampling from grid approximation.
@@ -61,7 +61,7 @@ Before doing any tosses, we have not seen *any* data. Therefore, it's reasonable
 There are two ways we can represent the uniform *prior distribution* in this particular case. Use of the beta distribution is an example for the analytical case as shown on the left below. But using grid approximation will set us up for later scenarios where we use samples. That is what is shown on the right.
 
 
-```
+```python
 # Use a0 and b0 for our prior
 # mu = 0.175
 # total_ab = 100
@@ -104,7 +104,7 @@ The graphs look quite different because the left shows a continuous distribution
 **Sampling the parameter values is a paradigm shift for me.** The advantage of the grid approximation approach is that we can think of it as having a bag of numbers. In this scenario, I arbitrarily chose to have 100 gridpoints and each of those gridpoints is represented equally. It's like having a marble for each in a bag. We pick one out, note the number on the marble, put it back, and repeat many times. 
 
 
-```
+```python
 # Pulling a marble out of the bag 10,000 times
 samples0 = np.random.choice(p_wat, p=prior0_vals, size=10 ** 4, replace=True)
 
@@ -115,10 +115,10 @@ samples0[0:20]
 
 
 
-    array([0.86868687, 0.45454545, 0.88888889, 0.66666667, 0.11111111,
-           0.85858586, 0.18181818, 0.96969697, 0.62626263, 0.03030303,
-           0.18181818, 0.50505051, 0.62626263, 0.02020202, 0.92929293,
-           0.85858586, 0.97979798, 0.97979798, 0.53535354, 0.05050505])
+    array([0.4040404 , 0.64646465, 0.56565657, 0.83838384, 0.35353535,
+           0.87878788, 0.02020202, 1.        , 0.78787879, 0.4040404 ,
+           0.55555556, 0.02020202, 0.41414141, 0.32323232, 0.39393939,
+           0.97979798, 0.05050505, 0.81818182, 0.31313131, 0.36363636])
 
 
 
@@ -131,7 +131,7 @@ samples0[0:20]
 Now let's look at the *prior predictive* distribution. This will be a distribution of count data: the number of water observations (designated by *W*). As a reminder, we are doing three tosses for each dataset, including this first one. Therefore, W can be 0, 1, 2, or 3.
 
 
-```
+```python
 # Use each sampled parameter for a binomial likelihood with n of 3
 prior_pred = stats.binom.rvs(3, samples0, loc=0, size=10000, random_state=19)
 
@@ -142,7 +142,7 @@ prior_pred[0:20]
 
 
 
-    array([3, 2, 3, 3, 0, 3, 1, 3, 0, 0, 0, 1, 2, 0, 3, 3, 3, 3, 2, 0])
+    array([0, 1, 2, 3, 1, 3, 0, 3, 1, 1, 2, 0, 1, 0, 0, 3, 0, 3, 1, 1])
 
 
 
@@ -151,7 +151,7 @@ prior_pred[0:20]
 
 
 
-```
+```python
 f, ax1 = plt.subplots(1, 1, figsize=(8, 6))
 
 ax1.hist(prior_pred, color="gray")
@@ -182,7 +182,7 @@ Given that the parameters we sampled from were uniformly distributed, we shouldn
 Now let us consider the data. In the scenario from the lecture, there were two waters and one land in the first three tosses. Before seeing the posterior, let's plot the likelihood on its own. It was key to remember that the x-axis is also a plot of the parameter.
 
 
-```
+```python
 prob_data1 = stats.binom.pmf(k=2, n=3, p=p_wat)
 
 f, ax1 = plt.subplots(1, 1, figsize=(8, 6))
@@ -212,7 +212,7 @@ ax1.set_title("Likelihood function with 2W in 3 tosses")
 Now let us use this new information to generate our posterior, generating a non-standardized and a standardized posterior in separate lines.
 
 
-```
+```python
 # Non-standardized posterior
 posterior1_nonstd = prob_data1 * prior0_vals
 
@@ -225,7 +225,7 @@ posterior1_std = posterior1_nonstd / np.sum(posterior1_nonstd)
 
 
 
-```
+```python
 f, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4), sharey=True)
 
 ax1.vlines(p_wat, 0, prior0_vals)
@@ -253,7 +253,7 @@ plt.tight_layout()
 Now let's create the *posterior predictive distribution*.
 
 
-```
+```python
 # Pulling a marble out of the bag 10,000 times
 samples1 = np.random.choice(p_wat, p=posterior1_std, size=10 ** 4, replace=True)
 
@@ -264,10 +264,10 @@ samples1[0:20]
 
 
 
-    array([0.3030303 , 0.96969697, 0.84848485, 0.90909091, 0.75757576,
-           0.48484848, 0.5959596 , 0.77777778, 0.64646465, 0.88888889,
-           0.66666667, 0.87878788, 0.56565657, 0.77777778, 0.78787879,
-           0.66666667, 0.72727273, 0.25252525, 0.77777778, 0.38383838])
+    array([0.65656566, 0.2020202 , 0.53535354, 0.55555556, 0.85858586,
+           0.53535354, 0.48484848, 0.61616162, 0.42424242, 0.50505051,
+           0.57575758, 0.41414141, 0.55555556, 0.39393939, 0.83838384,
+           0.62626263, 0.44444444, 0.56565657, 0.68686869, 0.92929293])
 
 
 
@@ -282,7 +282,7 @@ This is about having now parameter samples that are now differentially represent
 Now let's look at the *posterior predictive* distribution. This will be a distribution of count data: the number of water observations (designated by *W*). As a reminder, we are doing three tosses for the *next* dataset. Therefore, W remains as 0, 1, 2, or 3.
 
 
-```
+```python
 # Use each sampled parameter for a binomial likelihood with n of 3
 posterior_pred = stats.binom.rvs(3, samples1, loc=0, size=10000, random_state=19)
 
@@ -293,7 +293,7 @@ posterior_pred[0:20]
 
 
 
-    array([3, 1, 1, 3, 2, 3, 2, 1, 0, 1, 3, 2, 1, 3, 3, 1, 3, 2, 2, 2])
+    array([3, 1, 2, 3, 3, 3, 2, 1, 3, 1, 2, 1, 2, 1, 3, 2, 0, 2, 2, 3])
 
 
 
@@ -302,7 +302,7 @@ posterior_pred[0:20]
 
 
 
-```
+```python
 f, ax1 = plt.subplots(1, 1, figsize=(8, 6))
 
 ax1.hist(posterior_pred, color="gray")
