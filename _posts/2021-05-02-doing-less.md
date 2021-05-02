@@ -1,0 +1,9 @@
+---
+title: "Doing easy"
+---
+
+I've struggled to write consistently. Part of the reason for this is because I'm prone to self-censorship. Even as I type this, my mind is talking to itself. But in the book Atomic Habits, there's a great chapter, Chapter 13, that's called "How to Stop Procrastinating by Using the Two-Minute Rule." One of the takeaways is to do a *small thing*  consistently. I can start but I tend to over-edit before the piece is done. One deliberate thing I can do is write *less* and stop until it becomes a *chore*. This also helps me re-frame what I consider a success. It's okay to have some typos. The point is to simply produce. I timed myself for 10 minutes on this piece and I'll just stop writing when the alarm goes off.
+
+Another thing that influenced me was seeing the movie "Sound of Metal" a few days ago. There's a scene where the protagonist's mentor encourages him to sit still in a room. If he can't, then to write. That's it, just write. Don't worry about what's on the page, just keep moving the hand. That's advice I remember before about journaling. Don't filter, don't critique, just let your thoughts out.
+
+A few days ago I learned/reminded about how to story board my powerpoint slides. It was a great piece of advice and it helps improve my commmunication. Ironically, I have to be okay with this piece of not being perfect before my communication can be improved. It is logical but still feels like showing imperfections is hard. I remember some years in graduate school where I was learning that it's better to just show your imperfect side out there. When I discovered that, I found that looking ridiculous didn't really matter. Nothing bad happened. It gave me some confidence and allowed me to try things a bit more. Life felt a little bit looser and less anxiety-provoking. Being less than perfect is a good attitude to have.
