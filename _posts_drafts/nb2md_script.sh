@@ -30,6 +30,13 @@ echo ' '
 
 jupyter nbconvert --to markdown ${NB}
 
+# Remove the lines that say `<IPython.core.display.Javascript object>`  (not working)
+#echo 'Remove random Javascript object text'
+# sed '/<IPython.core.display.Javascript object>/d' ./${NB_md} > ./${NB_md}
+# sed -i '' '/\<IPython.core.display.Javascript object\>/d' ./${NB_md} # > ./${NB_md}
+# echo ' '
+
+
 # Move the associated figures files, in the NB_files folder, to _assets--------------------
 
 mv ${NB_base}_files/ ../assets/${NB_base}_files/
@@ -56,11 +63,16 @@ echo ' '
 
 # sed command was a bit hard to write
 # need to use single and double quotes (using comma as separator in sed command
-
 sed 's,'\\[png\]\("$NB_base"_files','\\[png\]\(/assets/"$NB_base"_files',g' ${NB_md} > ../_posts/${NB_md}
+
 
 echo 'After renaming png files'
 cat ../_posts/${NB_md} | grep "\[png\](${NB_base}_files"
+echo ' '
+
+# Cut out the first line
+echo 'Cut out the first line'
+tail -n +2 ./${NB_md} > ./${NB_md}
 echo ' '
 
 echo 'Moved markdown file ' ${NB_md} ../_posts/${NB_md}
@@ -70,6 +82,7 @@ echo 'Removed markdown file in _posts_drafts folder '
 echo ' '
 
 
+
 echo "Markdown produced and updated."
-echo "cd to parent folder"
-echo "Run `bundle exec jekyll serve` to test page build locally."
+echo "cd to parent folder and make sure first line of markdown file is not blank (starts with YAML)"
+echo "Run bundle exec jekyll serve to test page build locally."
