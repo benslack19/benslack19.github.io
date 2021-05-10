@@ -1,5 +1,5 @@
 ---
-title: "A better understanding of PyMC objects using a linear regression example"
+title: "PyMC objects with linear regression (part 1)"
 mathjax: true
 toc: true
 toc_sticky: true
