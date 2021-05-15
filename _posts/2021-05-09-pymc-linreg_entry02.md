@@ -6,7 +6,7 @@ toc_sticky: true
 categories: [data science, statistics]
 ---
 
-In [a previous post](https://benslack19.github.io/data%20science/statistics/pymc-linreg-entry01/), I wrote about my inital experience using [PyMC3](https://docs.pymc.io/). The point was to take a dive deep into some of the package's objects using a linear regression problem using PyMC3. Here, I'll go a little bit further and interpre the posterior distribution. Some of the initial code are replicated from the previous post to save steps.
+In [a previous post](https://benslack19.github.io/data%20science/statistics/pymc-linreg-entry01/), I wrote about my inital experience using [PyMC3](https://docs.pymc.io/). The point was to take a dive deep into some of the package's objects using a linear regression problem using PyMC3. Here, I'll go a little bit further and interpret the posterior distribution. Some of the initial code are replicated from the previous post to save steps.
 
 
 ```python
@@ -655,7 +655,7 @@ Per the PyMC documentation: "The left column consists of a smoothed histogram (u
 
 The purpose of this post is to use `pymc` to go from the fitting procedure to obtaining posterior distributions of our parameters. We can now see how our possible parameter values have been constrained after we factor in the data. In the next post, we will use the posterior distribution to make predictions.
 
-# Appendix: Environment and system parameters
+Appendix: Environment and system parameters
 
 
 ```python
