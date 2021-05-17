@@ -33,7 +33,6 @@ az.style.use("arviz-darkgrid")
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 Here again is the question that motivated the series of posts.
@@ -54,7 +53,6 @@ d2 = d[d.age >= 18]  # filter to get only adults
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 # Setting up the variables, producing `model ` and `trace` objects
@@ -66,7 +64,6 @@ xbar = d2.weight.mean()
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -107,7 +104,6 @@ with pm.Model() as heights_model:
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -116,7 +112,6 @@ trace_m2_df = pm.trace_to_dataframe(trace_m2)
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 Here again are some summary statistics of the posterior distribution.
@@ -187,7 +182,6 @@ az.summary(trace_m2, round_to=3, kind="stats")
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -248,7 +242,6 @@ trace_m2_df.cov().round(3)
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 The correlation matrix can show how changing one parameter affects another.
@@ -310,7 +303,6 @@ trace_m2_df.corr()
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 # Making predictions for average height ($\mu_i$)
@@ -398,7 +390,6 @@ trace_m2_df.head()
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 We can generate credibility intervals for the range of weight values using an `arviz` function. This puts bounds on the plausible mean line. Note how this code omits `sigma`.
@@ -432,7 +423,6 @@ cred_intervals[0:5, :]
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 We can represent uncertainty in two ways in the figure down below. In the left plot, we will use a combination of $\alpha$ and $\beta$ samples to produce a bunch of lines from the posterior distribution. On the right, we are plotting with the credibility interval.
@@ -510,7 +500,6 @@ ax2.legend(fontsize=11)
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 It's important to remember that the orange line drawn represents the posterior **mean** line. It is the most plausible line, but it's helpful to keep in mind that there's uncertainty and other lines (gray) are plausible (albeit with lower probability).
@@ -544,7 +533,6 @@ mu_at_45
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 We can plot the uncertainty around this *single* weight value.
@@ -563,7 +551,6 @@ az.hdi(np.array(mu_at_45))
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -596,7 +583,6 @@ ax1.vlines(
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 ## Understanding $\mu_i$ uncertainty for a range weight values
@@ -624,7 +610,6 @@ for i, w in enumerate(weight_seq):
 ```
 
 
-    <IPython.core.display.Javascript object>
 
 
 The line for `mu_pred` can use further explanation. Unlike the example above where `mu` was a vector when evaluating at had for a single weight value, we will now return a matrix. (While I didn't explicitly think to use this, this [Stack Overflow link](https://stackoverflow.com/questions/49825216/what-is-a-chain-in-pymc3) explains how MCMC uses multiple chains.)
@@ -833,7 +818,6 @@ df_mu_pred.head()
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 
@@ -860,7 +844,6 @@ for arb_weight, ax in zip(arb_weights, axes.flat):
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 This is another way of looking at the variability for average height. The compatibility interval range (CI range) is showing how bigger the CI is when looking at either end of the weight range. Here is a more intuitive way of showing this, with the data points in blue.
@@ -887,7 +870,6 @@ plt.title(r"Uncertainty of $\mu_i$, the linear model of the mean")
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 # Summary
@@ -921,7 +903,6 @@ Appendix: Environment and system parameters
 
 
 
-    <IPython.core.display.Javascript object>
 
 
 

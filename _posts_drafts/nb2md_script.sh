@@ -30,12 +30,6 @@ echo ' '
 
 jupyter nbconvert --to markdown ${NB}
 
-# Remove the lines that say `<IPython.core.display.Javascript object>`  (not working)
-#echo 'Remove random Javascript object text'
-# sed '/<IPython.core.display.Javascript object>/d' ./${NB_md} > ./${NB_md}
-# sed -i '' '/\<IPython.core.display.Javascript object\>/d' ./${NB_md} # > ./${NB_md}
-# echo ' '
-
 
 # Move the associated figures files, in the NB_files folder, to _assets--------------------
 
@@ -70,17 +64,28 @@ echo 'After renaming png files'
 cat ../_posts/${NB_md} | grep "\[png\](${NB_base}_files"
 echo ' '
 
-# Cut out the first line
-echo 'Cut out the first line'
-tail -n +2 ./${NB_md} > ./${NB_md}
-echo ' '
 
 echo 'Moved markdown file ' ${NB_md} ../_posts/${NB_md}
+
+
+# Remove the lines that say `<IPython.core.display.Javascript object>`  (not working)
+echo 'Remove random Javascript object text'
+# sed '/<IPython.core.display.Javascript object>/d' ./${NB_md} > ./${NB_md}
+sed -i '' '/\<IPython.core.display.Javascript object\>/d' ../_posts/${NB_md}
+# sed -i '' '/\<IPython.core.display.Javascript object\>/d' ${NB_md}
+echo ' '
+
+
+# Cut out the first line
+echo 'Cut out the first line'
+# Need to assign to a diff file first. Redirection (>) happens before tail is invoked by the shell.
+# https://stackoverflow.com/questions/339483/how-can-i-remove-the-first-line-of-a-text-file-using-bash-sed-script
+tail -n +2 ../_posts/${NB_md} > ../_posts/${NB_md}.tmp && mv ../_posts/${NB_md}.tmp ../_posts/${NB_md}
+echo ' '
 
 rm ${NB_md}
 echo 'Removed markdown file in _posts_drafts folder '
 echo ' '
-
 
 
 echo "Markdown produced and updated."
