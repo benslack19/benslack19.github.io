@@ -1,12 +1,12 @@
 ---
-title: "PyMC objects using linear regression, seeing the posterior distribution (part 3)"
+title: "PyMC linear regression part 3: predicting average height"
 mathjax: true
 toc: true
 toc_sticky: true
 categories: [data science, statistics]
 ---
 
-This is the next post in a series of linear regression posts using [PyMC3](https://docs.pymc.io/). This series has been inspired by my reading of [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/). [Part 1](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry01/) was dedicated to setting up the problem and understanding the package’s objects. [Part 2](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry02/) was about interpreting the posterior distribution. In this entry, I'll be using the posterior distribution to make predictions. Specifically, I'll make the distinction between predicting *average height* which has its own uncertainty, and *actual height*. I'll cover predictions of *average height* here.
+This is the next post in a series of linear regression posts using [PyMC3](https://docs.pymc.io/). This series has been inspired by my reading of [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/). [Part 1](https://benslack19.github.io/data%20science/statistics/pymc-linreg-entry01/) was dedicated to setting up the problem and understanding the package’s objects. [Part 2](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry02/) was about interpreting the posterior distribution. In this entry, I'll be using the posterior distribution to make predictions. Specifically, I'll make the distinction between predicting *average height* which has its own uncertainty, and *actual height*. I'll cover predictions of *average height* here.
 
 The first few pieces of code will replicate the previous posts to get us to where we want to be.
 
