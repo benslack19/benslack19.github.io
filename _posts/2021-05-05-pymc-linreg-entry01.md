@@ -1,5 +1,5 @@
 ---
-title: "PyMC objects with linear regression (part 1)"
+title: "PyMC linear regression part 1: PyMC objects"
 mathjax: true
 toc: true
 toc_sticky: true

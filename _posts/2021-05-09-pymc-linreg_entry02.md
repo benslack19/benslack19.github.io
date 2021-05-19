@@ -1,5 +1,5 @@
 ---
-title: "PyMC objects using linear regression, seeing the posterior distribution (part 2)"
+title: "PyMC linear regression part 2: understanding the posterior distribution"
 mathjax: true
 toc: true
 toc_sticky: true
