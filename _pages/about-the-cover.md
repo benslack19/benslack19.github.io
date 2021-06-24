@@ -3,8 +3,7 @@ layout: single
 permalink: /about-the-cover/
 ---
 
-<img src="/assets/BL,CMZ_DGcolorCodedRep_B_forBlog.jpg" alt="BL,CMZ"  title="Image series by CMZ, color-coding by BL" align="left" width="25%" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;"> **The cover image** encapsulates my interests of education, neuroscience, and data science.
+<img src="/assets/FILE0015_fallingBW.png" alt="BL"  title="Falling" align="left" width="30%" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;"> 
+The cover image of this site shows the ocean. It is a source of tranquility for me. I have spent a lot of time in the ocean as a surfer. I think most who are not familiar with surfing, assume that surfers spend the majority of their time riding waves, like [my profile page](https://benslack19.github.io/about/) shows. In reality, I spend most of my time paddling around, waiting for a wave. When I do try to catch one, I fall often. Surfing is a hobby that I don't ever think I will quite master. Nevertheless, it is an activity that I will continue to do.
 
-I have long been interested in education and how people learn. This lead me to neuroscience research with a focus on brain plasticity. One example of this plasticity is shown in the cover image--adult-born neurons in the dentate gyrus, a brain structure important for learning and memory. Neuroscience research provided a natural introduction to coding and data science. One of the first coding projects I did was color-coding a series of images such as the cover figure. I have applied data science in the fields of neuroscience, DNA and RNA sequencing, education, and baseball.
-
-The raw confocal images were obtained by Chunmei Zhao and the color-coding script was written in MATLAB by Ben Lacar.
+Data science and statistics are starting to play a similar role in my life. I am continuously learning. I will make mistakes but I am getting better at recognizing them. But I enjoy the fact that data science can help us make sense of the world around us. That is what keeps me going.

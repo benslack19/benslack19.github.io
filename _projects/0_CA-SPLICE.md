@@ -11,7 +11,7 @@ header:
 
 ---
 
-*A more condensed version of this article was [posted on Medium](https://medium.com/@ben.lacar01/school-and-community-features-associated-with-low-income-student-success-42797cd6baad) on June 7, 2020. The version here was posted on May 25, 2020 and was updated with mainly minor edits. It will remain here since it includes additional details, especially with regards to the Methods and Data Exploration section.*
+*I originally shared this article more widely on Medium. I've seen taken that version down after I learned more about causal inference and Bayesian data analysis. I an opting to keep this version here, which showcases some skills even if some conclusions may be flawed. Learning is a journey and I don't think it makes sense to hide our lessons along the way.*
 
 ## Summary
 
