@@ -333,8 +333,11 @@ Let's start without a multi-level model. Since the main question is whether ther
 <span style="color:red">Not sure if I set this up right. I think we'd still use a Normal here but should I use a Student t distribution instead. Also I used a flat prior since non-Bayesians wouldn't regularize </span>.
 
 $$\text{score}_i \text{ ~ Normal}(\mu_i, \sigma) $$
+<br>
 $$\mu_i = \alpha_{\text{TIME}}$$
+<br>
 $$\alpha_j \text{ ∼ Normal}(0, 10)$$
+<br>
 $$\sigma \text{ ~ Exp}(1)$$
 
 
@@ -803,14 +806,7 @@ post_diff2.mean() / (post_diff2.std() / np.sqrt(4))
 <span style="color:red">I get an answer further than the previous model but in the right direction. Again, not sure if I had done something incorrect</span>
 
 
-```python
 
-```
-
-
-```python
-
-```
 
 Appendix: Environment and system parameters
 
