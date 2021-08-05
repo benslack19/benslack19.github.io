@@ -1,5 +1,5 @@
 ---
-title: "Connecting a paired t-test with a Bayesian multilevel model (DRAFT)"
+title: "(DRAFT) Connecting a paired t-test with a Bayesian multilevel model"
 toc: true
 toc_sticky: true
 mathjax: true
