@@ -30,9 +30,9 @@ One of the things that helped me learn was writing and coding out solutions. The
 
 8. [Linear regression part 2: understanding the posterior distribution](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry02/)
 
-9. [Linear regression part 2: predicting an average outcome](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry03/)
+9. [Linear regression part 3: predicting an average outcome](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry03/)
 
-10. [Linear regression part 2: predicting an actual outcome](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry04/)
+10. [Linear regression part 4: predicting an actual outcome](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry04/)
 
 11. [Multilevel modeling with binomial GLM](https://benslack19.github.io/data%20science/statistics/multilevel_modeling_01/)
 
