@@ -26,17 +26,19 @@ One of the things that helped me learn was writing and coding out solutions. The
 
 6. [Running models forwards and backwards](https://benslack19.github.io/data%20science/statistics/stats_rethinking_ch03_sim4blog_part1/)
 
-7. [Linear regression part 1: an intro to PyMC objects](https://benslack19.github.io/data%20science/statistics/pymc-linreg-entry01/)
+7. [Correlated data, different DAGs](https://benslack19.github.io/data%20science/statistics/stats_rethinking_corr_diffDAGs/)
 
-8. [Linear regression part 2: understanding the posterior distribution](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry02/)
+8. [Linear regression part 1: an intro to PyMC objects](https://benslack19.github.io/data%20science/statistics/pymc-linreg-entry01/)
 
-9. [Linear regression part 3: predicting an average outcome](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry03/)
+9. [Linear regression part 2: understanding the posterior distribution](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry02/)
 
-10. [Linear regression part 4: predicting an actual outcome](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry04/)
+10. [Linear regression part 3: predicting an average outcome](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry03/)
 
-11. [Multilevel modeling with binomial GLM](https://benslack19.github.io/data%20science/statistics/multilevel_modeling_01/)
+11. [Linear regression part 4: predicting an actual outcome](https://benslack19.github.io/data%20science/statistics/pymc-linreg_entry04/)
 
-12. [Exploring multilevel modeling failure](https://benslack19.github.io/data%20science/statistics/diagnosing-a-model/)
+12. [Multilevel modeling with binomial GLM](https://benslack19.github.io/data%20science/statistics/multilevel_modeling_01/)
+
+13. [Exploring multilevel modeling failure](https://benslack19.github.io/data%20science/statistics/diagnosing-a-model/)
 
 Of course, there's still [more for me to learn](https://media.giphy.com/media/miz4vcp6teDBXNWhF8/giphy.gif) and these posts aren't perfect. The image shown above is from a post on diagnosing model failure, which was in one of the later lessons of the book. I wanted to highlight it because "failure" is necessary for learning.
 
