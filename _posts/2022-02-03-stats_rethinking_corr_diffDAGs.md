@@ -36,13 +36,6 @@ az.style.use("arviz-darkgrid")
 az.rcParams["stats.hdi_prob"] = 0.89  # sets default credible interval used by arviz
 ```
 
-    The nb_black extension is already loaded. To reload it, use:
-      %reload_ext nb_black
-    The watermark extension is already loaded. To reload it, use:
-      %reload_ext watermark
-
-
-
 
 
 We'll have three different directed acyclic graphs (DAGs) showing relationships with only three variables, [named](https://media.giphy.com/media/3oEduXdm2gjnrsJBOo/giphy.gif) X, Y, and Z. In all of them, we'll have 100 datapoints. In all of them, `X` will be our "predictor" variable and `Y` will always be the "outcome" variable. `Z` will be the wild card, moving around so we will see what effects it has on the relationship between `X` and `Y`.
