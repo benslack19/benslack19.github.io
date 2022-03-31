@@ -40,7 +40,8 @@ What is a a covariance matrix? One way to think of it is through an analogy: a s
 In equation form, you could have variables that look like this:
 
 $$x \sim \text{Normal}(\mu, \sigma) \tag{univariate normal distribution}$$
-$$\begin{bmatrix}x_1 \\ x_2 \\ ... \\ x_n \end{bmatrix} \sim \text{MVNormal} \left( \begin{bmatrix} \mu_1 \\ \mu_2 \\ ... \\ \mu_n \end{bmatrix} , \Sigma \right) \tag{multivariate normal distribution}$$ 
+
+$$\begin{bmatrix}x_1 \\ x_2 \\ ... \\ x_n \end{bmatrix} \sim \text{MVNormal} \left( \begin{bmatrix} \mu_1 \\ \mu_2 \\ ... \\ \mu_n \end{bmatrix} , \Sigma \right) \tag{multivariate normal distribution}$$
 
 In both cases, we have variables paramaterized by random distributions. In the univariate case, a single draw from the distribution will result in one value. In the multivariate case, a single draw will result in *n* values, one for each parameter. In the multivariate normal (MVN) case, we have a vector of means ($\mu$), but the interesting relationships will result from the covariance matrix $\Sigma$.. It will tell us about the variability of the parameters and also possible correlative relationships between them. This is seen in how we can construct covariance matrices.
 
