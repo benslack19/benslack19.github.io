@@ -15,4 +15,4 @@ This is a running list of interesting resources I've liked in no particular orde
 | [The Book of Why](http://bayes.cs.ucla.edu/WHY/) | A casual intro to causal inference.  |
 | [Causal Inference in Statistics: A Primer](http://bayes.cs.ucla.edu/PRIMER/) | Nice, practical reference on causal inference. |
 | [Bayesian Data Analysis](http://www.stat.columbia.edu/~gelman/book/) | Arguably the godfather of Bayesian data analysis books. Haven't gone too deep into it, but it has more technical detail than Statistical Rethinking. |
-
+| [What Google Learned From Its Quest to Build the Perfect Team](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html) | A trait of a high functioning team is not what I would've first guessed. |
