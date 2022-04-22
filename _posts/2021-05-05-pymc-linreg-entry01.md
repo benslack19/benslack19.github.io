@@ -432,7 +432,7 @@ Most of the information related to our input. Let's look at the `trace` objects,
 
 ## Inspecting the `trace` variables
 
-The `trace` object contains the samples collected, in the order they were collected per the [getting started](https://docs.pymc.io/notebooks/getting_started.html) tutorial. This is an important object so I wanted to dive deeper into it.
+The `trace` object contains the samples collected, in the order they were collected per the [getting started](https://docs.pymc.io/en/v3/pymc-examples/examples/getting_started.html) tutorial. This is an important object so I wanted to dive deeper into it.
 
 Note that I used the variable name "trace" simply because the repo version produced a `MultiTrace` object, which is what happens when the `return_inferencedata` flag is not set. As you'll see, in the first example, it is probably not the best name, but I'll leave the names alone for now.
 
@@ -904,7 +904,7 @@ type(trace_m2)
 
 
 
-The trace object contains the samples collected, in the order they were collected per the PyMC3's. [getting started tutorial](https://docs.pymc.io/notebooks/getting_started.html).  It is much clearer to see this concretely when we use the `trace_to_dataframe` function.
+The trace object contains the samples collected, in the order they were collected per the PyMC3's. [getting started tutorial](https://docs.pymc.io/en/v3/pymc-examples/examples/getting_started.html).  It is much clearer to see this concretely when we use the `trace_to_dataframe` function.
 
 
 ```python
