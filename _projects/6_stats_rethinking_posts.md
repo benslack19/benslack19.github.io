@@ -44,6 +44,8 @@ One of the things that helped me learn was writing and coding out solutions. The
 
 15. [Weird ways that covariance matrices are made](https://benslack19.github.io/data%20science/statistics/cov_matrix_weirdness/)
 
+16. [Why the Spiderman meme is relevant to Bayesian adaptive priors and fixed effects](https://benslack19.github.io/data%20science/statistics/mixed_effects_freqvsbayes_cafes/)
+
 Of course, there's still [more for me to learn](https://media.giphy.com/media/miz4vcp6teDBXNWhF8/giphy.gif) and these posts aren't perfect. The image shown above is from a post on diagnosing model failure, which was in one of the later lessons of the book. I wanted to highlight it because "failure" is necessary for learning.
 
 I'd welcome feedback at ben.lacar AT gmail.com.

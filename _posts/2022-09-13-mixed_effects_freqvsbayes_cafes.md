@@ -11,7 +11,7 @@ For a while, I've wondered about the different approches for multilevel modeling
 - Is it a statistical package thing?
 - Is it because there are five different definitions of "fixed and random effects", [infamously observed by Andrew Gelman](https://statmodeling.stat.columbia.edu/2005/01/25/why_i_dont_use/) and why he avoids using those terms?
 
-I decided to take a deep dive to resolve my confusion, with much help from numerous sources. Please check out the [Acknowledgments and references](#Acknowledgementsa-and-references) section!
+I decided to take a deep dive to resolve my confusion, with much help from numerous sources. Please check out the [Acknowledgments and references](#acknowledgements-and-references) section!
 
 In this post, I'll be comparing an example of mixed effects modeling across statistical philosophies and across statistical languages. As a bonus, a meme awaits.
 
@@ -1030,7 +1030,7 @@ $$ \textbf{S} = \begin{pmatrix} \sigma_{\alpha}^2 & \rho\sigma_{\alpha}\sigma_{\
 
 Finally, the role of $\boldsymbol{\epsilon}$ is to capture any residual variance. Between observations, it is assumed to be homogenous and independent.
 
-### Non-linear algebra form of equation 1
+### Non-linear algebra form
 
 Equation 1 is written concisely in linear algebra form. However, since our dataset is relatively simple (only one predictor variable), equation 1 can be written in an expanded, alternative form as equation 2. This might make it easier to understand (at least it did for me). The notation will start to get hairy with subscripts and so I will explicitly rename some variables for this explanation. It will also better match with the Bayesian set of equations described in the McElreath text. Equation 2 is written at the level of a single observation $i$. I'll repeat Equation 1 here so it's easier to see the conversion.
 
