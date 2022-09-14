@@ -1,5 +1,5 @@
 ---
-title: "Why the Spiderman meme is relevant to Bayesian adaptive priors and fixed effects"
+title: "When the Spider-Man meme is relevant to multilevel models"
 mathjax: True
 toc: true
 toc_sticky: true
@@ -1026,7 +1026,7 @@ In other words, in Equation 1, both the random intercept and random slope are bo
 $$ \textbf{S} = \begin{pmatrix} \sigma_{\alpha}^2 & \rho\sigma_{\alpha}\sigma_{\beta} \\ 
                 \rho\sigma_{\alpha}\sigma_{\beta} & \sigma_{\beta}^2 \end{pmatrix} \tag{4}$$ 
 
- We know there is a correlation because (a) we generated the data that way and (b) we can directly observe this when we [visualized the data](#Visualize-data).
+ We know there is a correlation because (a) we generated the data that way and (b) we can directly observe this when we [visualized the data](#visualize-data).
 
 Finally, the role of $\boldsymbol{\epsilon}$ is to capture any residual variance. Between observations, it is assumed to be homogenous and independent.
 
@@ -1079,7 +1079,7 @@ Now that we have the dataset, we can run the two models, one with `lmer` and one
 
 # Running equation set 1 with `lmer` (frequentist)
 
-The `lmer` and by extension (`brms`) syntax was confusing to me. Thanks to @probot from the Discord channel for helping me understand this.
+The `lmer` and by extension (`brms`) syntax was initially confusing to me.
 
 `lmer(wait ~ 1 + afternoon + (1 + afternoon | cafe), df_cafes)`
 
@@ -2414,7 +2414,7 @@ Acknowledgements
 
 References
 - [UCLA introduction to linear mixed models](https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/).
-- Richard McElreath's Statistical Rethinking for my introduction to Bayesian multilevel modeling and the Statistical Rethinking repo.
+- Richard McElreath's Statistical Rethinking for my introduction to Bayesian multilevel modeling and the [Statistical Rethinking Chapter 14 repo](https://github.com/pymc-devs/pymc-resources/blob/main/Rethinking_2/Chp_14.ipynb).
 - Andrzej Gałecki and Tomasz Burzykowski's [Linear Mixed-Effecsts Models Using R](https://link.springer.com/book/10.1007/978-1-4614-3900-4) which references the `lme4` package. Dr. McElreath referenced this package as a non-Bayesian alternative in his book.
 - Andrew Gelman wrote about why he doesn't like using "fixed and random effects" (in a [blog](https://statmodeling.stat.columbia.edu/2005/01/25/why_i_dont_use/) and in a [paper](https://projecteuclid.org/journals/annals-of-statistics/volume-33/issue-1/Analysis-of-variancewhy-it-is-more-important-than-ever/10.1214/009053604000001048.full)).
 - TJ Mahr's [partial pooling blog post](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/).
