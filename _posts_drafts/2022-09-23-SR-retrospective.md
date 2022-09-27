@@ -1,79 +1,68 @@
 ---
-title: "How to join the Statistical Rethinking cult"
+title: "How I joined the Statistical Rethinking cult"
 ---
 
-[Statistical Rethinking by Richard McElreath](https://xcelab.net/rm/statistical-rethinking/) gained a cult following in the last few years. How would I know that? Well, I'm part of the cult.
+[Statistical Rethinking by Richard McElreath](https://xcelab.net/rm/statistical-rethinking/) appears to have gained a cult following in the last few years. I'm a part of it. And I'm not alone. The first version of Solomon Kurz's tidyverse translation starts out unabashed: ["This is a love letter"](https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/). The strong affinity that others have for the book is no doubt due to Dr. McElreath's personality and his attitude towards science and statistics. From his lectures and his writing style, he comes across more as the grad student TA who makes material accessible rather than the high-and-mighty professor that (consciously or unconsciously) gatekeeps.
 
-And I'm not alone. The first version of Solomon Kurz's tidyverse translation starts out unabashed: ["This is a love letter"](https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/). This is no doubt due to Dr. McElreath's personality and attitude towards science and statistics. I would liken his appeal to our favorite teachers growing up; you liked he course 
+I was not exactly a novice when I first encountered the book. I've taken several courses in statistics, applied it in research work, and had worked as a data scientist. I nevertheless felt uneasy about my statistics knowledge and the decision points to be made for applying a statistical procedure. Dr. McElreath's book was the first I've come across that spoke directly to my personal discomfort on the matter. Seeing the response from other students to his book demonstrated that others felt the same.
 
+I did not initially read SR to improve my general knowledge of statistics. Instead, I sought to better understand a specific subject: mixed effects models. I read online that SR might be a good resource that could help explain it. But when I jumped ahead to the mixed effects chapter, I didn't quite grasp the concepts and felt like I had to go to the beginning. Dr. McElreath states in his preface that the book is meant to be read sequentially. Despite the unexpected time investment to go through the book and course, I’m happy that I did.
 
- auth
+ If you're reading this, you are likely considering going through the course as well. I hope you'll find it well worth your time. I hope me sharing my experience will help you on your journey. I went through the book initially on my own and started to hit a wall in the fifth chapter. I found an online study group where I joined them in going through the rest of the book. That took about 6 months, going at our own pace. I went through the book a second time, serving as a study group co-leader, running in parallel to the Winter 2022 series which was 10 weeks.
 
-The second edition was published just as our lives were 
+This post should not necessarily be interpreted as a list of things you "should" do. It's merely to give you ideas of what you might consider incorporating to be helpful.
 
+# Pre-requisites
+**Statistics and math.** The inclusion of the word "rethinking" in the book title is apt. I mention my exposure to statistics above so that you can also appreciate where my comments are coming from. In addition to courses, I had gone through this [Khan Academy course](https://www.khanacademy.org/math/statistics-probability) previously. If you understand those topics, I think you're okay moving forward.
+<br>
+**Programming.**  A commonly asked question is, "What package or approach should I use for the course?" This really is a matter of personal preference as [the course page](https://xcelab.net/rm/statistical-rethinking/) lists several repos in R, Python, and Julia. I had used both R and Python in work projects before beginning the course. The path with the least resistance would be to use the book's code (base R and `rethinking` package). I chose to use `pymc` and, while it may have taken me more time, thinking about coding implementation forced me to think about the material more deeply.
 
+# Setting up
+**Video series and accompanying course repos**.  In theory, one can use only the book to learn. However, this would mean missing McElreath's trademark wit. There are several video series one can choose from. I went through the Winter 2019 series (two years after it came out) and Winter 2022 series (as they were released). I would recommend choosing from one of these. (While you can find 2017 and older video series, they are reflective of the book's first edition.) Your choice will essentially come down to this: how much do you want the material to align with the second edition of the book versus how "updated" do you want the lectures to be? 
 
+| Video series  | Associated repo  |  Comments |
+| --- | --- |  --- | 
+| [Winter 2022 videos](https://www.youtube.com/playlist?list=PLDcUM9US4XdMROZ57-OIRtIK0aOynbgZN) | [Winter 2022 repo](https://github.com/rmcelreath/stat_rethinking_2022)  |  Many examples are tweaked relative to the 2nd edition (content appears to test material for a 3rd edition). Videos have great production quality. |
+| [Winter 2019 videos](https://www.youtube.com/watch?v=4WVelCswXo4&list=PLDcUM9US4XdNM4Edgs7weiyIguLSToZRI)  | [Winter 2020 repo](https://github.com/rmcelreath/stat_rethinking_2020/tree/main/homework)  | This is more tightly aligned with the 2nd edition of the book. He delivers in front of an audience where his personality shines through a bit more. (There is a 2019 repo, but I'd recommend using the more recent version.)|
 
-My journey
-- BDA
-- mixed effects models, other sources
-- found SR
-- went back
+If I was a total newbie, I think I would feel slightly confused by the alterations he makes from the book in the Winter 2022 version. In addition, the repos in other packages may not have all of the Winter 2022 code.
 
-
-https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/
-
-
-
-“Pre-requisites”
-- math knowlege
-- computational stuff
-
-Setting up
-- language choice
-- repos
-- sometimes class repo has questions
-- choice of video series
-    - McElreath’s 2022 lectures are a test of another edition; 2019 is a more faithful and updated to the second edition
-- get a hard copy book
-- electronic copy
-- put it on your phone
-
-Resources
-- Follow him on Twitter… follow pymc 
-- don't tweet at him as a first pass... he probably gets questions all the time
-- Ask on discord, Twitter, etc
-
-Flow / getting through it
-Daily
-- Order of exposure… lecture, easy book problems, homework, book for details… quizzing... re-watch lecture from different series
-- Print out and write notes
-- Consistent…. An hour a day (atomic habits)
-- Avoid using an answer key…. You’re not going to learn (use code for visualizations, etc)
-
-Weekly / group session
-- practice explaining concepts to others
-- sometimes you'll get behind, sometimes you'll want to go ahead
-
-- doing a group session
-- Draw the owl is necessary 
-- once a week, a chapter every 2 weeks
-- it'll get harder
+**Resources** 
+<br>
+Stuff to bookmark on your browser:
+- [The main book page](https://xcelab.net/rm/statistical-rethinking/)
+- Whatever video series and associated repo you choose above.
+- I also liked to occasionally watch videos on my phone's YouTube app. Consider bookmarking and subscribing to [Dr. McElreath's YouTube channel](https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA).
 
 
-Know what to prioritize
-- The earlier chapters are fundamental
-- Keep the big picture in mind… Know what to skip…  (it depends on what you want to get out of it... skip Gibbs or HMC details... ordererd categorical. )
-- Have a personal criteria to move on: “one hard problem”, one homework assignment... easy/medium/hard
-- Replay a lecture at faster speed
-- Apply to one of your own problems, write a blog post
+**Books**
 
-After finishing the first time
-- revisiting past concepts
-- going to different sources
-- book of why, BDA, gelman and hill, mixtape, etc.
+I like to have hard copies of book's I reference a lot. You can get it [here](https://www.routledge.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919). If finances are an issue, look at your local library. If you're associated with a university, you may be able to get access to an electronic copy as well. I used both the hard and electronic copy.
+<br>
 
-Imperfections
+**Social media sources**
+- Follow Dr. McElreath and his network on Twitter (based on their auto-suggest). They'll post stats content which may not make sense to you immediately. As you progress through the course, it's a good sign when you start to recognize their memes and jokes. (There's great cat content too.)
+- If you're using a package, you can follow their social media platforms. (The `pymc` folks are pretty active.)
+
+**Getting through the course**
+<br>
+I had been reading the book Atomic Habits around the time that I went through my first pass through the course. It helped me to go through SR due to some of the recommended practices. If there are two things I learned, they were: being consistent and not putting pressure on myself to learn everything on the first pass.
+
+- I established a routine where devote 1-2 hours per day every morning. I'd print out the slides of the video series and write notes (two slides per page and double-spaced otherwise I couldn't stapel). 
+- My order of exposure would generally go something like this: First watch the lecture and take notes. Then it would be a back and forth between the book's text and the homework problems (which were usually the book's hard problems in the 2020 course).
+- I avoided using the answer key in the homework. I liked having a course repo to check my answers but, as much as possible, I tried to resolve my own confusions in individual or group study sessions. I felt like the lessons stuck that way. Dr. McElreath implores us to ["draw the owl"](https://glebbahmutov.com/blog/how-to-draw-an-owl/) throughout the course. 
+- Having a group session was valuable. We met on a weekly basis and it helped me keep moving forward. Sometimes you'll get behind and sometimes you'll want to move ahead, but there's undoubtedly great benefit in both learning from and helping others.
+- I felt like the earlier chapters weren't too hard but the difficulty ramped up around Chapter 5 and 6. Having a routine established helps push through the harder sections.
+- As material gets hard, you may find yourself getting frustrated or feel like you're taking too long to get through the course. Here's an important thing that helped me: whether you're in a group or studying by yourself, **decide on a criteria, that determines whether you are okay moving on.** This speaks to the idea to not feel like you have to learn everything on the first pass. My criteria was that I could do at least one hard end-of-chapter problem (often it would be a homework problem). For others, it might be doing all of the homework. The Winter 2022 series had bonus problems but I had some trouble with them in the later weeks.
+- Understand what you want to get out of the course and try to not get too lost in details. I wanted to learn generalized linear models and multilevel models. That meant I did not care to be an expert on Metropolis Monte Carlo. I just wanted to know a little bit about it to understand what it's doing. I also found ordererd categorical models interesting but it wasn't my highest priority.
+- I felt most comfortable about a concept when I could apply an SR lesson to my own problem and write a blog post about it.
+
+# After finishing the first time
+Your priorities may vary after you've gone through the course. You may seek to:
+- revisiting past concepts, including ideas you felt were lower priority initially
+- look at concepts from different sources: including The Book of Why, Bayesian Data Analyais, Gelman and Hill, Causal Inference: The Mixtape, etc.
+
+# Imperfections
 - Some errors?
 - Many datasets are small, great teaching examples, not super realistic
 - Culture change with others (e.g. mixed effects model)
@@ -81,13 +70,9 @@ Imperfections
 - Open source contributions
 
 
-Closing thoughts
+# Closing thoughts
 other reviews
 - https://www.crosstab.io/articles/statistical-rethinking-review
 
 
-
-
-
-
-
+I revisited a section of statistics text recently and getting slightly teary eyed because I could comprehend stuff I wouldn’t have before SR. I hope it will make a similar impact on you. The material is not easy and throughout his videos he reminds us to "Be kind and patient with ourselves" and "If you're slightly confused, it only means you're paying attention." You should expect that the material will be difficult.
