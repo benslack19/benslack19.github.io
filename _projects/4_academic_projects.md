@@ -1,18 +1,20 @@
 ---
 title: Academic projects
-excerpt: A list of publications from my graduate and post-doctoral work in neuroscience.
+excerpt: A list of publications from my graduate, post-doctoral, and data science fellowship research.
 header:
   image: /assets/fldm_projects/brain-1787622_1280.png
   teaser: /assets/fldm_projects/brain-1787622_1280.png
 
 ---
 
-The following are selected examples of publications from my graduate studies at Yale and post-doctoral research at the Salk Institute in the field of neuroscience.
+The following are selected examples of projects from my graduate neuroscience studies at Yale, post-doctoral neuroscience and molecular biology research at the Salk Institute, and research work as a data science fellow with UCSF and UC Berkeley.
 
+
+- Identifying social risks from notes in the Electronic Health Record and evaluating associations with emergency department visits [(in prep, link)](https://github.com/benslack19/pediatric_oncology_EHR)
 
 - Nuclear RNA-seq of single neurons reveals molecular signatures of activation [(link)](https://www.nature.com/articles/ncomms11022)
 
-- Increasing the resolution of the adult neurogenesis picture [(link)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3914506/) (review article)
+- Increasing the resolution of the adult neurogenesis picture [(link)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3914506/)
 
 - Neural Progenitor Cells Regulate Capillary Blood Flow in the Postnatal Subventricular Zone [(link)](https://www.jneurosci.org/content/32/46/16435.short)
 
