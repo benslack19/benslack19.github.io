@@ -69,6 +69,9 @@ Your priorities may vary after you've gone through the course. You may seek to:
 including The Book of Why, Bayesian Data Analyais, Gelman and Hill, Causal Inference: The Mixtape, etc.
 
 # Imperfections
+Why would he not explain statistical procedures further?
+
+
 - Some errors?
 - Many datasets are small, great teaching examples, not super realistic
 - Culture change with others (e.g. mixed effects model)
