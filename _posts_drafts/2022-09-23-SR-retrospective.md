@@ -2,7 +2,7 @@
 title: "How I joined the Statistical Rethinking cult"
 ---
 
-[Statistical Rethinking by Richard McElreath](https://xcelab.net/rm/statistical-rethinking/) appears to have gained a cult following in the last few years. I'm a part of it and I'm hardly the first to have joined. The first version of Solomon Kurz's tidyverse translation starts out unabashed: ["This is a love letter"](https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/).
+[Statistical Rethinking by Richard McElreath](https://xcelab.net/rm/statistical-rethinking/) appears to have gained a cult following in the last few years. I'm a part of it and I'm hardly the first to have joined. The first version of Solomon Kurz's tidyverse translation starts out unabashed: ["This is a love letter"](https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/). Crosstab Data Science begins their review with ["This is an absolute gem of a book."](https://www.crosstab.io/articles/statistical-rethinking-review)
 
  The strong affinity that others have for the book is no doubt due to Dr. McElreath's personality and his attitude towards science and statistics. From his lectures and his writing style, he makes material accessible rather than the high-and-mighty professor that (consciously or unconsciously) gatekeeps.
 
@@ -64,18 +64,17 @@ Your priorities may vary after you've gone through the course. You may seek to:
 - Revisit past concepts, including ideas you felt were lower priority initially
 - Look at concepts from different sources. (This is what I aimed to do with various levels of success.) Here are a few books worth considering.
 
-
-
 including The Book of Why, Bayesian Data Analyais, Gelman and Hill, Causal Inference: The Mixtape, etc.
 
 # Imperfections
 Why would he not explain statistical procedures further?
 
+While I hope my enthusiasm for the book is clear, there are some drawbacks to be aware of. For example, Chapter 1 opens with his criticism of the statistical procedure decision tree that is commonly used by many researchers. I thought the criticism was appropriate.
 
 - Some errors?
 - Many datasets are small, great teaching examples, not super realistic
 - Culture change with others (e.g. mixed effects model)
-- T-test/ANOVA teaser
+
 - Open source contributions
 
 
