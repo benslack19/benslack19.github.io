@@ -64,15 +64,15 @@ Your priorities may vary after you've gone through the course. You may seek to:
 - Revisit past concepts, including ideas you felt were lower priority initially
 - Look at concepts from different sources. (This is what I aimed to do with various levels of success.) Here are a few books worth considering.
 
-
-
 including The Book of Why, Bayesian Data Analyais, Gelman and Hill, Causal Inference: The Mixtape, etc.
 
 # Imperfections
+While I hope my enthusiasm for the book is clear, there are some drawbacks to be aware of. For example, Chapter 1 opens with his criticism of the statistical procedure decision tree that is commonly used by many researchers. I thought the criticism was appropriate.
+
 - Some errors?
 - Many datasets are small, great teaching examples, not super realistic
 - Culture change with others (e.g. mixed effects model)
-- T-test/ANOVA teaser
+
 - Open source contributions
 
 
