@@ -2,7 +2,7 @@
 title: "How I joined the Statistical Rethinking cult"
 ---
 
-[Statistical Rethinking by Richard McElreath](https://xcelab.net/rm/statistical-rethinking/) appears to have gained a cult following in the last few years. I'm a part of it and I'm hardly the first to have joined. The first version of Solomon Kurz's tidyverse translation starts out unabashed: ["This is a love letter"](https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/).
+[Statistical Rethinking by Richard McElreath](https://xcelab.net/rm/statistical-rethinking/) appears to have gained a cult following in the last few years. I'm a part of it and I'm hardly the first to have joined. The first version of Solomon Kurz's tidyverse translation starts out unabashed: ["This is a love letter"](https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/). Crosstab Data Science begins their review with ["This is an absolute gem of a book."](https://www.crosstab.io/articles/statistical-rethinking-review)
 
  The strong affinity that others have for the book is no doubt due to Dr. McElreath's personality and his attitude towards science and statistics. From his lectures and his writing style, he makes material accessible rather than the high-and-mighty professor that (consciously or unconsciously) gatekeeps.
 
