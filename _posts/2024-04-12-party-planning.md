@@ -6,21 +6,21 @@ toc_sticky: true
 categories: [data science, statistics]
 ---
 
-A few years back when I started writing on this blog, I wrote a piece called [The probability of making your Friday night party](https://benslack19.github.io/data%20science/statistics/social_schedule/). Well the opportunity has now presented itself for predicting the number of people attending *our* party. This question came up between my wife and I since we're trying to plan party logistics.
+A few years ago, not long after I started writing on this blog, I wrote a piece called [The probability of making your Friday night party](https://benslack19.github.io/data%20science/statistics/social_schedule/). Well, the opportunity has presented itself for predicting the number of people attending *our* party. This question came up between my wife and I since we're trying to plan party logistics.
 
 You might be asking yourself, "Ben, why don't you just request RSVPs and get a more definitive number?" There are several reasons for this:
 1. The number of people in attendance is not only a key factor in party planning, but a factor that both affects and is *affected by* logistics. If you build the party, they will come. Therefore, it would be helpful to get a probability distribution for the number of attendees even before sending an Evite or request RSVPs.
-1. Friends and family have increasingly busy schedules and sometimes RSVPs aren't reliable. We know they'd love to attend but have other barriers with complicated dependencies. Think caregiving for older parents, kids, or pets; travel preferences; already reserved tickets to sporting events; hair salon appointments (hey sometimes they're hard to get).
+1. Friends and family have increasingly busy schedules and sometimes RSVPs aren't reliable. We know they'd love to attend but have other barriers with complicated dependencies. Think caregiving for older parents, kids, or pets; travel preferences; already reserved tickets to sporting events; hair salon appointments (hey sometimes they're hard to get). Cancellations last minute are increasingly common.
 1. In a post-pandemic world, it's more acceptable to be a no-show if you're experiencing any health symptoms.
 1. I'm a geek and thought of the fun way this can be answered with probability and statistics!
 
-Here are the fun, geeky aspects of the problem.
-- Estimating the total number of people might come means considering that the probabilities of coming vary across individuals. You can imagine that a grandmother will very likely come (probability of 0.9) while a co-worker with young kids is more of a toss-up (probability of 0.5). That's why an initial, naive approach for using the binomial distribution for the entire guest list would not be optimal; the binomial distribution would assumes constant probability across the individuals. However, one can apply binomial distribution to a group of friends or a family unit. Maybe one parent goes, and that parent can take 1 or 2 kids.
+Here are some interesting aspects of the problem.
+- Estimating the total number of people means considering the variable probabilities of attending across individuals. A grandmother will very likely come (probability of 0.9) while a co-worker with young kids is more of a toss-up (probability of 0.5). That's why an initial, naive approach for using the binomial distribution for the entire guest list would not be optimal, since constant probability is assumed across individuals. However, one can apply binomial distribution to a group of friends or a family.
 - Determining the expected value is relatively easy. Understanding the uncertainty is harder.
 
-The core analytical aspect of this problem was addressed by a [1993](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWQ1eDd1dnI4YnBieHRoZTdoNzJycXNhYTFmeXl3dWE4YWlpZTA5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6DTyIDQ1VfQnC/giphy.gif) paper by Ken Butler and Michael Stephens called [The Distribution of a Sum of Binomial Random Variables ](https://www.semanticscholar.org/paper/The-Distribution-of-a-Sum-of-Binomial-Random-Butler-Stephens/a85017f8ef59cefc315aec62c06fb8bb645b720d). However, we can re-derive some of the work through reasoning through just a few fundamental probability rules such as:
-- Identifying the probabilities of jointly events which are otherwise independent means multiplying the probabilities of the individual events ("and" statements)
-- Identifying the total probability of several events occurring means adding the probabilities of the individual events ("or" statements)
+This problem was addressed by a [1993](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWQ1eDd1dnI4YnBieHRoZTdoNzJycXNhYTFmeXl3dWE4YWlpZTA5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6DTyIDQ1VfQnC/giphy.gif) paper by Ken Butler and Michael Stephens called [The Distribution of a Sum of Binomial Random Variables ](https://www.semanticscholar.org/paper/The-Distribution-of-a-Sum-of-Binomial-Random-Butler-Stephens/a85017f8ef59cefc315aec62c06fb8bb645b720d). However, we can re-derive some of the work through reasoning with just a few fundamental probability rules:
+- Identifying the probabilities of jointly occurring events which are otherwise independent means multiplying the probabilities of the individual events ("and" statements)
+- Determining the total probability of several events occurring means adding the probabilities of the individual events ("or" statements)
 - The sum of the probabilities of all possible events must add to 1.
 
 Let's get started!
@@ -125,20 +125,18 @@ for (i, row), ax  in zip(df_data.iterrows(), axes.flat):
     
 ![png](/assets/2024-04-12-party-planning_files/2024-04-12-party-planning_4_0.png)
     
-
+As you can see, it's straighforward to get a distribution for each group. But how do we get a distribution for the *total* number of people attending?
 
 # Deriving the algorithm for the distribution of summed discrete random variables
-As you can see, it's fairly straighforward to get a distribution for the individual groups for attendance. But how do we get a distribution for the *total* number of people attending?
-
-We can look at the Butler and Stephens paper and see that they approached this with an algorithm for the exact distribution while also examining approximations. For our purposes, we'll focus on the exact distribution, especially since there was this line from their paper "With modern computing facilities, it is possible to calculate the exact distribution of S." Remember this was written in 1993 when computers looked like [this](https://giphy.com/gifs/90s-computer-dV3GXudtLAbTi). Nevertheless, when you see the calculations carried out, you can appreciate why a statement was warranted and why they explored approximations, especially as the number of samples (possible attendees in this case) scales.
+We can look at the Butler and Stephens paper and see that they with both exact and approximate solutions. For our purposes, we'll focus on the exact distribution, especially since there was this line from their paper: "With modern computing facilities, it is possible to calculate the exact distribution of S." Remember this was written in 1993 when computers looked like [this](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2I0bmVnMmx3NDljdmp0eXZucnEzeTJzcHpzZmhkbW85eTY5dGw1dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dV3GXudtLAbTi/giphy.gif). Nevertheless, when you see the calculations carried out, you can appreciate why a statement was warranted and why they explored approximations, especially as the number of samples (possible attendees in this case) might scale.
 
 The heart of the algorithm is the following equation.
 
 $$ P(Y + Z=j) = \sum_{i=0}^{j} P(Y=i) P(Z = j-i) $$
 
-$Y$ and $Z$ are two discrete random variables (e.g. integers) which makes sense since we don't want a fraction of a person attending (maybe if it was Halloween?). (While they described $Y$ and $Z$ as variables with a binomial distribution, we can see later why this isn't strictly necessary.) They talk about focusing on only two groups at a time, then once that has been calculated, adding in an additional group recursively until all have been accounted for. 
+$Y$ and $Z$ are two discrete random variables (e.g. integers) which makes sense since we don't want a fraction of a person attending (unless it was Halloween). While they described $Y$ and $Z$ as variables with a binomial distribution, we can see later why this is not strictly necessary. Additionally, the equation only has $Y$ and $Z$ since they start with only two groups. Once that has been calculated the new distribution is the "new" $Y$ and the next group would be the "new" $Z$. This continues recursively until all groups have been accounted for. 
 
-We can reason through the above formula with our putative invites. We'll go back to the dataframe that produced the above figure where each row contains a group, the number of people (n), and the probability of attendance (p) but limit it to the first two rows where the `Grandparents` group is the $Y$ variable and the `Neighbors` group is the $Z$ variable.
+We can derive the above formula with our putative invite example. We'll go back to our dataframe where each row contains a group, the number of people ($n$), and the probability of attendance ($p$) but limit it to the first two rows where `Grandparents` is the $Y$ variable and `Neighbors` is the $Z$ variable.
 
 
 ```python
@@ -314,13 +312,13 @@ df_Z
 
 
 
-We can then think now about the probabilities for each possibility of total attendance which we'll designate with the variable $j$. That means, $j$ is bounded by 0 (no one comes, wah wah) to 6 (everyone shows up). Let's reason this out. I'm italicizing some keywords below since we can link *and* statements to multiplying probabilities and *or* statements to adding probabilities.
+Now, we can consider the probabilities for each possibility of total attendance $j$. That means, $j$ is bounded by 0 (no one comes, wah wah) to 6 (everyone shows up). The probability for each value of $j$ can be deduced with probability rules. I'm italicizing some keywords below since we can link *and* statements to multiplication and *or* statements to addition.
 
 - 0 total attendees ($j=0$): That means 0 grandparents show up *and* 0 neighbors show up. The probability of both happening means multiplying the probabilities ($0.01 \times 0.003906$).
 - 1 total attendee ($j=1$): That means *either* 1 grandparent shows up *and* 0 neighbors show up ($0.18 \times 0.003906$) *or* 0 grandparents show up *and* 1 neighbor shows up ($0.01 \times 0.046875$). This means adding the two possibilities ($0.18 \times 0.003906 + 0.01 \times 0.046875$)
 - 2 total attendees ($j=2$): Here's where it starts get more complicated. That means *either* 2 grandparents show up *and* 0 neighbors show up ($0.81 \times 0.003906$) *or* 1 grandparent shows up *and* 1 neighbor shows up ($0.18 \times 0.046875$) *or* 0 grandparents show up *and* 2 neighbors show up ($0.01 \times 0.210938$). This means adding these three possibilities ($0.81 \times 0.003906 + 0.18 \times 0.046875 + 0.01 \times 0.210938$).
 
-Hopefully you start to see the pattern and can figure out the logic for the remaining values of $j$ and now see how this leads to the above equation. Let's flesh this out with code.
+You can see the pattern and figure out the logic for the remaining values of $j$. Hopefully you can see now how this leads to the above equation. Let's flesh this out with code.
 
 
 ```python
@@ -399,7 +397,7 @@ print(f"\nTotal probability after accounting for all cases: {total_prob:0.4f}")
     Total probability after accounting for all cases: 1.0000
 
 
-Awesome! It looks like we've successfully carried out the equation. But remember we've only done the first two groups. The next step is to add in the remaining group (co-worker's family) using the same process. But the probability distribution of our new $Y$ variable is what we just calculated, which is now stored in  a dictionary `j_prob`. As I indicated above, there's really no requirement that the distribution be binomial, it just has to be discrete.
+Awesome! It looks like we've successfully carried out the equation. But remember we've only done the first two groups. The next step is to add in the remaining group (`co-worker's family`) using the same process. But the probability distribution of our new $Y$ variable is what we just calculated, which is now stored in  a dictionary `j_prob`. As I indicated above, there's really no requirement that the distribution be binomial. It just has to be discrete.
 
 
 ```python
@@ -525,7 +523,7 @@ df_data
 
 
 
-Recall that the putative total invite list was 11 people. Therefore, our probability distribution should give probabilities between 0 and 11.
+Recall that the putative total invite list was 11 people. Therefore, our probability distribution should give probabilities for each value between 0 and 11, inclusive.
 
 
 ```python
@@ -554,7 +552,7 @@ ax.set(
 
 
 # A user-friendly function
-OK! So it now looks like we have our final, exact distribution for the sum of all variables, what Butler and Stephens called $S$. We can make the production of this distribution much more user friendly with another couple of functions. Let's produce this by passing in our dataframe.
+OK! So it now looks like we have our final, exact distribution for the sum of all variables, what Butler and Stephens called $S$. We can make the production of this distribution much more user friendly with another couple of functions. Passing in our dataframe, we will produce a list of dictionaries, where each dictionary is a group's probability distribution. Then this list will be passed into a second function to give our [final answer](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW0ydHZ2bWdkZ2syM21uMDN4b3J5dXlpN2s0MmpteTg2dmZnemtxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tgro6ounLJHvBR7QwU/giphy.gif). You can see at the `assert` statement that gives us the same answer that we derived above, step-by-step.
 
 
 ```python
@@ -670,8 +668,6 @@ assert j_prob_new == sum_of_discrete_rvs_exact_calculation(pmf_list_party)
 %watermark -n -u -v -iv -w
 ```
 
-    The watermark extension is already loaded. To reload it, use:
-      %reload_ext watermark
     Last updated: Fri Apr 12 2024
     
     Python implementation: CPython
