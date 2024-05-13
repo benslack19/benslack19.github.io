@@ -36,4 +36,4 @@ Bulk RNA-seq is one of the most popular sequencing methods in academic and comme
 
 [poster](https://github.com/benslack19/benslack19.github.io/blob/master/assets/fldm_projects/Juno%20RNA%20Seq%20Poster%20ESHG%202019%2020190619.pdf)
 
- *Disclosure: I am a shareholder of Fluidigm Corporation. I am including these examples of data science projects I have done in industry.*
+ *Disclosure: I am a shareholder of Fluidigm Corporation and Seer, Inc. I am including these examples of data science projects I have done in industry.*
