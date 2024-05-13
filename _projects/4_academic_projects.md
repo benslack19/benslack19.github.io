@@ -7,8 +7,11 @@ header:
 
 ---
 
-The following are selected examples of projects from my graduate neuroscience studies at Yale, post-doctoral neuroscience and molecular biology research at the Salk Institute, and research work as a data science fellow with UCSF and UC Berkeley.
+The following are selected examples of projects from my graduate neuroscience studies at Yale, post-doctoral neuroscience and molecular biology research at the Salk Institute, health informatics research as a data science fellow with UCSF and UC Berkeley, and as a machine learning researcher at Seer.
 
+- Identification of Novel Biomarkers for Alzheimer’s Disease and Related Dementias Using Unbiased Plasma Proteomics [(preprint)](https://www.biorxiv.org/content/10.1101/2024.01.05.574446v1)
+
+- Automatic extraction of social determinants of health from medical notes of chronic lower back pain patients [(link)](https://academic.oup.com/jamia/article/30/8/1438/7133957)
 
 - Identifying social risks from notes in the Electronic Health Record and evaluating associations with emergency department visits [(in prep, link)](https://github.com/benslack19/pediatric_oncology_EHR)
 
