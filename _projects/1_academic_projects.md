@@ -14,7 +14,7 @@ The following are selected examples of projects from my graduate neuroscience st
 
 - Automatic extraction of social determinants of health from medical notes of chronic lower back pain patients [(link)](https://academic.oup.com/jamia/article/30/8/1438/7133957)
 
-- Identifying social risks from notes in the Electronic Health Record and evaluating associations with emergency department visits [(in prep, link to abstract)](https://www.textxd.org/speaker/lacar/)
+- Identifying and evaluating social risk associations with pediatric oncology outcomes using electronic health records and clinical notes [(in prep, link to abstract)](https://www.textxd.org/speaker/lacar/)
 
 - Nuclear RNA-seq of single neurons reveals molecular signatures of activation [(link)](https://www.nature.com/articles/ncomms11022)
 
