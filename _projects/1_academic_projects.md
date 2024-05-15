@@ -1,6 +1,7 @@
 ---
 title: Publications
 excerpt: A list of research projects from academia and industry.
+mathjax: true
 header:
   image: /assets/fldm_projects/brain-1787622_1280.png
   teaser: /assets/fldm_projects/brain-1787622_1280.png
