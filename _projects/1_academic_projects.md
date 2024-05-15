@@ -1,6 +1,6 @@
 ---
-title: Academic projects
-excerpt: A list of publications from my graduate, post-doctoral, and data science fellowship research.
+title: Publications
+excerpt: A list of research projects from academia and industry.
 header:
   image: /assets/fldm_projects/brain-1787622_1280.png
   teaser: /assets/fldm_projects/brain-1787622_1280.png
