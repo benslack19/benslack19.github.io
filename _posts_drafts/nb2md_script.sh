@@ -97,5 +97,5 @@ echo 'Removed markdown file in _posts_drafts folder '
 echo ' '
 
 echo "Markdown produced and updated."
-echo "cd to parent folder and make sure first line of markdown file is not blank (starts with `---` indicating start of YAML)"
+echo "cd to parent folder and make sure first line of markdown file is not blank (starts with --- indicating start of YAML)"
 echo "Run bundle exec jekyll serve to test page build locally."
