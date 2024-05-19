@@ -21,9 +21,9 @@ Notes for Chapter 2 of [Causal Inference with Survey Data](https://www.linkedin.
 | ----- | ----- | ------- |
 | Simple randomization  | Assigns equal probability to treatment and control groups |- Easy to implement<br>- Can lead to unequal group sizes in small trials |
 | Block randomization  | Get similar group sizes by dividing subjects into predetermined number of subjects (often a multiple of the number of groups, like 4, 8, etc. for two groups). Within each block, participants are then randomly assigned to treatment groups.  |- Requires choosing the total number of subjects in each block <br>- Can often avoid imbalance in small trials seen with simple randomization |
-| Stratified randomization  | Balance based on characteristics/covariates (like age, sex, etc.) before randomizing within these strata |<ul><li>Ensures balance in important covariates between groups  |
+| Stratified randomization  | Balance based on characteristics/covariates (like age, sex, etc.) before randomizing within these strata |- Ensures balance in important covariates between groups  |
 | Cluster randomization  | Randomizes entire groups (like schools or hospitals) |- Suitable for group-level interventions or when individual assignment is impractical   |
-| Covariate adaptive randomization  | Increases the probability of being assigned to a group to address a deficit of a particular characteristic   within the group |<ul><li>Effective in trials with small sample sizes or multiple important covariates |
+| Covariate adaptive randomization  | Increases the probability of being assigned to a group to address a deficit of a particular characteristic within the group |- Effective in trials with small sample sizes or multiple important covariates |
 
 - Before randomization, the number of observations is typically calculated ahead of time based on a specific effect size (power analysis). You need to consider measure of variability (standard deviation), significance level, and power.
 - You can make a graph of sample size on y-axis and effect size on x-axis to see the relationship.
