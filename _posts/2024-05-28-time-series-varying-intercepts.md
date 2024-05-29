@@ -557,7 +557,7 @@ df_data["tumor_size_std"].hist(ax=ax1)
     
 
 
-## Model 2: no pooling
+## Model 1: no pooling
 Acknowledge that there are patient clusters but do not share any information across them. In other words have a prior but no adaptive regularization.
 
 $$ s_i \sim \text{Normal}(\mu_i, \sigma) $$
