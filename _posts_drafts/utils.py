@@ -33,6 +33,51 @@ def standardize(x):
     return x
 
 
+def format_df_for_comparison(
+    trace0,
+    trace1,
+    az_summary_col,
+    var_name,
+    xlabel,
+    ylabel,
+    meta_df=None,
+    cluster_col=None,
+    hue=None,
+):
+    """Format dataframe for pplotting.
+    Note: Use with pymc output
+    """
+
+    # Create dfs for plotting
+    df_trace0 = az.summary(trace0, var_names=[var_name])[["mean", "sd"]]
+    df_trace1 = az.summary(trace1, var_names=[var_name])[["mean", "sd"]]
+
+    df = pd.concat(
+        [
+            df_trace0[az_summary_col]
+            .reset_index()
+            .rename(columns={az_summary_col: xlabel}),
+            df_trace1[az_summary_col]
+            .reset_index()
+            .rename(columns={az_summary_col: ylabel})
+            .drop(columns="index"),
+        ],
+        axis=1,
+    )
+
+    if cluster_col and hue:
+        df[cluster_col] = (
+            df["index"].str.lstrip(f"{var_name}[").str.rstrip("]").astype(int)
+        )
+
+        df = df.merge(meta_df[[cluster_col, hue]].drop_duplicates(), on=cluster_col)
+
+    data_min = df[[xlabel, ylabel]].min().min()
+    data_max = df[[xlabel, ylabel]].max().max()
+
+    return df, data_min, data_max
+
+
 def plot_comparison(
     trace0,
     trace1,
@@ -75,42 +120,31 @@ def plot_comparison(
 
     """
 
-    # Create dfs for plotting
-    df_trace0 = az.summary(trace0, var_names=[var_name])[["mean", "sd"]]
-    df_trace1 = az.summary(trace1, var_names=[var_name])[["mean", "sd"]]
-
-    def _format_df_for_seaborn(az_summary_col, cluster_col):
-        df = pd.concat(
-            [
-                df_trace0[az_summary_col]
-                .reset_index()
-                .rename(columns={az_summary_col: xlabel}),
-                df_trace1[az_summary_col]
-                .reset_index()
-                .rename(columns={az_summary_col: ylabel})
-                .drop(columns="index"),
-            ],
-            axis=1,
-        )
-
-        if cluster_col and hue:
-            df[cluster_col] = (
-                df["index"].str.lstrip(f"{var_name}[").str.rstrip("]").astype(int)
-            )
-
-            df = df.merge(meta_df[[cluster_col, hue]].drop_duplicates(), on=cluster_col)
-
-        data_min = df[[xlabel, ylabel]].min().min()
-        data_max = df[[xlabel, ylabel]].max().max()
-
-        return df, data_min, data_max
-
     f, (ax0, ax1) = plt.subplots(1, 2, figsize=(12, 5))
 
-    df_mean, mean_min, mean_max = _format_df_for_seaborn(
-        "mean", cluster_col=cluster_col
+    df_mean, mean_min, mean_max = format_df_for_comparison(
+        trace0=trace0,
+        trace1=trace1,
+        az_summary_col="mean",
+        var_name=var_name,
+        xlabel=xlabel,
+        ylabel=ylabel,
+        meta_df=meta_df,
+        cluster_col=cluster_col,
+        hue=hue,
     )
-    df_sd, sd_min, sd_max = _format_df_for_seaborn("sd", cluster_col=cluster_col)
+
+    df_sd, sd_min, sd_max = format_df_for_comparison(
+        trace0=trace0,
+        trace1=trace1,
+        az_summary_col="sd",
+        var_name=var_name,
+        xlabel=xlabel,
+        ylabel=ylabel,
+        meta_df=meta_df,
+        cluster_col=cluster_col,
+        hue=hue,
+    )
 
     sns.scatterplot(data=df_mean, x=xlabel, y=ylabel, hue=hue, marker="$\circ$", ax=ax0)
     sns.scatterplot(data=df_sd, x=xlabel, y=ylabel, hue=hue, marker="$\circ$", ax=ax1)
@@ -127,3 +161,5 @@ def plot_comparison(
     ax1.set_title(f"{title_prefix}\n(SD)")
 
     f.tight_layout()
+
+    return f, ax0, ax1
