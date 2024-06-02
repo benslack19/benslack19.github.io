@@ -12,7 +12,7 @@ def draw_causal_graph(
     edge_list, node_props=None, edge_props=None, graph_direction="UD"
 ):
     """Utility to draw a causal (directed) graph
-    Taken from: https://github.com/dustinstansbury/statistical-rethinking-2023/blob/a0f4f2d15a06b33355cf3065597dcb43ef829991/utils.py#L52-L66
+    Credit to: https://github.com/dustinstansbury/statistical-rethinking-2023/blob/a0f4f2d15a06b33355cf3065597dcb43ef829991/utils.py#L52-L66
 
     """
     g = gr.Digraph(graph_attr={"rankdir": graph_direction})
