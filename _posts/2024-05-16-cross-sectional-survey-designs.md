@@ -178,13 +178,175 @@ A way to observe the effect on a regression model of incrementally adding more v
 - Underpins more complex models
 - Works well with large surveys and many variables
 
+# Propensity score matching
+
+Introduction
+- Matching designs achieve causal inference by pairing similar data units.
+- They don't require functional form assumptions of normal regression models.
+- In normal regression models, coefficients are assumed to be linear. But for something like an age-variable where trends can reverse with old age, this wouldn't be accurate. Sometimes you can address this in a regression model (e.g. spline?) but needs to be done manually and needs to be correct.
+- Matching designs overcome this by not needing functional form assumptions.
+
+How does matching work?
+- Imagine you want to know the causal effect of a training program on productivity. In an ideal world, you'd have parallel universes where the exact same person is observed with and without the training.
+- But with survey data, imagine there are two people who share similar characteristics (age, gender, etc.) except for whether they got training.
+- Take the difference in the outcome variable (productivity). Repeat for all possible pairs.
+- Take average of all these differences and that's the causal effect based on matching.
+- Major advantage of this method: all these micro-comparisons don't require any complex modeling.
+
+Matching assumptions (need both)
+- Conditional independence assumption (CIA)
+    - Once you control for relevant observed variables, the assignment to the treatment group is as good as random.
+    - No unobserved confounders! Can't have unobserved variables that drive both outcome and treatment.
+- Common support assumption (CSA)
+    - There must be enough appropriate control observations to match wtih.
+    - There must be substantial overlap in the distributions of the matching variables comparing the treated and control observations.
+
+Propensity score matching
+- Exact matching is when units are paired exactly.
+- It's simple but likely reduces dataset a lot. Also leads to the curse of dimensionality.
+- You can match on probability of receiving treatment instead. This is called propensity score matching which is the most common type of matching.
+
+## How to propensity score match
+1. Model probability of treatment using logit or probit regression with independent variables that you believe influence treatment and outcome.
+1. Predict each unit's probability of treatment (e.g. compare the propensity score distribution support between treatments and make sure they're not radically different).
+1. Use a matching algorithm to match units. K-nearest neighbors is the most common algorithm.
+1. Assess the covariate balance between treated and untreated control groups. Make sure there's not a heavy bias. Check that matched differences all go towards zero.
+1. Compare the outcome variable across the matched pairs.
+
+
+![png](/assets/2024-05-16-cross-sectional-survey-designs_files/image-prop-scores.png)
+
+
+**Advantages**
+- More flexible than regression
+- Simpler interpretation
+
+**Disadvantages**
+- Relies on observable covariates (unobservable covariates can't be helped)
+- Matching quality depends on data
+
+**Conclusion**
+- Attractive alternative to standard regression
+- Relatively easy to impelement and explain
+- Requires high-quality data
+
+
+# Regression discontinuity designs
+
+Introduction
+- Exploits a cutoff in the assignment of treatment
+- Uses naturally occurring thresholds
+- Very useful for policy analysis
+
+Visual technique
+- RDD is a very visual technique
+- Much of the math is related to curves are fitted on a graph
+- Easy to explain
+
+Example: raising of the school leaving age (1972)
+- School leaving age increased from 15 to 16
+- Reform led to a signficant increase in percentage of kids staying in school (the discontinuity observed before and after reform date)
+- Researcher finds the gap between the regression lines before and after the reform
+
+![png](/assets/2024-05-16-cross-sectional-survey-designs_files/image-school-cohort-relative.png)
+
+Then what? How do you use discontinuity if you find one? Look another outcome.
+- How are average wages changed with more schooling? He sees a positive causal effect on wages.
+
+![png](/assets/2024-05-16-cross-sectional-survey-designs_files/image-effect-of-reform-on-wages.png)
+
+
+
+Why causal?
+- Placement near discontinuity is random
+- Being born just before a reform is random
+- Earning just below benefit threshold is random
+- RDD can eliminate selection bias into treatments
+- It eliminates backdoor paths
+- The focus on the cutoff leads to random assignment on just either side of the discontinuity
+
+![png](/assets/2024-05-16-cross-sectional-survey-designs_files/image-rdd-dag.png)
+
+
+How to perfom RDD?
+1. Identify running variable X and natural cut-point (test scores, time of policy interventions, etc.)
+1. Use visual and statistical tests to see if discontinuity actually exists (is there a gap in the data)
+1. Identify a suitable outcome variable Y that you're interested in
+1. Plot Y against X and examine the effect at the discontinuity (parametric vs. non-parametric). Estimate the treatment effect by plotting the difference in Y for either side of the discontinuity. Use parametric methods if you want to control for covariates and may not have a lot of data, or parametric if there's a lot of data but don't want to impose functional form.
+
+Example: election
+You can also run multiple RDD lines.
+
+
+
+**Advantages**
+- Strong causal inference
+- Simple and visual
+
+**Disadvantages**
+- Generlizability, only applies in vinity of discontinuity
+- Many RDD designs are fuzzy, there might be a gradual change instead of a sharp one. That means it's a local average treatment effect (LATE), again limiting generalizability.
+- Requires large, high-quality surveys
+- Sensitive to specifications
+
+**Conclusion**
+- RDD is simple and attractive
+- Relies on finding jumps in data
+- If they don't exist, find another method.
+
+
+# Instrumental variables
+
+- Helps causal inference
+- Approach requires "instrument"
+
+
+
+![png](/assets/2024-05-16-cross-sectional-survey-designs_files/image-req-exclusion-restriction.png)
+
+
+
+![png](/assets/2024-05-16-cross-sectional-survey-designs_files/image-2SLS.png)
+
+Use the predicted X variable in the second equation, not the actual X variable.
+
+It's tricky to do this manually since some correction needs to take place.
+
+Always use a dedicated program.
+
+
+![png](/assets/2024-05-16-cross-sectional-survey-designs_files/image-good-instrument.png)
+
+
+Examples of instruments in studies:
+- distance to college
+- lottery wins
+- quarter of birth
+- rainfall
+- military draft lottery numbers
+
+
+
+**Advantages**
+- Identifies causal effect
+
+**Disadvantages**
+- Relies on having a good instrument (and good data quality to have an instrument)
+- Applicable to local average treatment effect (only applicable to subset of individuals)
+
+**Conclusion**
+- Important causal technique for cross-sectional survey data
+- Everything hinges on the instrument defense
+- Not always possible, you may need to use other methods
+
+
 
 ```python
 %load_ext watermark
 %watermark -n -u -v -iv -w
 ```
 
-    Last updated: Sun May 19 2024
+    Last updated: Fri May 24 2024
     
     Python implementation: CPython
     Python version       : 3.11.7
