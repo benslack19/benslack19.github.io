@@ -146,8 +146,10 @@ def plot_comparison(
         hue=hue,
     )
 
-    sns.scatterplot(data=df_mean, x=xlabel, y=ylabel, hue=hue, marker="$\circ$", ax=ax0)
-    sns.scatterplot(data=df_sd, x=xlabel, y=ylabel, hue=hue, marker="$\circ$", ax=ax1)
+    sns.scatterplot(
+        data=df_mean, x=xlabel, y=ylabel, hue=hue, marker=r"$\circ$", ax=ax0
+    )
+    sns.scatterplot(data=df_sd, x=xlabel, y=ylabel, hue=hue, marker=r"$\circ$", ax=ax1)
 
     # Add dashed line and set the limits to be the same for both axes
     ax0.plot([0, 1], [0, 1], transform=ax0.transAxes, linestyle="dashed", color="gray")
