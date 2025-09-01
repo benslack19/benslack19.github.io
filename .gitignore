@@ -31,3 +31,5 @@ _site
 # Notebook checkpoints
 _posts_drafts/.ipynb_checkpoints/*
 _posts_drafts/__pycache__/
+
+.devcontainer

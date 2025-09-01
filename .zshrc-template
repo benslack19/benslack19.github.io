@@ -1,0 +1,86 @@
+# .zshrc-template
+
+# Path to your oh-my-zsh installation.
+export ZSH="${HOME}/.oh-my-zsh"
+
+# Set name of the theme to load --- learn more in https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="agnoster" # A popular powerline-style theme, requires a powerline-compatible font (VS Code handles this well)
+
+# Example of plugins you can use.
+# Add all plugins you want to use here.
+# Common and useful ones: git, zsh-autosuggestions, zsh-syntax-highlighting, colored-man-pages, common-aliases
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  colored-man-pages
+  common-aliases
+  # Add more as you explore:
+  # docker
+  # python
+  # pip
+  # ...
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# --- Custom Plugin Installations (outside of Oh My Zsh bundle) ---
+# zsh-autosuggestions
+# This typically needs to be cloned manually if not part of OMZ by default (it often is now)
+# The postCreateCommand installs it, but if you want to be explicit:
+# ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
+# if [ ! -d "${ZSH_CUSTOM}/plugins/zsh-autosuggestions" ]; then
+#     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
+# fi
+
+# zsh-syntax-highlighting
+# Same as autosuggestions, needs to be cloned if not part of OMZ
+# ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
+# if [ ! -d "${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting" ]; then
+#     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
+# fi
+
+# Source the plugins that are manually installed
+# source ${ZSH_CUSTOM}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# --- Custom Aliases & Functions ---
+# Example aliases
+alias ll='ls -alF'
+alias cls='clear'
+alias gcl='git clone'
+alias gst='git status'
+alias gp='git pull'
+alias gd='git diff'
+
+# Python specific aliases
+alias py="python"
+alias pa="pip install -e .[dev]" # Alias for your project setup
+
+# Roo Code specific aliases
+alias r='roo'
+
+# Adjustments for Ruff (if needed, though pre-commit usually handles this)
+# export PY_RUFF_ARGS="--fix --exit-non-zero-on-fix"
+
+# Ensure pip's user site-packages are in PATH if applicable
+# This is generally handled by Oh My Zsh's python/pip plugins or Hatch.
+# export PATH="$HOME/.local/bin:$PATH"
+
+# Enable auto-suggestion styling (optional, based on your preference)
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
+
+# History settings (Oh My Zsh often sets good defaults, but you can override)
+# HIST_STDOUT_PATTERN="%F{%b}%D{%H:%M:%S} %n@%m%f: %c"
+# HIST_STDOUT_FORMAT="%h %T %d\n"
+
+# Set preferred editor (optional)
+export EDITOR="code --wait" # Use VS Code as your default editor for git commits, etc.
+
+# Use pyenv/nvm if installed (Oh My Zsh has plugins for these)
+# eval "$(pyenv init --path)"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+
+# --- END OF .zshrc-template ---
