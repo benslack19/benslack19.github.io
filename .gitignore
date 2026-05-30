@@ -21,6 +21,9 @@ codekit-config.json
 # macOS
 .DS_Store
 
+# Local config overrides (contains secrets like analytics tracking IDs)
+_config_local.yml
+
 # Jekyll generated files
 .jekyll-cache
 .jekyll-metadata

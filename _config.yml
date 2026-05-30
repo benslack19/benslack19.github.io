@@ -25,7 +25,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes@4.22.0
+remote_theme: mmistakes/minimal-mistakes@4.28.0
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -143,10 +143,14 @@ tag_archive:
   path: /tags/
 
 # Analytics
+# UA (Universal Analytics) was shut down July 2023. Using google-gtag for GA4.
+# Set tracking_id in _config_local.yml (gitignored) to keep it out of the repo.
+# Local dev with analytics: bundle exec jekyll serve --config _config.yml,_config_local.yml
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  provider: "google-gtag"
   google:
-    tracking_id          : UA-167983398-1
+    tracking_id: ""
+    anonymize_ip: false
 
 # Comments - TBD
 # comments:

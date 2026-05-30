@@ -1,24 +1,4 @@
 
-{% if page.mathjax %}
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-{% endif %}
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-      processEscapes: true
-    },
-    "HTML-CSS": { availableFonts: ["TeX"] }
-  });
-</script> 
-
-
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
     {% if script contains "://" %}
@@ -30,7 +10,6 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}
