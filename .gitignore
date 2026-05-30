@@ -10,7 +10,7 @@
 *.gem
 .bundle
 Gemfile.lock
-**/vendor/bundle
+vendor/
 
 # Node.js and NPM
 node_modules
@@ -28,8 +28,10 @@ codekit-config.json
 _asset_bundler_cache
 _site
 
-# Notebook checkpoints
-_posts_drafts/.ipynb_checkpoints/*
-_posts_drafts/__pycache__/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
 
 .devcontainer
