@@ -21,8 +21,11 @@ codekit-config.json
 # macOS
 .DS_Store
 
-# Local config overrides (contains secrets like analytics tracking IDs)
+# Local config overrides
 _config_local.yml
+
+# Claude Code working directory
+.claude/
 
 # Jekyll generated files
 .jekyll-cache

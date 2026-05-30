@@ -143,13 +143,10 @@ tag_archive:
   path: /tags/
 
 # Analytics
-# UA (Universal Analytics) was shut down July 2023. Using google-gtag for GA4.
-# Set tracking_id in _config_local.yml (gitignored) to keep it out of the repo.
-# Local dev with analytics: bundle exec jekyll serve --config _config.yml,_config_local.yml
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: ""
+    tracking_id: "G-QJKZ0VB05W"
     anonymize_ip: false
 
 # Comments - TBD
